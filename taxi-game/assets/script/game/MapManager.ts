@@ -1,20 +1,13 @@
 import { _decorator, Component, Node } from "cc";
+import { GameMap } from "./GameMap";
 const { ccclass, property } = _decorator;
 
 @ccclass("MapManager")
 export class MapManager extends Component {
-    /* class member could be defined like this */
-    // dummy = '';
+    public currPath: Node[] = [];
 
-    /* use `property` decorator if your want the member to be serializable */
-    // @property
-    // serializableDummy = 0;
-
-    start () {
-        // Your initialization goes here.
+    public resetMap(){
+        const currMap = this.node.children[0].getComponent(GameMap);
+        this.currPath = currMap.path;
     }
-
-    // update (deltaTime: number) {
-    //     // Your update function goes here.
-    // }
 }

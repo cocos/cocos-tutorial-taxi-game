@@ -1,20 +1,32 @@
 import { _decorator, Component, Node } from "cc";
+import { Car } from "./Car";
 const { ccclass, property } = _decorator;
 
 @ccclass("CarManager")
 export class CarManager extends Component {
-    /* class member could be defined like this */
-    // dummy = '';
+    @property({
+        type: Car
+    })
+    mainCar: Car = null;
 
-    /* use `property` decorator if your want the member to be serializable */
-    // @property
-    // serializableDummy = 0;
+    public resetCars(points: Node[]){
+        if(points.length <=0){
+            console.warn('There is no points in this map');
+            return;
+        }
 
-    start () {
-        // Your initialization goes here.
+        this._createMainCar(points[0]);
     }
 
-    // update (deltaTime: number) {
-    //     // Your update function goes here.
-    // }
+    public controlMoving(isRunning = true){
+        if (isRunning) {
+            this.mainCar.startRunning();
+        } else {
+            this.mainCar.stopRunning();
+        }
+    }
+
+    private _createMainCar(point: Node){
+        this.mainCar.setEntry(point);
+    }
 }
