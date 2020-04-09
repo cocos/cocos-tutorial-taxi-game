@@ -10,6 +10,6 @@
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
-    "moduleId": "project:///assets/script/RoadPoint.js"
+    "moduleId": "project:///assets/script/game/RoadPoint.js"
   }
 }
