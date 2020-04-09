@@ -1,0 +1,123 @@
+{
+  "ver": "1.3.16",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "df693b2d-2846-43af-afe9-348a454abdbd",
+  "files": [],
+  "subMetas": {
+    "44034": {
+      "ver": "1.0.8",
+      "importer": "gltf-mesh",
+      "uuid": "df693b2d-2846-43af-afe9-348a454abdbd@44034",
+      "imported": true,
+      "files": [
+        ".json",
+        ".bin"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      },
+      "displayName": "",
+      "id": "44034",
+      "name": "001.mesh"
+    },
+    "3bd65": {
+      "ver": "1.0.2",
+      "importer": "gltf-embeded-image",
+      "uuid": "df693b2d-2846-43af-afe9-348a454abdbd@3bd65",
+      "imported": true,
+      "files": [
+        ".jpg",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      },
+      "displayName": "",
+      "id": "3bd65",
+      "name": "road03.jpg.image"
+    },
+    "bc797": {
+      "ver": "1.0.19",
+      "importer": "texture",
+      "uuid": "df693b2d-2846-43af-afe9-348a454abdbd@bc797",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "premultiplyAlpha": false,
+        "anisotropy": 1,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "df693b2d-2846-43af-afe9-348a454abdbd@3bd65"
+      },
+      "displayName": "",
+      "id": "bc797",
+      "name": "贴图 #8.texture"
+    },
+    "530d1": {
+      "ver": "1.0.13",
+      "importer": "gltf-material",
+      "uuid": "df693b2d-2846-43af-afe9-348a454abdbd@530d1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      },
+      "displayName": "",
+      "id": "530d1",
+      "name": "Material #103.material"
+    },
+    "396f2": {
+      "ver": "1.0.9",
+      "importer": "gltf-scene",
+      "uuid": "df693b2d-2846-43af-afe9-348a454abdbd@396f2",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      },
+      "displayName": "",
+      "id": "396f2",
+      "name": "road05.FBX.prefab"
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "road03.jpg",
+        "uri": "df693b2d-2846-43af-afe9-348a454abdbd@3bd65"
+      }
+    ],
+    "redirect": "df693b2d-2846-43af-afe9-348a454abdbd@396f2",
+    "assetFinder": {
+      "meshes": [
+        "df693b2d-2846-43af-afe9-348a454abdbd@44034"
+      ],
+      "skeletons": [],
+      "textures": [
+        "df693b2d-2846-43af-afe9-348a454abdbd@bc797"
+      ],
+      "materials": [
+        "df693b2d-2846-43af-afe9-348a454abdbd@530d1"
+      ],
+      "scenes": [
+        "df693b2d-2846-43af-afe9-348a454abdbd@396f2"
+      ]
+    }
+  }
+}
