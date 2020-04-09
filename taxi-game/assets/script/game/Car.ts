@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Vec3, ParticleSystemComponent } from "cc";
+import { _decorator, Component, Node, Vec3, ParticleSystemComponent, BoxColliderComponent, RigidBodyComponent, ICollisionEvent } from "cc";
 import { RoadPoint } from "./RoadPoint";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
@@ -28,6 +28,8 @@ export class Car extends Component {
     private _isInOrder = false;
     private _isBraking = false;
     private _gas: ParticleSystemComponent = null;
+    private _overCD: Function = null;
+    private _camera: Node = null;
 
     public start(){
         CustomEventListener.on(EventName.FINISHED_WALK, this._finishedWalk, this);
@@ -134,10 +136,29 @@ export class Car extends Component {
             }
         }
 
-        if(this._isMain){
+        const collider = this.node.getComponent(BoxColliderComponent);
+        if (this._isMain) {
             const gasNode = this.node.getChildByName('gas');
             this._gas = gasNode.getComponent(ParticleSystemComponent);
             this._gas.play();
+
+            collider.on('onCollisionEnter', this._onCollisionEnter, this);
+            collider.setGroup(Constants.CarGroup.MAIN_CAR);
+            collider.setMask(Constants.CarGroup.OTHER_CAR);
+        } else {
+            collider.setGroup(Constants.CarGroup.OTHER_CAR);
+            collider.setMask(-1);
+        }
+
+        this._resetPhysical();
+    }
+
+    public setCamera(camera: Node, pos: Vec3, rotation: number){
+        if(this._isMain){
+            this._camera = camera;
+            this._camera.parent = this.node;
+            this._camera.setPosition(pos);
+            this._camera.eulerAngles = new Vec3(rotation, 0, 0);
         }
     }
 
@@ -155,6 +176,15 @@ export class Car extends Component {
         this._isBraking = true;
         AudioManager.playSound(Constants.AudioSource.STOP);
         // this._isMoving = false;
+    }
+
+    public moveAfterFinished(cd: Function){
+        this._overCD = cd;
+    }
+
+    public stopImmediately() {
+        this._isMoving = false;
+        this._currSpeed = 0;
     }
 
     private _arrivalStation(){
@@ -209,7 +239,29 @@ export class Car extends Component {
         } else {
             this._isMoving = false;
             this._currRoadPoint = null;
+
+            if(this._overCD){
+                this._overCD(this);
+                this._overCD = null;
+            }
         }
+    }
+
+    private _onCollisionEnter(event: ICollisionEvent) {
+        const otherCollider = event.otherCollider;
+        if(otherCollider.node.name === 'group'){
+            return;
+        }
+
+        const otherRigidBody = otherCollider.node.getComponent(RigidBodyComponent);
+        otherRigidBody.useGravity = true;
+        otherRigidBody.applyForce(new Vec3(0, 3000, -1500), new Vec3(0, 0.5, 0));
+
+        const collider = event.selfCollider;
+        collider.addMask(Constants.CarGroup.NORMAL);
+        const rigidBody = this.node.getComponent(RigidBodyComponent);
+        rigidBody.useGravity = true;
+        this._gameOver();
     }
 
     private _greetingCustomer(){
@@ -228,8 +280,21 @@ export class Car extends Component {
     }
 
     private _finishedWalk(){
-        this._isInOrder = false;
-        this._gas.play();
+        if(this._isMain){
+            this._isInOrder = false;
+            this._gas.play();
+        }
+    }
+
+    private _gameOver(){
+        CustomEventListener.dispatchEvent(EventName.GAME_OVER);
+    }
+
+    private _resetPhysical() {
+        const rigidBody = this.node.getComponent(RigidBodyComponent);
+        rigidBody.useGravity = false;
+        rigidBody.sleep();
+        rigidBody.wakeUp();
     }
 
     private _conversion(value: number) {

@@ -8,6 +8,8 @@ enum EventName {
     START_BRAKING = 'start-braking',
     END_BRAKING = 'end-braking',
     SHOW_COIN = 'show-coin',
+    GAME_START = 'game-start',
+    GAME_OVER = 'game-over',
 }
 
 enum CustomerState {
@@ -30,9 +32,16 @@ enum AudioSource {
     WIN = 'win',
 }
 
+enum CarGroup {
+    NORMAL = 1 << 0,
+    MAIN_CAR = 1 << 1,
+    OTHER_CAR = 1 << 2,
+}
+
 @ccclass("Constants")
 export class Constants {
     public static EventName = EventName;
     public static CustomerState = CustomerState;
     public static AudioSource = AudioSource;
+    public static CarGroup = CarGroup;
 }

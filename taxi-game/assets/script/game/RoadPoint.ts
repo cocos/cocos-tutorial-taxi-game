@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, Vec3, Enum } from "cc";
+import { _decorator, Component, Node, Vec3, Enum, macro } from "cc";
 const { ccclass, property } = _decorator;
 
 enum ROAD_POINT_TYPE {
@@ -71,4 +71,38 @@ export class RoadPoint extends Component {
         return this.type === ROAD_POINT_TYPE.AI_START;
     }})
     cars = '201';
+
+    private _arrCars: string[] = [];
+    private _cd: Function = null;
+
+    public start(){
+        this._arrCars = this.cars.split(',');
+    }
+
+    public startSchedule(cd: Function){
+        if(this.type !== ROAD_POINT_TYPE.AI_START){
+            return;
+        }
+
+        this.stopSchedule();
+        this._cd = cd;
+        this.scheduleOnce(this._startDelay, this.delayTime);
+    }
+
+    public stopSchedule(){
+        this.unschedule(this._startDelay);
+        this.unschedule(this._scheduleCD);
+    }
+
+    private _startDelay(){
+        this._scheduleCD();
+        this.schedule(this._scheduleCD, this.interval, macro.REPEAT_FOREVER);
+    }
+
+    private _scheduleCD(){
+        const index = Math.floor(Math.random() * this._arrCars.length);
+        if(this._cd){
+            this._cd(this, this._arrCars[index]);
+        }
+    }
 }

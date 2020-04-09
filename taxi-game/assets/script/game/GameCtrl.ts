@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Touch, EventTouch } from "cc";
+import { _decorator, Component, Node, Touch, EventTouch, BoxColliderComponent, Vec3 } from "cc";
 import { MapManager } from "./MapManager";
 import { CarManager } from "./CarManager";
 import { AudioManager } from "./AudioManager";
@@ -17,9 +17,17 @@ export class GameCtrl extends Component {
     })
     carManager: CarManager = null;
 
+    @property({
+        type: Node,
+    })
+    group: Node = null;
+
     public onLoad(){
         this.mapManager.resetMap();
-        this.carManager.resetCars(this.mapManager.currPath);
+        this.carManager.reset(this.mapManager.currPath);
+        const collider = this.group.getComponent(BoxColliderComponent);
+        collider.setGroup(Constants.CarGroup.NORMAL);
+        collider.setMask(-1);
     }
 
     public start(){
