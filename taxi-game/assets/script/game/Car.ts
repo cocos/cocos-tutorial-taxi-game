@@ -1,7 +1,8 @@
-import { _decorator, Component, Node, Vec3 } from "cc";
+import { _decorator, Component, Node, Vec3, ParticleSystemComponent } from "cc";
 import { RoadPoint } from "./RoadPoint";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
+import { AudioManager } from "./AudioManager";
 const { ccclass, property } = _decorator;
 
 const _tempVec = new Vec3();
@@ -25,9 +26,11 @@ export class Car extends Component {
     private _acceleration = 0.2;
     private _isMain = false;
     private _isInOrder = false;
+    private _isBraking = false;
+    private _gas: ParticleSystemComponent = null;
 
     public start(){
-        CustomEventListener.on(EventName.FINISHEDWALK, this._finishedWalk, this);
+        CustomEventListener.on(EventName.FINISHED_WALK, this._finishedWalk, this);
     }
 
     public update(dt: number){
@@ -44,6 +47,10 @@ export class Car extends Component {
 
         if (this._currSpeed <= 0.001) {
             this._isMoving = false;
+            if (this._isBraking) {
+                this._isBraking = false;
+                CustomEventListener.dispatchEvent(EventName.END_BRAKING);
+            }
         }
 
         switch (this._currRoadPoint.moveType) {
@@ -126,6 +133,12 @@ export class Car extends Component {
                 this.node.eulerAngles = new Vec3(0, 90, 0);
             }
         }
+
+        if(this._isMain){
+            const gasNode = this.node.getChildByName('gas');
+            this._gas = gasNode.getComponent(ParticleSystemComponent);
+            this._gas.play();
+        }
     }
 
     public startRunning() {
@@ -138,21 +151,30 @@ export class Car extends Component {
 
     public stopRunning() {
         this._acceleration = -0.3;
+        CustomEventListener.dispatchEvent(EventName.START_BRAKING, this.node);
+        this._isBraking = true;
+        AudioManager.playSound(Constants.AudioSource.STOP);
         // this._isMoving = false;
     }
 
     private _arrivalStation(){
-        console.log('arrival...............');
         this._pointA.set(this._pointB);
         this._currRoadPoint = this._currRoadPoint.nextStation.getComponent(RoadPoint);
         if (this._currRoadPoint.nextStation) {
             this._pointB.set(this._currRoadPoint.nextStation.worldPosition);
 
             if (this._isMain) {
+                if (this._isBraking) {
+                    this._isBraking = false;
+                    CustomEventListener.dispatchEvent(EventName.END_BRAKING);
+                }
+
                 if (this._currRoadPoint.type === RoadPoint.RoadPointType.GREETING) {
                     this._greetingCustomer();
                 } else if (this._currRoadPoint.type === RoadPoint.RoadPointType.GOODBYE) {
                     this._takingCustomer();
+                } else if (this._currRoadPoint.type === RoadPoint.RoadPointType.END) {
+                    AudioManager.playSound(Constants.AudioSource.WIN);
                 }
             }
 
@@ -193,17 +215,21 @@ export class Car extends Component {
     private _greetingCustomer(){
         this._isInOrder = true;
         this._currSpeed = 0;
+        this._gas.stop();
         CustomEventListener.dispatchEvent(EventName.GREETING, this.node.worldPosition, this._currRoadPoint.direction);
     }
 
     private _takingCustomer(){
         this._isInOrder = true;
         this._currSpeed = 0;
+        this._gas.stop();
         CustomEventListener.dispatchEvent(EventName.GOODBYE, this.node.worldPosition, this._currRoadPoint.direction);
+        CustomEventListener.dispatchEvent(EventName.SHOW_COIN, this.node.worldPosition);
     }
 
     private _finishedWalk(){
         this._isInOrder = false;
+        this._gas.play();
     }
 
     private _conversion(value: number) {

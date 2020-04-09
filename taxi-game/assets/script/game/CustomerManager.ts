@@ -1,6 +1,7 @@
 import { _decorator, Component, Node, Vec3, AnimationComponent } from "cc";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
+import { AudioManager } from "./AudioManager";
 const { ccclass, property } = _decorator;
 
 const EventName = Constants.EventName;
@@ -38,7 +39,10 @@ export class CustomerManager extends Component {
                     this._currCustomer = null;
                 }
 
-                CustomEventListener.dispatchEvent(EventName.FINISHEDWALK);
+                CustomEventListener.dispatchEvent(EventName.FINISHED_WALK);
+                if (this._state === Constants.CustomerState.GREETING) {
+                    AudioManager.playSound(Constants.AudioSource.INCAR);
+                }
             } else {
                 Vec3.lerp(_tempVec, this._startPos, this._endPos, this._deltaTime / this.walkTime);
                 this._currCustomer.setWorldPosition(_tempVec);
@@ -112,5 +116,6 @@ export class CustomerManager extends Component {
 
         const animComp = this._currCustomer.getComponent(AnimationComponent);
         animComp.play('walk');
+        AudioManager.playSound(Constants.AudioSource.GETMONEY);
     }
 }
