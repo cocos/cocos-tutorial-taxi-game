@@ -63,22 +63,6 @@
       "id": "442db",
       "name": "贴图 #4.texture"
     },
-    "1fbcb": {
-      "ver": "1.0.13",
-      "importer": "gltf-material",
-      "uuid": "c2857ca9-e016-4fae-ba6f-8f711458072c@1fbcb",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {},
-      "userData": {
-        "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "1fbcb",
-      "name": "Material #28.material"
-    },
     "7a0d8": {
       "ver": "1.0.9",
       "importer": "gltf-scene",
@@ -113,11 +97,12 @@
         "c2857ca9-e016-4fae-ba6f-8f711458072c@442db"
       ],
       "materials": [
-        "c2857ca9-e016-4fae-ba6f-8f711458072c@1fbcb"
+        "badf100a-efd2-413c-9103-5eb1db7545d1"
       ],
       "scenes": [
         "c2857ca9-e016-4fae-ba6f-8f711458072c@7a0d8"
       ]
-    }
+    },
+    "dumpMaterials": true
   }
 }
