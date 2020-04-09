@@ -6,18 +6,47 @@ const _tempVec = new Vec3();
 
 @ccclass("Car")
 export class Car extends Component {
+    @property
+    maxSpeed = 0.2;
+
     private _currRoadPoint: RoadPoint = null;
     private _pointA = new Vec3();
     private _pointB = new Vec3();
-    private _currSpeed = 0.1;
+    private _currSpeed = 0;
     private _isMoving = false;
     private _offset = new Vec3();
+    private _originRotation = 0;
+    private _targetRotation = 0;
+    private _centerPoint = new Vec3();
+    private _rotMeasure = 0;
+    private _acceleration = 0.2;
 
     public update(dt: number){
         if (this._isMoving) {
             this._offset.set(this.node.worldPosition);
+
+            this._currSpeed += this._acceleration * dt;
+            if(this._currSpeed > this.maxSpeed){
+                this._currSpeed = this.maxSpeed;
+            }
+
+            if(this._currSpeed <= 0.001){
+                this._isMoving = false;
+            }
+
             switch (this._currRoadPoint.moveType) {
                 case RoadPoint.RoadMoveType.BEND:
+                    const offsetRotation = this._targetRotation - this._originRotation;
+                    const currRotation = this._conversion(this.node.eulerAngles.y);
+                    let nextStation = (currRotation - this._originRotation) + (this._currSpeed * this._rotMeasure * (this._targetRotation > this._originRotation ? 1 : -1));
+                    if(Math.abs(nextStation) > Math.abs(offsetRotation)){
+                        nextStation = offsetRotation;
+                    }
+
+                    const target = nextStation + this._originRotation;
+                    _tempVec.set(0, target, 0);
+                    this.node.eulerAngles = _tempVec;
+                    Vec3.rotateY(this._offset, this._pointA, this._centerPoint, nextStation * Math.PI / 180);
                     break;
                 default:
                     const z = this._pointB.z - this._pointA.z;
@@ -89,11 +118,14 @@ export class Car extends Component {
     public startRunning() {
         if (this._currRoadPoint) {
             this._isMoving = true;
+            this._currSpeed = 0;
+            this._acceleration = 0.2;
         }
     }
 
     public stopRunning() {
-        this._isMoving = false;
+        this._acceleration = -0.3;
+        // this._isMoving = false;
     }
 
     private _arrivalStation(){
@@ -102,9 +134,47 @@ export class Car extends Component {
         this._currRoadPoint = this._currRoadPoint.nextStation.getComponent(RoadPoint);
         if (this._currRoadPoint.nextStation) {
             this._pointB.set(this._currRoadPoint.nextStation.worldPosition);
+
+            if(this._currRoadPoint.moveType === RoadPoint.RoadMoveType.BEND){
+                if (this._currRoadPoint.clockwise) {
+                    this._originRotation = this._conversion(this.node.eulerAngles.y);
+                    this._targetRotation = this._originRotation - 90;
+
+                    if ((this._pointB.z < this._pointA.z && this._pointB.x > this._pointA.x) ||
+                        (this._pointB.z > this._pointA.z && this._pointB.x < this._pointA.x)) {
+                        this._centerPoint.set(this._pointB.x, 0, this._pointA.z);
+                    } else {
+                        this._centerPoint.set(this._pointA.x, 0, this._pointB.z);
+                    }
+                } else {
+                    this._originRotation = this._conversion(this.node.eulerAngles.y);
+                    this._targetRotation = this._originRotation + 90;
+
+                    if ((this._pointB.z > this._pointA.z && this._pointB.x > this._pointA.x) ||
+                        (this._pointB.z < this._pointA.z && this._pointB.x < this._pointA.x)) {
+                        this._centerPoint.set(this._pointB.x, 0, this._pointA.z);
+                    } else {
+                        this._centerPoint.set(this._pointA.x, 0, this._pointB.z);
+                    }
+                }
+
+                Vec3.subtract(_tempVec, this._pointA, this._centerPoint);
+                const r = _tempVec.length();
+                this._rotMeasure = 90 / (Math.PI * r / 2);
+
+            }
         } else {
             this._isMoving = false;
             this._currRoadPoint = null;
         }
+    }
+
+    private _conversion(value: number) {
+        let a = value;
+        if (a <= 0) {
+            a += 360;
+        }
+
+        return a;
     }
 }

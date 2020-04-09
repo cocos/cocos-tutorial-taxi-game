@@ -13434,6 +13434,7 @@
       "__id__": 447
     },
     "_enabled": true,
+    "maxSpeed": 0.2,
     "_id": "40qHsTdH5Pw73hyRwU/fgh"
   },
   {
