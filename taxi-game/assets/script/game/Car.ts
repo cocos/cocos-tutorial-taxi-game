@@ -1,8 +1,11 @@
 import { _decorator, Component, Node, Vec3 } from "cc";
 import { RoadPoint } from "./RoadPoint";
+import { CustomEventListener } from "../data/CustomEventListener";
+import { Constants } from "../data/Constants";
 const { ccclass, property } = _decorator;
 
 const _tempVec = new Vec3();
+const EventName = Constants.EventName;
 
 @ccclass("Car")
 export class Car extends Component {
@@ -20,76 +23,86 @@ export class Car extends Component {
     private _centerPoint = new Vec3();
     private _rotMeasure = 0;
     private _acceleration = 0.2;
+    private _isMain = false;
+    private _isInOrder = false;
 
-    public update(dt: number){
-        if (this._isMoving) {
-            this._offset.set(this.node.worldPosition);
-
-            this._currSpeed += this._acceleration * dt;
-            if(this._currSpeed > this.maxSpeed){
-                this._currSpeed = this.maxSpeed;
-            }
-
-            if(this._currSpeed <= 0.001){
-                this._isMoving = false;
-            }
-
-            switch (this._currRoadPoint.moveType) {
-                case RoadPoint.RoadMoveType.BEND:
-                    const offsetRotation = this._targetRotation - this._originRotation;
-                    const currRotation = this._conversion(this.node.eulerAngles.y);
-                    let nextStation = (currRotation - this._originRotation) + (this._currSpeed * this._rotMeasure * (this._targetRotation > this._originRotation ? 1 : -1));
-                    if(Math.abs(nextStation) > Math.abs(offsetRotation)){
-                        nextStation = offsetRotation;
-                    }
-
-                    const target = nextStation + this._originRotation;
-                    _tempVec.set(0, target, 0);
-                    this.node.eulerAngles = _tempVec;
-                    Vec3.rotateY(this._offset, this._pointA, this._centerPoint, nextStation * Math.PI / 180);
-                    break;
-                default:
-                    const z = this._pointB.z - this._pointA.z;
-                    if (z !== 0) {
-                        if (z > 0) {
-                            this._offset.z += this._currSpeed;
-                            if (this._offset.z > this._pointB.z) {
-                                this._offset.z = this._pointB.z;
-                            }
-                        } else {
-                            this._offset.z -= this._currSpeed;
-                            if (this._offset.z < this._pointB.z) {
-                                this._offset.z = this._pointB.z;
-                            }
-                        }
-                    } else {
-                        const x = this._pointB.x - this._pointA.x;
-                        if (x > 0) {
-                            this._offset.x += this._currSpeed;
-                            if (this._offset.x > this._pointB.x) {
-                                this._offset.x = this._pointB.x;
-                            }
-                        } else {
-                            this._offset.x -= this._currSpeed;
-                            if (this._offset.x < this._pointB.x) {
-                                this._offset.x = this._pointB.x;
-                            }
-                        }
-                    }
-                    break;
-            }
-
-            this.node.setWorldPosition(this._offset);
-            Vec3.subtract(_tempVec, this._pointB, this._offset);
-            if (_tempVec.length() <= 0.01){
-                this._arrivalStation();
-            }
-        }
+    public start(){
+        CustomEventListener.on(EventName.FINISHEDWALK, this._finishedWalk, this);
     }
 
-    public setEntry(entry: Node){
+    public update(dt: number){
+        if (!this._isMoving || this._isInOrder) {
+            return;
+        }
+
+        this._offset.set(this.node.worldPosition);
+
+        this._currSpeed += this._acceleration * dt;
+        if (this._currSpeed > this.maxSpeed) {
+            this._currSpeed = this.maxSpeed;
+        }
+
+        if (this._currSpeed <= 0.001) {
+            this._isMoving = false;
+        }
+
+        switch (this._currRoadPoint.moveType) {
+            case RoadPoint.RoadMoveType.BEND:
+                const offsetRotation = this._targetRotation - this._originRotation;
+                const currRotation = this._conversion(this.node.eulerAngles.y);
+                let nextStation = (currRotation - this._originRotation) + (this._currSpeed * this._rotMeasure * (this._targetRotation > this._originRotation ? 1 : -1));
+                if (Math.abs(nextStation) > Math.abs(offsetRotation)) {
+                    nextStation = offsetRotation;
+                }
+
+                const target = nextStation + this._originRotation;
+                _tempVec.set(0, target, 0);
+                this.node.eulerAngles = _tempVec;
+                Vec3.rotateY(this._offset, this._pointA, this._centerPoint, nextStation * Math.PI / 180);
+                break;
+            default:
+                const z = this._pointB.z - this._pointA.z;
+                if (z !== 0) {
+                    if (z > 0) {
+                        this._offset.z += this._currSpeed;
+                        if (this._offset.z > this._pointB.z) {
+                            this._offset.z = this._pointB.z;
+                        }
+                    } else {
+                        this._offset.z -= this._currSpeed;
+                        if (this._offset.z < this._pointB.z) {
+                            this._offset.z = this._pointB.z;
+                        }
+                    }
+                } else {
+                    const x = this._pointB.x - this._pointA.x;
+                    if (x > 0) {
+                        this._offset.x += this._currSpeed;
+                        if (this._offset.x > this._pointB.x) {
+                            this._offset.x = this._pointB.x;
+                        }
+                    } else {
+                        this._offset.x -= this._currSpeed;
+                        if (this._offset.x < this._pointB.x) {
+                            this._offset.x = this._pointB.x;
+                        }
+                    }
+                }
+                break;
+        }
+
+        this.node.setWorldPosition(this._offset);
+        Vec3.subtract(_tempVec, this._pointB, this._offset);
+        if (_tempVec.length() <= 0.01) {
+            this._arrivalStation();
+        }
+
+    }
+
+    public setEntry(entry: Node, isMain = false){
         this.node.setWorldPosition(entry.worldPosition);
         this._currRoadPoint = entry.getComponent(RoadPoint);
+        this._isMain = isMain;
         if(!this._currRoadPoint){
             console.warn('There is no RoadPoint in ' + entry.name);
             return;
@@ -135,6 +148,14 @@ export class Car extends Component {
         if (this._currRoadPoint.nextStation) {
             this._pointB.set(this._currRoadPoint.nextStation.worldPosition);
 
+            if (this._isMain) {
+                if (this._currRoadPoint.type === RoadPoint.RoadPointType.GREETING) {
+                    this._greetingCustomer();
+                } else if (this._currRoadPoint.type === RoadPoint.RoadPointType.GOODBYE) {
+                    this._takingCustomer();
+                }
+            }
+
             if(this._currRoadPoint.moveType === RoadPoint.RoadMoveType.BEND){
                 if (this._currRoadPoint.clockwise) {
                     this._originRotation = this._conversion(this.node.eulerAngles.y);
@@ -167,6 +188,22 @@ export class Car extends Component {
             this._isMoving = false;
             this._currRoadPoint = null;
         }
+    }
+
+    private _greetingCustomer(){
+        this._isInOrder = true;
+        this._currSpeed = 0;
+        CustomEventListener.dispatchEvent(EventName.GREETING, this.node.worldPosition, this._currRoadPoint.direction);
+    }
+
+    private _takingCustomer(){
+        this._isInOrder = true;
+        this._currSpeed = 0;
+        CustomEventListener.dispatchEvent(EventName.GOODBYE, this.node.worldPosition, this._currRoadPoint.direction);
+    }
+
+    private _finishedWalk(){
+        this._isInOrder = false;
     }
 
     private _conversion(value: number) {
