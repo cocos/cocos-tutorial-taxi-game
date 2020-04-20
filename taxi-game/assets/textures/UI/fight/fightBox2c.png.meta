@@ -8,10 +8,10 @@
     ".json"
   ],
   "subMetas": {
-    "6c48a": {
-      "ver": "1.0.19",
-      "importer": "texture",
-      "uuid": "1600f2e7-4fdc-47d9-94bf-6034142cde67@6c48a",
+    "f9941": {
+      "ver": "1.0.8",
+      "importer": "sprite-frame",
+      "uuid": "1600f2e7-4fdc-47d9-94bf-6034142cde67@f9941",
       "imported": true,
       "files": [
         ".json"
@@ -25,16 +25,32 @@
         "mipfilter": "none",
         "premultiplyAlpha": false,
         "anisotropy": 1,
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 75,
+        "height": 31,
+        "rawWidth": 75,
+        "rawHeight": 31,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "1600f2e7-4fdc-47d9-94bf-6034142cde67"
+        "imageUuidOrDatabaseUri": "1600f2e7-4fdc-47d9-94bf-6034142cde67",
+        "atlasUuid": ""
       },
       "displayName": "fightBox2c",
-      "id": "6c48a",
-      "name": "texture"
+      "id": "f9941",
+      "name": "spriteFrame"
     }
   },
   "userData": {
-    "type": "texture",
-    "redirect": "1600f2e7-4fdc-47d9-94bf-6034142cde67@6c48a"
+    "type": "sprite-frame",
+    "redirect": "1600f2e7-4fdc-47d9-94bf-6034142cde67@f9941"
   }
 }

@@ -8,10 +8,10 @@
     ".json"
   ],
   "subMetas": {
-    "6c48a": {
-      "ver": "1.0.19",
-      "importer": "texture",
-      "uuid": "caff3d25-4e15-4e36-a0cf-1d69131ce99d@6c48a",
+    "f9941": {
+      "ver": "1.0.8",
+      "importer": "sprite-frame",
+      "uuid": "caff3d25-4e15-4e36-a0cf-1d69131ce99d@f9941",
       "imported": true,
       "files": [
         ".json"
@@ -25,16 +25,32 @@
         "mipfilter": "none",
         "premultiplyAlpha": false,
         "anisotropy": 1,
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 84,
+        "height": 90,
+        "rawWidth": 84,
+        "rawHeight": 90,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "caff3d25-4e15-4e36-a0cf-1d69131ce99d"
+        "imageUuidOrDatabaseUri": "caff3d25-4e15-4e36-a0cf-1d69131ce99d",
+        "atlasUuid": ""
       },
       "displayName": "homeIconSet",
-      "id": "6c48a",
-      "name": "texture"
+      "id": "f9941",
+      "name": "spriteFrame"
     }
   },
   "userData": {
-    "type": "texture",
-    "redirect": "caff3d25-4e15-4e36-a0cf-1d69131ce99d@6c48a"
+    "type": "sprite-frame",
+    "redirect": "caff3d25-4e15-4e36-a0cf-1d69131ce99d@f9941"
   }
 }

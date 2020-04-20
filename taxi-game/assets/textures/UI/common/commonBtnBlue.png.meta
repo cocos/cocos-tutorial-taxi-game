@@ -8,10 +8,10 @@
     ".json"
   ],
   "subMetas": {
-    "6c48a": {
-      "ver": "1.0.19",
-      "importer": "texture",
-      "uuid": "3b9c790c-52c8-45d7-85b0-7342e2b071a1@6c48a",
+    "f9941": {
+      "ver": "1.0.8",
+      "importer": "sprite-frame",
+      "uuid": "3b9c790c-52c8-45d7-85b0-7342e2b071a1@f9941",
       "imported": true,
       "files": [
         ".json"
@@ -25,16 +25,32 @@
         "mipfilter": "none",
         "premultiplyAlpha": false,
         "anisotropy": 1,
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 208,
+        "height": 88,
+        "rawWidth": 208,
+        "rawHeight": 88,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "3b9c790c-52c8-45d7-85b0-7342e2b071a1"
+        "imageUuidOrDatabaseUri": "3b9c790c-52c8-45d7-85b0-7342e2b071a1",
+        "atlasUuid": ""
       },
       "displayName": "commonBtnBlue",
-      "id": "6c48a",
-      "name": "texture"
+      "id": "f9941",
+      "name": "spriteFrame"
     }
   },
   "userData": {
-    "type": "texture",
-    "redirect": "3b9c790c-52c8-45d7-85b0-7342e2b071a1@6c48a"
+    "type": "sprite-frame",
+    "redirect": "3b9c790c-52c8-45d7-85b0-7342e2b071a1@f9941"
   }
 }

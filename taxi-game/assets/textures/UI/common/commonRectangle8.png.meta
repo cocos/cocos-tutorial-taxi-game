@@ -8,10 +8,10 @@
     ".json"
   ],
   "subMetas": {
-    "6c48a": {
-      "ver": "1.0.19",
-      "importer": "texture",
-      "uuid": "0c8f0b64-2ae7-4efb-88cf-0c3e6d44970b@6c48a",
+    "f9941": {
+      "ver": "1.0.8",
+      "importer": "sprite-frame",
+      "uuid": "0c8f0b64-2ae7-4efb-88cf-0c3e6d44970b@f9941",
       "imported": true,
       "files": [
         ".json"
@@ -25,16 +25,32 @@
         "mipfilter": "none",
         "premultiplyAlpha": false,
         "anisotropy": 1,
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 2.5,
+        "trimX": 0,
+        "trimY": 1,
+        "width": 400,
+        "height": 53,
+        "rawWidth": 400,
+        "rawHeight": 60,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "0c8f0b64-2ae7-4efb-88cf-0c3e6d44970b"
+        "imageUuidOrDatabaseUri": "0c8f0b64-2ae7-4efb-88cf-0c3e6d44970b",
+        "atlasUuid": ""
       },
       "displayName": "commonRectangle8",
-      "id": "6c48a",
-      "name": "texture"
+      "id": "f9941",
+      "name": "spriteFrame"
     }
   },
   "userData": {
-    "type": "texture",
-    "redirect": "0c8f0b64-2ae7-4efb-88cf-0c3e6d44970b@6c48a"
+    "type": "sprite-frame",
+    "redirect": "0c8f0b64-2ae7-4efb-88cf-0c3e6d44970b@f9941"
   }
 }

@@ -8,10 +8,10 @@
     ".json"
   ],
   "subMetas": {
-    "6c48a": {
-      "ver": "1.0.19",
-      "importer": "texture",
-      "uuid": "5afabb37-926f-437d-b6f3-a3e516bb1692@6c48a",
+    "f9941": {
+      "ver": "1.0.8",
+      "importer": "sprite-frame",
+      "uuid": "5afabb37-926f-437d-b6f3-a3e516bb1692@f9941",
       "imported": true,
       "files": [
         ".json"
@@ -25,16 +25,32 @@
         "mipfilter": "none",
         "premultiplyAlpha": false,
         "anisotropy": 1,
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 118,
+        "height": 158,
+        "rawWidth": 118,
+        "rawHeight": 158,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "5afabb37-926f-437d-b6f3-a3e516bb1692"
+        "imageUuidOrDatabaseUri": "5afabb37-926f-437d-b6f3-a3e516bb1692",
+        "atlasUuid": ""
       },
       "displayName": "homeBoxOnline01",
-      "id": "6c48a",
-      "name": "texture"
+      "id": "f9941",
+      "name": "spriteFrame"
     }
   },
   "userData": {
-    "type": "texture",
-    "redirect": "5afabb37-926f-437d-b6f3-a3e516bb1692@6c48a"
+    "type": "sprite-frame",
+    "redirect": "5afabb37-926f-437d-b6f3-a3e516bb1692@f9941"
   }
 }

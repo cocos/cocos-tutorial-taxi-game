@@ -3,6 +3,8 @@ import { MapManager } from "./MapManager";
 import { CarManager } from "./CarManager";
 import { AudioManager } from "./AudioManager";
 import { Constants } from "../data/Constants";
+import { CustomEventListener } from "../data/CustomEventListener";
+import { UIManager } from "../ui/UIManager";
 const { ccclass, property } = _decorator;
 
 @ccclass("GameCtrl")
@@ -31,8 +33,12 @@ export class GameCtrl extends Component {
     }
 
     public start(){
+        UIManager.showDialog(Constants.UIPage.mainUI);
         this.node.on(Node.EventType.TOUCH_START, this._touchStart, this);
         this.node.on(Node.EventType.TOUCH_END, this._touchEnd, this);
+        CustomEventListener.on(Constants.EventName.GAME_START, this._gameStart, this);
+        CustomEventListener.on(Constants.EventName.GAME_OVER, this._gameOver, this);
+        CustomEventListener.on(Constants.EventName.NEW_LEVEL, this._newLevel, this);
 
         AudioManager.playMusic(Constants.AudioSource.BACKGROUND);
     }
@@ -43,5 +49,20 @@ export class GameCtrl extends Component {
 
     private _touchEnd(touch: Touch, event: EventTouch) {
         this.carManager.controlMoving(false);
+    }
+
+    private _gameStart(){
+        UIManager.hideDialog(Constants.UIPage.mainUI);
+        UIManager.showDialog(Constants.UIPage.gameUI);
+    }
+
+    private _gameOver(){
+        UIManager.hideDialog(Constants.UIPage.gameUI);
+        UIManager.showDialog(Constants.UIPage.resultUI);
+    }
+
+    private _newLevel(){
+        UIManager.hideDialog(Constants.UIPage.resultUI);
+        UIManager.showDialog(Constants.UIPage.mainUI);
     }
 }
