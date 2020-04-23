@@ -3,15 +3,26 @@ import { RoadPoint } from "./RoadPoint";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
 import { AudioManager } from "./AudioManager";
+import { RunTimeData } from "../data/GameData";
 const { ccclass, property } = _decorator;
 
 const _tempVec = new Vec3();
 const EventName = Constants.EventName;
+const TOOTING_COOL_TIME = 5;
+
+enum RunState {
+    NORMAL = 0,
+    INORDER = 1,
+    CRASH = 2,
+    OVER = 3,
+}
 
 @ccclass("Car")
 export class Car extends Component {
     @property
     maxSpeed = 0.2;
+    @property
+    minSpeed = 0.02;
 
     private _currRoadPoint: RoadPoint = null;
     private _pointA = new Vec3();
@@ -25,30 +36,37 @@ export class Car extends Component {
     private _rotMeasure = 0;
     private _acceleration = 0.2;
     private _isMain = false;
-    private _isInOrder = false;
     private _isBraking = false;
     private _gas: ParticleSystemComponent = null;
     private _overCD: Function = null;
     private _camera: Node = null;
+    private _tootingCoolTime = 0;
+    private _minSpeed = 0;
+    private _maxSpeed = 0;
+    private _runState = RunState.NORMAL;
 
     public start(){
         CustomEventListener.on(EventName.FINISHED_WALK, this._finishedWalk, this);
+
+        this._minSpeed = this.minSpeed;
+        this._maxSpeed = this.maxSpeed;
     }
 
     public update(dt: number){
-        if (!this._isMoving || this._isInOrder) {
+        this._tootingCoolTime = this._tootingCoolTime > dt ? this._tootingCoolTime - dt : 0;
+        if ((!this._isMoving && this._currSpeed <= 0) || this._runState === RunState.INORDER || this._runState === RunState.CRASH) {
             return;
         }
 
         this._offset.set(this.node.worldPosition);
 
         this._currSpeed += this._acceleration * dt;
-        if (this._currSpeed > this.maxSpeed) {
-            this._currSpeed = this.maxSpeed;
+        if (this._currSpeed > this._maxSpeed) {
+            this._currSpeed = this._maxSpeed;
         }
 
         if (this._currSpeed <= 0.001) {
-            this._isMoving = false;
+            this._currSpeed = this.minSpeed;
             if (this._isBraking) {
                 this._isBraking = false;
                 CustomEventListener.dispatchEvent(EventName.END_BRAKING);
@@ -136,6 +154,9 @@ export class Car extends Component {
             }
         }
 
+        this._runState = RunState.NORMAL;
+        this._currSpeed = 0;
+        this._isMoving = false;
         const collider = this.node.getComponent(BoxColliderComponent);
         if (this._isMain) {
             const gasNode = this.node.getChildByName('gas');
@@ -163,14 +184,28 @@ export class Car extends Component {
     }
 
     public startRunning() {
+        if(this._runState !== RunState.NORMAL){
+            return;
+        }
+
+        this._minSpeed = this.minSpeed;
+        this._maxSpeed = this.maxSpeed;
         if (this._currRoadPoint) {
             this._isMoving = true;
-            this._currSpeed = 0;
             this._acceleration = 0.2;
+        }
+
+        if(this._isBraking){
+            CustomEventListener.dispatchEvent(EventName.END_BRAKING);
+            this._isBraking = false;
         }
     }
 
     public stopRunning() {
+        if (this._runState !== RunState.NORMAL) {
+            return;
+        }
+
         this._acceleration = -0.3;
         CustomEventListener.dispatchEvent(EventName.START_BRAKING, this.node);
         this._isBraking = true;
@@ -185,6 +220,22 @@ export class Car extends Component {
     public stopImmediately() {
         this._isMoving = false;
         this._currSpeed = 0;
+    }
+
+    public tooting(){
+        if(this._tootingCoolTime > 0){
+            return;
+        }
+
+        this._tootingCoolTime = TOOTING_COOL_TIME;
+        const audioSource = Math.floor(Math.random() * 2) < 1?Constants.AudioSource.TOOTING1: Constants.AudioSource.TOOTING2;
+        AudioManager.playSound(audioSource);
+    }
+
+    public startWithMinSpeed(){
+        this._currSpeed = this.minSpeed;
+        this._maxSpeed = this._minSpeed;
+        this._isMoving = true;
     }
 
     private _arrivalStation(){
@@ -205,6 +256,11 @@ export class Car extends Component {
                     this._takingCustomer();
                 } else if (this._currRoadPoint.type === RoadPoint.RoadPointType.END) {
                     AudioManager.playSound(Constants.AudioSource.WIN);
+                    this._runState = RunState.OVER;
+                    this._minSpeed = this._maxSpeed = 0.2;
+                    this._currSpeed = this._minSpeed;
+                    this._acceleration = 0;
+                    CustomEventListener.dispatchEvent(EventName.GAME_OVER);
                 }
             }
 
@@ -238,6 +294,7 @@ export class Car extends Component {
             }
         } else {
             this._isMoving = false;
+            this._currSpeed = 0;
             this._currRoadPoint = null;
 
             if(this._overCD){
@@ -261,19 +318,28 @@ export class Car extends Component {
         collider.addMask(Constants.CarGroup.NORMAL);
         const rigidBody = this.node.getComponent(RigidBodyComponent);
         rigidBody.useGravity = true;
-        this._gameOver();
+        this._runState = RunState.CRASH;
+        AudioManager.playSound(Constants.AudioSource.CRASH);
+        CustomEventListener.dispatchEvent(EventName.GAME_OVER);
     }
 
     private _greetingCustomer(){
-        this._isInOrder = true;
+        const runtimeData = RunTimeData.instance();
+        runtimeData.isTakeOver = false;
+        this._runState = RunState.INORDER;
         this._currSpeed = 0;
+        this._isMoving = false;
         this._gas.stop();
         CustomEventListener.dispatchEvent(EventName.GREETING, this.node.worldPosition, this._currRoadPoint.direction);
     }
 
     private _takingCustomer(){
-        this._isInOrder = true;
+        const runtimeData = RunTimeData.instance();
+        runtimeData.isTakeOver = true;
+        runtimeData.currProgress ++;
+        this._runState = RunState.INORDER;
         this._currSpeed = 0;
+        this._isMoving = false;
         this._gas.stop();
         CustomEventListener.dispatchEvent(EventName.GOODBYE, this.node.worldPosition, this._currRoadPoint.direction);
         CustomEventListener.dispatchEvent(EventName.SHOW_COIN, this.node.worldPosition);
@@ -281,13 +347,9 @@ export class Car extends Component {
 
     private _finishedWalk(){
         if(this._isMain){
-            this._isInOrder = false;
+            this._runState = RunState.NORMAL;
             this._gas.play();
         }
-    }
-
-    private _gameOver(){
-        CustomEventListener.dispatchEvent(EventName.GAME_OVER);
     }
 
     private _resetPhysical() {

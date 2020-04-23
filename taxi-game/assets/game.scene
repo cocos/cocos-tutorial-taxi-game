@@ -20094,17 +20094,17 @@
     "__type__": "cc.AmbientInfo",
     "_skyColor": {
       "__type__": "cc.Color",
-      "r": 51,
-      "g": 128,
-      "b": 204,
+      "r": 94,
+      "g": 160,
+      "b": 224,
       "a": 1
     },
-    "_skyIllum": 20000,
+    "_skyIllum": 90000,
     "_groundAlbedo": {
       "__type__": "cc.Color",
-      "r": 51,
-      "g": 51,
-      "b": 51,
+      "r": 255,
+      "g": 255,
+      "b": 255,
       "a": 255
     }
   },

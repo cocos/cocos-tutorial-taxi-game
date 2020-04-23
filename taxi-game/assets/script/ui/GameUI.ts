@@ -1,4 +1,7 @@
-import { _decorator, Component, Node, LabelComponent, SpriteComponent, SpriteFrame } from "cc";
+import { _decorator, Component, Node, LabelComponent, SpriteComponent, SpriteFrame, loader, AnimationComponent } from "cc";
+import { RunTimeData } from "../data/GameData";
+import { CustomEventListener } from "../data/CustomEventListener";
+import { Constants } from "../data/Constants";
 const { ccclass, property } = _decorator;
 
 @ccclass("GameUI")
@@ -40,10 +43,10 @@ export class GameUI extends Component {
     levelUnFinished: SpriteFrame = null;
 
     @property({
-        type: [Node],
+        type: [SpriteComponent],
         displayOrder: 7,
     })
-    progress: Node[] = [];
+    progress: SpriteComponent[] = [];
 
     @property({
         type: SpriteFrame,
@@ -87,11 +90,82 @@ export class GameUI extends Component {
     })
     guideNode: Node = null;
 
-    public show(){
+    private _runtimeData: RunTimeData = null;
 
+    public show(){
+        CustomEventListener.on(Constants.EventName.GREETING, this._greeting, this);
+        CustomEventListener.on(Constants.EventName.GOODBYE, this._taking, this);
+        CustomEventListener.on(Constants.EventName.SHOW_TALK, this._talking, this);
+        CustomEventListener.on(Constants.EventName.SHOW_GUIDE, this._showGuide, this);
+
+        this._runtimeData = RunTimeData.instance();
+        this._refreshUI();
+        this._showGuide(true);
     }
 
     public hide(){
+        CustomEventListener.off(Constants.EventName.GREETING, this._greeting, this);
+        CustomEventListener.off(Constants.EventName.GOODBYE, this._taking, this);
+        CustomEventListener.off(Constants.EventName.SHOW_TALK, this._talking, this);
+        CustomEventListener.off(Constants.EventName.SHOW_GUIDE, this._showGuide, this);
+    }
 
+    private _greeting(){
+        this.progress[this._runtimeData.maxProgress - 1 - this._runtimeData.currProgress].spriteFrame = this.progress2;
+    }
+
+    private _taking(){
+        this.progress[this._runtimeData.maxProgress - this._runtimeData.currProgress].spriteFrame = this.progress1;
+        if(this._runtimeData.maxProgress === this._runtimeData.currProgress){
+            this.targetSp.spriteFrame = this.levelFinished;
+        }
+    }
+
+    private _talking(customerID: string){
+        const table = Constants.talkTable;
+        const index = Math.floor(Math.random() * table.length);
+        const str = table[index];
+        this.content.string = str;
+        this.talkNode.active = true;
+        const path = `texture/head/head${customerID + 1}/spriteFrame`;
+        loader.loadRes(path, SpriteFrame, (err: any, sp: SpriteFrame)=>{
+            if(err){
+                return;
+            }
+
+            if(this.talkNode.active){
+                this.avatar.spriteFrame = sp;
+            }
+        });
+
+        this.scheduleOnce(()=>{
+            this.talkNode.active = false;
+        }, 3);
+    }
+
+    private _showGuide(isShow: boolean){
+        this.guideNode.active = isShow;
+
+        if(isShow){
+            const animComp = this.guideNode.getComponent(AnimationComponent);
+            animComp.play('showGuide');
+        }
+    }
+
+    private _refreshUI(){
+        for (let i = 0; i < this.progress.length; i++) {
+            const progress = this.progress[i];
+            if (i >= this._runtimeData.maxProgress) {
+                progress.node.active = false;
+            } else {
+                progress.node.active = true;
+                progress.spriteFrame = this.progress3;
+            }
+        }
+
+        this.srcLevel.string = '1';
+        this.targetLevel.string = '2';
+        this.srcSp.spriteFrame = this.levelFinished;
+        this.targetSp.spriteFrame = this.levelUnFinished;
     }
 }

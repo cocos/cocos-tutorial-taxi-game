@@ -22,6 +22,7 @@ export class CustomerManager extends Component {
     private _inTheOrder = false;
     private _deltaTime = 0;
     private _state = Constants.CustomerState.NONE;
+    private _customerID = -1;
 
     public start (){
         CustomEventListener.on(EventName.GREETING, this._greetingCustomer, this);
@@ -43,6 +44,8 @@ export class CustomerManager extends Component {
                 if (this._state === Constants.CustomerState.GREETING) {
                     AudioManager.playSound(Constants.AudioSource.INCAR);
                 }
+
+                CustomEventListener.dispatchEvent(Constants.EventName.SHOW_GUIDE, true);
             } else {
                 Vec3.lerp(_tempVec, this._startPos, this._endPos, this._deltaTime / this.walkTime);
                 this._currCustomer.setWorldPosition(_tempVec);
@@ -51,7 +54,8 @@ export class CustomerManager extends Component {
     }
 
     private _greetingCustomer(...args: any[]){
-        this._currCustomer = this.customers[Math.floor(Math.random() * this.customers.length)];
+        this._customerID = Math.floor(Math.random() * this.customers.length);
+        this._currCustomer = this.customers[this._customerID];
         this._state = Constants.CustomerState.GREETING;
         this._inTheOrder = true;
         if (!this._currCustomer) {
@@ -84,6 +88,9 @@ export class CustomerManager extends Component {
 
         const animComp = this._currCustomer.getComponent(AnimationComponent);
         animComp.play('walk');
+
+        CustomEventListener.dispatchEvent(EventName.SHOW_TALK, this._customerID);
+        AudioManager.playSound(Constants.AudioSource.NEWORDER);
     }
 
     private _takingCustomer(...args: any[]) {
@@ -117,5 +124,8 @@ export class CustomerManager extends Component {
         const animComp = this._currCustomer.getComponent(AnimationComponent);
         animComp.play('walk');
         AudioManager.playSound(Constants.AudioSource.GETMONEY);
+
+        CustomEventListener.dispatchEvent(EventName.SHOW_TALK, this._customerID);
+        this._customerID = -1;
     }
 }

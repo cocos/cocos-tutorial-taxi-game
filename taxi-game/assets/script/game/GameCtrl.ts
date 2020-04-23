@@ -5,6 +5,7 @@ import { AudioManager } from "./AudioManager";
 import { Constants } from "../data/Constants";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { UIManager } from "../ui/UIManager";
+import { RunTimeData } from "../data/GameData";
 const { ccclass, property } = _decorator;
 
 @ccclass("GameCtrl")
@@ -25,8 +26,7 @@ export class GameCtrl extends Component {
     group: Node = null;
 
     public onLoad(){
-        this.mapManager.resetMap();
-        this.carManager.reset(this.mapManager.currPath);
+        this._reset();
         const collider = this.group.getComponent(BoxColliderComponent);
         collider.setGroup(Constants.CarGroup.NORMAL);
         collider.setMask(-1);
@@ -64,5 +64,15 @@ export class GameCtrl extends Component {
     private _newLevel(){
         UIManager.hideDialog(Constants.UIPage.resultUI);
         UIManager.showDialog(Constants.UIPage.mainUI);
+
+        this._reset();
+    }
+
+    private _reset(){
+        this.mapManager.resetMap();
+        this.carManager.reset(this.mapManager.currPath);
+        const runtimeData = RunTimeData.instance();
+        runtimeData.currProgress = 0;
+        runtimeData.maxProgress = this.mapManager.maxProgress;
     }
 }
