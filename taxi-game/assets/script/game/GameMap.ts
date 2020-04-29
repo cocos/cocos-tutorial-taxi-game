@@ -8,5 +8,6 @@ export class GameMap extends Component {
     })
     path: Node[] = [];
 
+    @property
     public maxProgress = 2;
 }

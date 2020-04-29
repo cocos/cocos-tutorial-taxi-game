@@ -163,8 +163,9 @@ export class GameUI extends Component {
             }
         }
 
-        this.srcLevel.string = '1';
-        this.targetLevel.string = '2';
+        const level = this._runtimeData.currLevel;
+        this.srcLevel.string = `${level}`;
+        this.targetLevel.string = `${level + 1}`;
         this.srcSp.spriteFrame = this.levelFinished;
         this.targetSp.spriteFrame = this.levelUnFinished;
     }

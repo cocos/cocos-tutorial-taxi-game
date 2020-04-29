@@ -2,6 +2,7 @@ import { _decorator, Component, Node, Vec3, AnimationComponent } from "cc";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
 import { AudioManager } from "./AudioManager";
+import { RunTimeData } from "../data/GameData";
 const { ccclass, property } = _decorator;
 
 const EventName = Constants.EventName;
@@ -106,6 +107,9 @@ export class CustomerManager extends Component {
 
         this._currCustomer.setWorldPosition(this._startPos);
         this._currCustomer.active = true;
+        const runtimeData = RunTimeData.instance();
+        const money = Math.floor(30 + (runtimeData.currLevel / 2) + (Math.random() * 10));
+        runtimeData.money += money;
 
         if (direction.x !== 0) {
             if (direction.x > 0) {

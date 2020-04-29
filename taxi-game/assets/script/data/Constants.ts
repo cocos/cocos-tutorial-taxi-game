@@ -13,6 +13,7 @@ enum EventName {
     NEW_LEVEL = 'new-level',
     SHOW_TALK = 'show-talk',
     SHOW_GUIDE = 'show-guide',
+    UPDATE_PROGRESS = 'update-progress',
 }
 
 enum CustomerState {
@@ -57,4 +58,8 @@ export class Constants {
         gameUI: 'gameUI',
         resultUI: 'resultUI',
     };
+
+    public static GameConfigID = 'TAXI_GAME_CACHE';
+    public static PlayerConfigID = 'playerInfo';
+    public static MaxLevel = 20;
 }

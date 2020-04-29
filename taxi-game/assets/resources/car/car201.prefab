@@ -211,7 +211,8 @@
       "__id__": 1
     },
     "_enabled": true,
-    "maxSpeed": 0.2,
+    "maxSpeed": 0.3,
+    "minSpeed": 0.02,
     "_id": ""
   },
   {
