@@ -31,6 +31,7 @@ export class Car extends Component {
     private _isMoving = false;
     private _offset = new Vec3();
     private _originRotation = 0;
+    private _currRotation = 0;
     private _targetRotation = 0;
     private _centerPoint = new Vec3();
     private _rotMeasure = 0;
@@ -76,13 +77,12 @@ export class Car extends Component {
         switch (this._currRoadPoint.moveType) {
             case RoadPoint.RoadMoveType.BEND:
                 const offsetRotation = this._targetRotation - this._originRotation;
-                const currRotation = this._conversion(this.node.eulerAngles.y);
-                let nextStation = (currRotation - this._originRotation) + (this._currSpeed * this._rotMeasure * (this._targetRotation > this._originRotation ? 1 : -1));
+                let nextStation = (this._currRotation - this._originRotation) + (this._currSpeed * this._rotMeasure * (this._targetRotation > this._originRotation ? 1 : -1));
                 if (Math.abs(nextStation) > Math.abs(offsetRotation)) {
                     nextStation = offsetRotation;
                 }
 
-                const target = nextStation + this._originRotation;
+                const target = this._currRotation = nextStation + this._originRotation;
                 _tempVec.set(0, target, 0);
                 this.node.eulerAngles = _tempVec;
                 Vec3.rotateY(this._offset, this._pointA, this._centerPoint, nextStation * Math.PI / 180);
@@ -154,6 +154,7 @@ export class Car extends Component {
             }
         }
 
+        this._originRotation = this._targetRotation = this._currRotation = this.node.eulerAngles.y;
         this._runState = RunState.NORMAL;
         this._currSpeed = 0;
         this._isMoving = false;
@@ -243,6 +244,7 @@ export class Car extends Component {
         this._currRoadPoint = this._currRoadPoint.nextStation.getComponent(RoadPoint);
         if (this._currRoadPoint.nextStation) {
             this._pointB.set(this._currRoadPoint.nextStation.worldPosition);
+            this._originRotation = this._targetRotation;
 
             if (this._isMain) {
                 if (this._isBraking) {
@@ -266,7 +268,7 @@ export class Car extends Component {
 
             if(this._currRoadPoint.moveType === RoadPoint.RoadMoveType.BEND){
                 if (this._currRoadPoint.clockwise) {
-                    this._originRotation = this._conversion(this.node.eulerAngles.y);
+                    this._originRotation = this._currRotation = this._originRotation <= 0 ? this._originRotation + 360 : this._originRotation;
                     this._targetRotation = this._originRotation - 90;
 
                     if ((this._pointB.z < this._pointA.z && this._pointB.x > this._pointA.x) ||
@@ -276,7 +278,7 @@ export class Car extends Component {
                         this._centerPoint.set(this._pointA.x, 0, this._pointB.z);
                     }
                 } else {
-                    this._originRotation = this._conversion(this.node.eulerAngles.y);
+                    this._originRotation = this._currRotation = this._originRotation >= 360 ? this._originRotation - 360 : this._originRotation;
                     this._targetRotation = this._originRotation + 90;
 
                     if ((this._pointB.z > this._pointA.z && this._pointB.x > this._pointA.x) ||
@@ -357,14 +359,5 @@ export class Car extends Component {
         rigidBody.useGravity = false;
         rigidBody.sleep();
         rigidBody.wakeUp();
-    }
-
-    private _conversion(value: number) {
-        let a = value;
-        if (a <= 0) {
-            a += 360;
-        }
-
-        return a;
     }
 }
