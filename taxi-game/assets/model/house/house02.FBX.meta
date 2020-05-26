@@ -1,12 +1,12 @@
 {
-  "ver": "1.3.16",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "c4995fba-9b4b-4968-957c-6eb66f4e73eb",
   "files": [],
   "subMetas": {
     "604e5": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "name": "Box022.mesh",
       "id": "604e5",
@@ -64,7 +64,7 @@
       }
     },
     "4eb3d": {
-      "ver": "1.0.13",
+      "ver": "1.0.14",
       "importer": "gltf-material",
       "name": "Material #117.material",
       "id": "4eb3d",
@@ -79,13 +79,13 @@
         "gltfIndex": 0
       }
     },
-    "ad709": {
-      "ver": "1.0.9",
+    "f5095": {
       "importer": "gltf-scene",
-      "name": "house02.FBX.prefab",
-      "id": "ad709",
+      "uuid": "c4995fba-9b4b-4968-957c-6eb66f4e73eb@f5095",
       "displayName": "",
-      "uuid": "c4995fba-9b4b-4968-957c-6eb66f4e73eb@ad709",
+      "id": "f5095",
+      "name": "house02.prefab",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -100,7 +100,7 @@
     "normals": 0,
     "tangents": 1,
     "dumpMaterials": false,
-    "redirect": "c4995fba-9b4b-4968-957c-6eb66f4e73eb@ad709",
+    "redirect": "c4995fba-9b4b-4968-957c-6eb66f4e73eb@f5095",
     "assetFinder": {
       "meshes": [
         "c4995fba-9b4b-4968-957c-6eb66f4e73eb@604e5"
@@ -112,7 +112,7 @@
         "c4995fba-9b4b-4968-957c-6eb66f4e73eb@4eb3d"
       ],
       "scenes": [
-        "c4995fba-9b4b-4968-957c-6eb66f4e73eb@ad709"
+        "c4995fba-9b4b-4968-957c-6eb66f4e73eb@f5095"
       ],
       "skeletons": []
     },

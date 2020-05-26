@@ -1,12 +1,12 @@
 {
-  "ver": "1.3.16",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "f5cf3589-8dc9-48c1-8df8-59bcead1895e",
   "files": [],
   "subMetas": {
     "3a0f4": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "f5cf3589-8dc9-48c1-8df8-59bcead1895e@3a0f4",
       "imported": true,
@@ -64,7 +64,7 @@
       "name": "贴图 #7.texture"
     },
     "8dbc3": {
-      "ver": "1.0.13",
+      "ver": "1.0.14",
       "importer": "gltf-material",
       "uuid": "f5cf3589-8dc9-48c1-8df8-59bcead1895e@8dbc3",
       "imported": true,
@@ -79,10 +79,13 @@
       "id": "8dbc3",
       "name": "Material #90.material"
     },
-    "390ec": {
-      "ver": "1.0.9",
+    "25a9e": {
       "importer": "gltf-scene",
-      "uuid": "f5cf3589-8dc9-48c1-8df8-59bcead1895e@390ec",
+      "uuid": "f5cf3589-8dc9-48c1-8df8-59bcead1895e@25a9e",
+      "displayName": "",
+      "id": "25a9e",
+      "name": "road07.prefab",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -90,10 +93,7 @@
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "390ec",
-      "name": "road07.FBX.prefab"
+      }
     }
   },
   "userData": {
@@ -103,7 +103,7 @@
         "uri": "f5cf3589-8dc9-48c1-8df8-59bcead1895e@3bd65"
       }
     ],
-    "redirect": "f5cf3589-8dc9-48c1-8df8-59bcead1895e@390ec",
+    "redirect": "f5cf3589-8dc9-48c1-8df8-59bcead1895e@25a9e",
     "assetFinder": {
       "meshes": [
         "f5cf3589-8dc9-48c1-8df8-59bcead1895e@3a0f4"
@@ -116,7 +116,7 @@
         "f5cf3589-8dc9-48c1-8df8-59bcead1895e@8dbc3"
       ],
       "scenes": [
-        "f5cf3589-8dc9-48c1-8df8-59bcead1895e@390ec"
+        "f5cf3589-8dc9-48c1-8df8-59bcead1895e@25a9e"
       ]
     }
   }

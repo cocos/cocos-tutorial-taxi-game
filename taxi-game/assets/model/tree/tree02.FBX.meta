@@ -1,12 +1,12 @@
 {
-  "ver": "1.3.16",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "88ca6b8d-dc57-44ed-8a36-ba2c53c3af6d",
   "files": [],
   "subMetas": {
     "604e5": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "88ca6b8d-dc57-44ed-8a36-ba2c53c3af6d@604e5",
       "imported": true,
@@ -63,10 +63,13 @@
       "id": "bfae8",
       "name": "贴图 #3.texture"
     },
-    "0eebb": {
-      "ver": "1.0.9",
+    "034ca": {
       "importer": "gltf-scene",
-      "uuid": "88ca6b8d-dc57-44ed-8a36-ba2c53c3af6d@0eebb",
+      "uuid": "88ca6b8d-dc57-44ed-8a36-ba2c53c3af6d@034ca",
+      "displayName": "",
+      "id": "034ca",
+      "name": "tree02.prefab",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -74,10 +77,7 @@
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "0eebb",
-      "name": "tree02.FBX.prefab"
+      }
     }
   },
   "userData": {
@@ -87,7 +87,7 @@
         "uri": "88ca6b8d-dc57-44ed-8a36-ba2c53c3af6d@1cdc4"
       }
     ],
-    "redirect": "88ca6b8d-dc57-44ed-8a36-ba2c53c3af6d@0eebb",
+    "redirect": "88ca6b8d-dc57-44ed-8a36-ba2c53c3af6d@034ca",
     "assetFinder": {
       "meshes": [
         "88ca6b8d-dc57-44ed-8a36-ba2c53c3af6d@604e5"
@@ -100,7 +100,7 @@
         "48b96b20-cf46-4daa-b815-e97a0b456809"
       ],
       "scenes": [
-        "88ca6b8d-dc57-44ed-8a36-ba2c53c3af6d@0eebb"
+        "88ca6b8d-dc57-44ed-8a36-ba2c53c3af6d@034ca"
       ]
     },
     "dumpMaterials": true

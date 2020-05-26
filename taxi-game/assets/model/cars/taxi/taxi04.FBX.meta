@@ -1,12 +1,12 @@
 {
-  "ver": "1.3.16",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "a3e7039d-7969-4e5c-b557-130b162884e4",
   "files": [],
   "subMetas": {
     "8cc00": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "a3e7039d-7969-4e5c-b557-130b162884e4@8cc00",
       "imported": true,
@@ -23,7 +23,7 @@
       "name": "taxi04.mesh"
     },
     "4166c": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "a3e7039d-7969-4e5c-b557-130b162884e4@4166c",
       "imported": true,
@@ -40,7 +40,7 @@
       "name": "tyre2.mesh"
     },
     "8c383": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "a3e7039d-7969-4e5c-b557-130b162884e4@8c383",
       "imported": true,
@@ -57,7 +57,7 @@
       "name": "tyre1.mesh"
     },
     "6726b": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "a3e7039d-7969-4e5c-b557-130b162884e4@6726b",
       "imported": true,
@@ -74,7 +74,7 @@
       "name": "tyre3.mesh"
     },
     "801a3": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "a3e7039d-7969-4e5c-b557-130b162884e4@801a3",
       "imported": true,
@@ -91,7 +91,7 @@
       "name": "tyre4.mesh"
     },
     "14b6a": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "a3e7039d-7969-4e5c-b557-130b162884e4@14b6a",
       "imported": true,
@@ -190,7 +190,7 @@
       "name": "贴图 #17.texture"
     },
     "5227b": {
-      "ver": "1.0.13",
+      "ver": "1.0.14",
       "importer": "gltf-material",
       "uuid": "a3e7039d-7969-4e5c-b557-130b162884e4@5227b",
       "imported": true,
@@ -206,7 +206,7 @@
       "name": "Material #14.material"
     },
     "793ac": {
-      "ver": "1.0.13",
+      "ver": "1.0.14",
       "importer": "gltf-material",
       "uuid": "a3e7039d-7969-4e5c-b557-130b162884e4@793ac",
       "imported": true,
@@ -221,10 +221,13 @@
       "id": "793ac",
       "name": "Material #17.material"
     },
-    "a1530": {
-      "ver": "1.0.9",
+    "976b9": {
       "importer": "gltf-scene",
-      "uuid": "a3e7039d-7969-4e5c-b557-130b162884e4@a1530",
+      "uuid": "a3e7039d-7969-4e5c-b557-130b162884e4@976b9",
+      "displayName": "",
+      "id": "976b9",
+      "name": "taxi04.prefab",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -232,10 +235,7 @@
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "a1530",
-      "name": "taxi04.FBX.prefab"
+      }
     }
   },
   "userData": {
@@ -249,7 +249,7 @@
         "uri": "a3e7039d-7969-4e5c-b557-130b162884e4@0e6cb"
       }
     ],
-    "redirect": "a3e7039d-7969-4e5c-b557-130b162884e4@a1530",
+    "redirect": "a3e7039d-7969-4e5c-b557-130b162884e4@976b9",
     "assetFinder": {
       "meshes": [
         "a3e7039d-7969-4e5c-b557-130b162884e4@8cc00",
@@ -269,7 +269,7 @@
         "a3e7039d-7969-4e5c-b557-130b162884e4@793ac"
       ],
       "scenes": [
-        "a3e7039d-7969-4e5c-b557-130b162884e4@a1530"
+        "a3e7039d-7969-4e5c-b557-130b162884e4@976b9"
       ]
     }
   }

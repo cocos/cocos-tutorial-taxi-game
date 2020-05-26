@@ -1688,7 +1688,8 @@
     "enable": true,
     "color": {
       "__id__": 44
-    }
+    },
+    "_enable": true
   },
   {
     "__type__": "cc.GradientRange",
@@ -1785,7 +1786,8 @@
       "z": 0.5
     },
     "_arc": 6.283185307179586,
-    "_angle": 0.4363323129985824
+    "_angle": 0.4363323129985824,
+    "_enable": true
   },
   {
     "__type__": "cc.CurveRange",
@@ -1867,7 +1869,8 @@
     },
     "z": {
       "__id__": 54
-    }
+    },
+    "_enable": false
   },
   {
     "__type__": "cc.CurveRange",
@@ -2144,7 +2147,8 @@
     "speedModifier": {
       "__id__": 59
     },
-    "space": 1
+    "space": 1,
+    "_enable": false
   },
   {
     "__type__": "cc.CurveRange",
@@ -2418,7 +2422,8 @@
     "z": {
       "__id__": 63
     },
-    "space": 1
+    "space": 1,
+    "_enable": false
   },
   {
     "__type__": "cc.CurveRange",
@@ -2632,7 +2637,8 @@
     },
     "dampen": 3,
     "separateAxes": false,
-    "space": 1
+    "space": 1,
+    "_enable": false
   },
   {
     "__type__": "cc.CurveRange",
@@ -2906,7 +2912,8 @@
     },
     "z": {
       "__id__": 72
-    }
+    },
+    "_enable": false
   },
   {
     "__type__": "cc.CurveRange",

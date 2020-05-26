@@ -1,12 +1,12 @@
 {
-  "ver": "1.3.16",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "0bb50b73-023a-4269-bac6-c7be72d298d0",
   "files": [],
   "subMetas": {
     "b36d2": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "0bb50b73-023a-4269-bac6-c7be72d298d0@b36d2",
       "imported": true,
@@ -23,7 +23,7 @@
       "name": "muchangguanliyuan_01.mesh"
     },
     "438fe": {
-      "ver": "1.0.0",
+      "ver": "1.0.1",
       "importer": "gltf-skeleton",
       "uuid": "0bb50b73-023a-4269-bac6-c7be72d298d0@438fe",
       "imported": true,
@@ -32,7 +32,8 @@
       ],
       "subMetas": {},
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 0,
+        "jointsLength": 19
       },
       "displayName": "",
       "id": "438fe",
@@ -79,10 +80,13 @@
       "id": "3efb2",
       "name": "贴图 #0.texture"
     },
-    "a102e": {
-      "ver": "1.0.9",
+    "3787f": {
       "importer": "gltf-scene",
-      "uuid": "0bb50b73-023a-4269-bac6-c7be72d298d0@a102e",
+      "uuid": "0bb50b73-023a-4269-bac6-c7be72d298d0@3787f",
+      "displayName": "",
+      "id": "3787f",
+      "name": "man01.prefab",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -90,10 +94,7 @@
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "a102e",
-      "name": "man01.FBX.prefab"
+      }
     }
   },
   "userData": {
@@ -103,7 +104,7 @@
         "uri": "0bb50b73-023a-4269-bac6-c7be72d298d0@91c13"
       }
     ],
-    "redirect": "0bb50b73-023a-4269-bac6-c7be72d298d0@a102e",
+    "redirect": "0bb50b73-023a-4269-bac6-c7be72d298d0@3787f",
     "assetFinder": {
       "meshes": [
         "0bb50b73-023a-4269-bac6-c7be72d298d0@b36d2"
@@ -118,7 +119,7 @@
         "33a4cb9e-e594-471d-b84e-2c5343b48530"
       ],
       "scenes": [
-        "0bb50b73-023a-4269-bac6-c7be72d298d0@a102e"
+        "0bb50b73-023a-4269-bac6-c7be72d298d0@3787f"
       ]
     },
     "dumpMaterials": true

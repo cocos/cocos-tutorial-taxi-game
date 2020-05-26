@@ -1,12 +1,12 @@
 {
-  "ver": "1.3.16",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561",
   "files": [],
   "subMetas": {
     "59171": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@59171",
       "imported": true,
@@ -23,7 +23,7 @@
       "name": "tyre1-1.mesh"
     },
     "f29e8": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@f29e8",
       "imported": true,
@@ -40,7 +40,7 @@
       "name": "CityCar_01_005-0.mesh"
     },
     "e2346": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@e2346",
       "imported": true,
@@ -57,7 +57,7 @@
       "name": "tyre3-2.mesh"
     },
     "9b25d": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@9b25d",
       "imported": true,
@@ -74,7 +74,7 @@
       "name": "light1-3.mesh"
     },
     "bdfac": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@bdfac",
       "imported": true,
@@ -91,7 +91,7 @@
       "name": "tyre2-4.mesh"
     },
     "e5185": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@e5185",
       "imported": true,
@@ -231,7 +231,7 @@
       "name": "贴图 #19.texture"
     },
     "b82d3": {
-      "ver": "1.0.13",
+      "ver": "1.0.14",
       "importer": "gltf-material",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@b82d3",
       "imported": true,
@@ -247,7 +247,7 @@
       "name": "Material #22.material"
     },
     "0534a": {
-      "ver": "1.0.13",
+      "ver": "1.0.14",
       "importer": "gltf-material",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@0534a",
       "imported": true,
@@ -263,7 +263,7 @@
       "name": "Material #21.material"
     },
     "9e444": {
-      "ver": "1.0.13",
+      "ver": "1.0.14",
       "importer": "gltf-material",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@9e444",
       "imported": true,
@@ -278,10 +278,13 @@
       "id": "9e444",
       "name": "Material #20.material"
     },
-    "dd289": {
-      "ver": "1.0.9",
+    "fb28c": {
       "importer": "gltf-scene",
-      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@dd289",
+      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@fb28c",
+      "displayName": "",
+      "id": "fb28c",
+      "name": "taxi05.prefab",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -289,10 +292,7 @@
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "dd289",
-      "name": "taxi05.FBX.prefab"
+      }
     }
   },
   "userData": {
@@ -310,7 +310,7 @@
         "uri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@7d8de"
       }
     ],
-    "redirect": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@dd289",
+    "redirect": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@fb28c",
     "assetFinder": {
       "meshes": [
         "dfb49ec2-7be2-4377-864b-c4f6d82cd561@f29e8",
@@ -332,7 +332,7 @@
         "dfb49ec2-7be2-4377-864b-c4f6d82cd561@9e444"
       ],
       "scenes": [
-        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@dd289"
+        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@fb28c"
       ]
     }
   }

@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.16",
+  "ver": "1.0.17",
   "importer": "image",
   "imported": true,
   "uuid": "1597c3d1-c42b-4ad3-9958-5ae671555417",
@@ -8,6 +8,30 @@
     ".json"
   ],
   "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "1597c3d1-c42b-4ad3-9958-5ae671555417@6c48a",
+      "displayName": "commonRectangle1",
+      "id": "6c48a",
+      "name": "texture",
+      "ver": "1.0.19",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "premultiplyAlpha": false,
+        "anisotropy": 1,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "1597c3d1-c42b-4ad3-9958-5ae671555417"
+      }
+    },
     "f9941": {
       "ver": "1.0.8",
       "importer": "sprite-frame",
@@ -41,7 +65,7 @@
         "borderLeft": 0,
         "borderRight": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "1597c3d1-c42b-4ad3-9958-5ae671555417",
+        "imageUuidOrDatabaseUri": "1597c3d1-c42b-4ad3-9958-5ae671555417@6c48a",
         "atlasUuid": ""
       },
       "displayName": "commonRectangle1",

@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.16",
+  "ver": "1.0.17",
   "importer": "image",
   "imported": true,
   "uuid": "db5beed2-d4c0-41f1-a8bd-db3a612344ab",
@@ -8,6 +8,30 @@
     ".json"
   ],
   "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "db5beed2-d4c0-41f1-a8bd-db3a612344ab@6c48a",
+      "displayName": "fightBoxGold02",
+      "id": "6c48a",
+      "name": "texture",
+      "ver": "1.0.19",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "premultiplyAlpha": false,
+        "anisotropy": 1,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "db5beed2-d4c0-41f1-a8bd-db3a612344ab"
+      }
+    },
     "f9941": {
       "ver": "1.0.8",
       "importer": "sprite-frame",
@@ -41,7 +65,7 @@
         "borderLeft": 45,
         "borderRight": 45,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "db5beed2-d4c0-41f1-a8bd-db3a612344ab",
+        "imageUuidOrDatabaseUri": "db5beed2-d4c0-41f1-a8bd-db3a612344ab@6c48a",
         "atlasUuid": ""
       },
       "displayName": "fightBoxGold02",

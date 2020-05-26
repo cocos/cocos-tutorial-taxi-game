@@ -1,12 +1,12 @@
 {
-  "ver": "1.3.16",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "aee90582-839a-42e0-940a-1ba3faa31ae9",
   "files": [],
   "subMetas": {
     "c6160": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "aee90582-839a-42e0-940a-1ba3faa31ae9@c6160",
       "imported": true,
@@ -64,7 +64,7 @@
       "name": "贴图 #1.texture"
     },
     "9d093": {
-      "ver": "1.0.13",
+      "ver": "1.0.14",
       "importer": "gltf-material",
       "uuid": "aee90582-839a-42e0-940a-1ba3faa31ae9@9d093",
       "imported": true,
@@ -79,10 +79,13 @@
       "id": "9d093",
       "name": "Material #25.material"
     },
-    "a2ca0": {
-      "ver": "1.0.9",
+    "8038b": {
       "importer": "gltf-scene",
-      "uuid": "aee90582-839a-42e0-940a-1ba3faa31ae9@a2ca0",
+      "uuid": "aee90582-839a-42e0-940a-1ba3faa31ae9@8038b",
+      "displayName": "",
+      "id": "8038b",
+      "name": "coin.prefab",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -90,10 +93,7 @@
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "a2ca0",
-      "name": "coin.FBX.prefab"
+      }
     }
   },
   "userData": {
@@ -103,7 +103,7 @@
         "uri": "aee90582-839a-42e0-940a-1ba3faa31ae9@df7df"
       }
     ],
-    "redirect": "aee90582-839a-42e0-940a-1ba3faa31ae9@a2ca0",
+    "redirect": "aee90582-839a-42e0-940a-1ba3faa31ae9@8038b",
     "assetFinder": {
       "meshes": [
         "aee90582-839a-42e0-940a-1ba3faa31ae9@c6160"
@@ -116,7 +116,7 @@
         "aee90582-839a-42e0-940a-1ba3faa31ae9@9d093"
       ],
       "scenes": [
-        "aee90582-839a-42e0-940a-1ba3faa31ae9@a2ca0"
+        "aee90582-839a-42e0-940a-1ba3faa31ae9@8038b"
       ]
     }
   }
