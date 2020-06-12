@@ -1,4 +1,4 @@
-import { _decorator, Component, Node } from "cc";
+import { _decorator, Component, Node, LabelComponent } from "cc";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
 import { UpdateLabelValue } from "../data/UpdateLabelValue";
@@ -10,6 +10,10 @@ export class LoadingUI extends Component {
         type: UpdateLabelValue
     })
     progressLabel: UpdateLabelValue = null;
+    @property({
+        type: LabelComponent
+    })
+    tipLabel: LabelComponent = null;
     private _progress = 0;
 
     public onEnable(){
@@ -20,15 +24,18 @@ export class LoadingUI extends Component {
         CustomEventListener.off(Constants.EventName.UPDATE_PROGRESS, this.updateProgress, this);
     }
 
-    public show(){
+    public show(start = 0){
         this.node.active = true;
-        this._progress = 50;
+        this._progress = start;
         this.progressLabel.playUpdateValue(this._progress, this._progress, 0);
     }
 
-    public updateProgress(value: number){
+    public updateProgress(value: number, tips?: string){
         this.progressLabel.playUpdateValue(this._progress, this._progress + value, 0.2);
         this._progress += value;
+        if (tips) {
+            this.tipLabel.string = tips;
+        }
     }
 
     public finishLoading(){
