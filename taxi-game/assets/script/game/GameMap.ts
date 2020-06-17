@@ -1,4 +1,5 @@
-import { _decorator, Component, Node } from "cc";
+import { _decorator, Component, Node, JsonAsset } from "cc";
+import { RoadPoint } from "./RoadPoint";
 const { ccclass, property } = _decorator;
 
 @ccclass("GameMap")
