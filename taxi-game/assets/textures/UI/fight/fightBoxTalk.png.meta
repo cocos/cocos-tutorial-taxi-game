@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.16",
+  "ver": "1.0.17",
   "importer": "image",
   "imported": true,
   "uuid": "32bf4713-1bb0-4b32-a69a-eb2133147f9c",
@@ -8,6 +8,30 @@
     ".json"
   ],
   "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "32bf4713-1bb0-4b32-a69a-eb2133147f9c@6c48a",
+      "displayName": "fightBoxTalk",
+      "id": "6c48a",
+      "name": "texture",
+      "ver": "1.0.19",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "premultiplyAlpha": false,
+        "anisotropy": 1,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "32bf4713-1bb0-4b32-a69a-eb2133147f9c"
+      }
+    },
     "f9941": {
       "ver": "1.0.8",
       "importer": "sprite-frame",
@@ -41,7 +65,7 @@
         "borderLeft": 39,
         "borderRight": 39,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "32bf4713-1bb0-4b32-a69a-eb2133147f9c",
+        "imageUuidOrDatabaseUri": "32bf4713-1bb0-4b32-a69a-eb2133147f9c@6c48a",
         "atlasUuid": ""
       },
       "displayName": "fightBoxTalk",

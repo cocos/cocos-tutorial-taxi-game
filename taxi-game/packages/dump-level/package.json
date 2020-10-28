@@ -1,0 +1,13 @@
+{
+    "name": "taxi-game",
+    "version": "0.0.1",
+    "author": "Cocos Creator 3D",
+    "description": "export of level data",
+    "editor": ">=1.0.4",
+    "main": "./main.js",
+    "menu": {
+        "Tools/Dump Level Data": {
+            "message": "start-dump-level"
+        }
+    }
+}

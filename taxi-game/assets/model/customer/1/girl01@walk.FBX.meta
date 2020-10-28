@@ -1,5 +1,5 @@
 {
-  "ver": "1.3.16",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "3428b334-9c03-49d6-8d06-2b7873e4cdc4",
@@ -22,16 +22,20 @@
           "from": 0,
           "to": 0.6666666865348816
         },
-        "events": []
+        "events": [],
+        "wrapMode": 2
       },
       "displayName": "",
       "id": "7f3dc",
       "name": "walk.animation"
     },
-    "68ea6": {
-      "ver": "1.0.9",
+    "c4bc3": {
       "importer": "gltf-scene",
-      "uuid": "3428b334-9c03-49d6-8d06-2b7873e4cdc4@68ea6",
+      "uuid": "3428b334-9c03-49d6-8d06-2b7873e4cdc4@c4bc3",
+      "displayName": "",
+      "id": "c4bc3",
+      "name": "girl01@walk.prefab",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -39,10 +43,7 @@
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "68ea6",
-      "name": "girl01@walk.FBX.prefab"
+      }
     }
   },
   "userData": {
@@ -56,19 +57,20 @@
           {
             "name": "walk",
             "from": 0,
-            "to": 0.6666666865348816
+            "to": 0.6666666865348816,
+            "wrapMode": 2
           }
         ]
       }
     ],
-    "redirect": "3428b334-9c03-49d6-8d06-2b7873e4cdc4@68ea6",
+    "redirect": "3428b334-9c03-49d6-8d06-2b7873e4cdc4@c4bc3",
     "assetFinder": {
       "meshes": [],
       "skeletons": [],
       "textures": [],
       "materials": [],
       "scenes": [
-        "3428b334-9c03-49d6-8d06-2b7873e4cdc4@68ea6"
+        "3428b334-9c03-49d6-8d06-2b7873e4cdc4@c4bc3"
       ]
     }
   }

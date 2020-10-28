@@ -1,12 +1,12 @@
 {
-  "ver": "1.3.16",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd",
   "files": [],
   "subMetas": {
     "40572": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@40572",
       "imported": true,
@@ -23,7 +23,7 @@
       "name": "Box023.mesh"
     },
     "a8fa3": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@a8fa3",
       "imported": true,
@@ -40,7 +40,7 @@
       "name": "Box042.mesh"
     },
     "6eeec": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@6eeec",
       "imported": true,
@@ -57,7 +57,7 @@
       "name": "Box043.mesh"
     },
     "c75d3": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@c75d3",
       "imported": true,
@@ -74,7 +74,7 @@
       "name": "Box047.mesh"
     },
     "207a8": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@207a8",
       "imported": true,
@@ -173,7 +173,7 @@
       "name": "贴图 #4.texture"
     },
     "c372b": {
-      "ver": "1.0.13",
+      "ver": "1.0.14",
       "importer": "gltf-material",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@c372b",
       "imported": true,
@@ -189,7 +189,7 @@
       "name": "Material #88.material"
     },
     "0bac0": {
-      "ver": "1.0.13",
+      "ver": "1.0.14",
       "importer": "gltf-material",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@0bac0",
       "imported": true,
@@ -204,10 +204,13 @@
       "id": "0bac0",
       "name": "Material #87.material"
     },
-    "5318e": {
-      "ver": "1.0.9",
+    "99a4a": {
       "importer": "gltf-scene",
-      "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@5318e",
+      "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@99a4a",
+      "displayName": "",
+      "id": "99a4a",
+      "name": "road03.prefab",
+      "ver": "1.0.11",
       "imported": true,
       "files": [
         ".json"
@@ -215,10 +218,7 @@
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "5318e",
-      "name": "road03.FBX.prefab"
+      }
     }
   },
   "userData": {
@@ -232,7 +232,7 @@
         "uri": "648a88b7-d36e-452e-9b37-a7dd077f05dd@1b048"
       }
     ],
-    "redirect": "648a88b7-d36e-452e-9b37-a7dd077f05dd@5318e",
+    "redirect": "648a88b7-d36e-452e-9b37-a7dd077f05dd@99a4a",
     "assetFinder": {
       "meshes": [
         "648a88b7-d36e-452e-9b37-a7dd077f05dd@40572",
@@ -251,7 +251,7 @@
         "648a88b7-d36e-452e-9b37-a7dd077f05dd@0bac0"
       ],
       "scenes": [
-        "648a88b7-d36e-452e-9b37-a7dd077f05dd@5318e"
+        "648a88b7-d36e-452e-9b37-a7dd077f05dd@99a4a"
       ]
     }
   }
