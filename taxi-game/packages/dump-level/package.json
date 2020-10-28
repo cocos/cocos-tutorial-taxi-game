@@ -5,9 +5,18 @@
     "description": "export of level data",
     "editor": ">=1.0.4",
     "main": "./main.js",
-    "menu": {
-        "Tools/Dump Level Data": {
-            "message": "start-dump-level"
+    "contributions": {
+        "menu": [
+            {
+                "path": "Tools",
+                "label": "Dump Level Data",
+                "message": "start-dump-level"
+            }
+        ],
+        "messages": {
+            "start-dump-level": {
+                "methods": ["start-dump-level"]
+            }
         }
     }
 }

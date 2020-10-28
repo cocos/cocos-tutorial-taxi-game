@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.14",
+  "ver": "4.0.1",
   "importer": "typescript",
   "imported": true,
   "uuid": "e31d1aac-7d80-4ff3-ac8b-71ce2d2dc397",
@@ -10,6 +10,7 @@
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
-    "moduleId": "project:///assets/script/game/CarManager.js"
+    "moduleId": "project:///assets/script/game/CarManager.js",
+    "importerSettings": 0
   }
 }

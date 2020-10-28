@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.28",
+  "ver": "1.1.20",
   "importer": "prefab",
   "imported": true,
   "uuid": "9f9d7ee3-0651-43b9-a7a6-47732364d9dd",
@@ -7,5 +7,7 @@
     ".json"
   ],
   "subMetas": {},
-  "userData": {}
+  "userData": {
+    "syncNodeName": "road02"
+  }
 }

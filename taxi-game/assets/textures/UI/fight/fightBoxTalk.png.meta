@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "32bf4713-1bb0-4b32-a69a-eb2133147f9c",
@@ -14,7 +14,7 @@
       "displayName": "fightBoxTalk",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "32bf4713-1bb0-4b32-a69a-eb2133147f9c@f9941"
+    "redirect": "32bf4713-1bb0-4b32-a69a-eb2133147f9c@f9941",
+    "hasAlpha": true
   }
 }

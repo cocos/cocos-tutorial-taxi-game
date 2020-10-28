@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "5f44bd4f-8f5e-4741-8eaa-991af25102fa",
   "files": [],
   "subMetas": {
     "50b92": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@50b92",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -23,7 +23,7 @@
       "name": "TS_FaGuangSuiPian_01.mesh"
     },
     "1cdc4": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "importer": "gltf-embeded-image",
       "uuid": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@1cdc4",
       "imported": true,
@@ -40,7 +40,7 @@
       "name": "贴图 #3.image"
     },
     "bfae8": {
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "importer": "texture",
       "uuid": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@bfae8",
       "imported": true,
@@ -103,6 +103,7 @@
         "5f44bd4f-8f5e-4741-8eaa-991af25102fa@dea75"
       ]
     },
-    "dumpMaterials": true
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/model/tree/Materials_stone01"
   }
 }

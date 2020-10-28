@@ -16,13 +16,13 @@ async function _export(node) {
     const fileName = `${projectPath}/assets/resources/gameMap/data/${mapName}.zip`;
     fs.writeFile(fileName, data, null, () => {
         console.log('export successful!');
-        Editor.Ipc.sendToPackage('asset-db', 'refresh-asset', 'db://assets/resources/gameMap/data');
+        Editor.Message.send('asset-db', 'refresh-asset', 'db://assets/resources/gameMap/data');
     })
 }
 
 async function _parseDetail(currNode, objExport) {
     for (let i = 0; i < currNode.children.length; i++) {
-        let manager = await Editor.Ipc.requestToPackage('scene', 'query-node', currNode.children[i].value.uuid);
+        let manager = await Editor.Message.request('scene', 'query-node', currNode.children[i].value.uuid);
         if (manager.name.value !== 'path') {
             await _parseTypeDetail(manager, objExport);
         } else {
@@ -41,7 +41,7 @@ async function _parseTypeDetail(managerNode, objExport) {
     }
 
     for (let i = 0; i < managerNode.children.length; i++) {
-        let child = await Editor.Ipc.requestToPackage('scene', 'query-node', managerNode.children[i].value.uuid);
+        let child = await Editor.Message.request('scene', 'query-node', managerNode.children[i].value.uuid);
         let objChild = await _parseChildDetail(child);
 
         objDetail.children.push(objChild);
@@ -91,8 +91,8 @@ async function _parsePath(root, manager, objExport) {
     }
 
     for (let i = 0; i < gameMap.value.path.value.length; i++) {
-        let nodePoint = await Editor.Ipc.requestToPackage('scene', 'query-node', gameMap.value.path.value[i].value.uuid);
-        let nodePath = await Editor.Ipc.requestToPackage('scene', 'query-node', nodePoint.parent.value.uuid);
+        let nodePoint = await Editor.Message.request('scene', 'query-node', gameMap.value.path.value[i].value.uuid);
+        let nodePath = await Editor.Message.request('scene', 'query-node', nodePoint.parent.value.uuid);
 
         let objPath = {
             name: nodePath.name.value,
@@ -124,7 +124,7 @@ async function _parseDetailPath(nodePoint) {
 
     let nextStation = null;
     if (point.value.nextStation.value.uuid) {
-        nextStation = await _parseDetailPath(await Editor.Ipc.requestToPackage('scene', 'query-node', point.value.nextStation.value.uuid));
+        nextStation = await _parseDetailPath(await Editor.Message.request('scene', 'query-node', point.value.nextStation.value.uuid));
     }
 
     let objChild = {
@@ -161,7 +161,7 @@ module.exports = {
     // Called when the package is properly uninstalled
     unload() { },
 
-    messages: {
+    methods: {
         async 'start-dump-level'() {
             console.log('start dump level');
             const type = Editor.Selection.getLastSelectedType();
@@ -172,7 +172,7 @@ module.exports = {
 
             const uuids = Editor.Selection.getSelected(type);
             for (let i = 0; i < uuids.length; i++) {
-                const dump = await Editor.Ipc.requestToPackage('scene', 'query-node', uuids[i]);
+                const dump = await Editor.Message.request('scene', 'query-node', uuids[i]);
                 _export(dump);
             }
         },

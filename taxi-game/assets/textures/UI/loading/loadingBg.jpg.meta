@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "433e09cb-3eeb-4a0b-819f-19373be6eef2",
@@ -14,7 +14,7 @@
       "displayName": "loadingBg",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "433e09cb-3eeb-4a0b-819f-19373be6eef2@f9941"
+    "redirect": "433e09cb-3eeb-4a0b-819f-19373be6eef2@f9941",
+    "hasAlpha": false
   }
 }

@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "97243e5b-17bc-46f4-9764-8d015bff1975",
@@ -14,7 +14,7 @@
       "displayName": "singleColorBlack",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "97243e5b-17bc-46f4-9764-8d015bff1975@f9941"
+    "redirect": "97243e5b-17bc-46f4-9764-8d015bff1975@f9941",
+    "hasAlpha": false
   }
 }

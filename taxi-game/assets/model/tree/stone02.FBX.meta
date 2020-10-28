@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "79a67e73-19fa-4efa-a5f2-a29f53bc7319",
   "files": [],
   "subMetas": {
     "7c176": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "79a67e73-19fa-4efa-a5f2-a29f53bc7319@7c176",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -23,7 +23,7 @@
       "name": "CJ_PoLinKuang_01.mesh"
     },
     "df7df": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "importer": "gltf-embeded-image",
       "uuid": "79a67e73-19fa-4efa-a5f2-a29f53bc7319@df7df",
       "imported": true,
@@ -40,7 +40,7 @@
       "name": "贴图 #1.image"
     },
     "a96a6": {
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "importer": "texture",
       "uuid": "79a67e73-19fa-4efa-a5f2-a29f53bc7319@a96a6",
       "imported": true,
@@ -103,6 +103,7 @@
         "79a67e73-19fa-4efa-a5f2-a29f53bc7319@6bfe5"
       ]
     },
-    "dumpMaterials": true
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/model/tree/Materials_stone02"
   }
 }

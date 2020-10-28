@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd",
   "files": [],
   "subMetas": {
     "40572": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@40572",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -23,13 +23,13 @@
       "name": "Box023.mesh"
     },
     "a8fa3": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@a8fa3",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -40,13 +40,13 @@
       "name": "Box042.mesh"
     },
     "6eeec": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@6eeec",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -57,13 +57,13 @@
       "name": "Box043.mesh"
     },
     "c75d3": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@c75d3",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -74,13 +74,13 @@
       "name": "Box047.mesh"
     },
     "207a8": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@207a8",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -91,7 +91,7 @@
       "name": "Box050.mesh"
     },
     "a9ca9": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "importer": "gltf-embeded-image",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@a9ca9",
       "imported": true,
@@ -108,7 +108,7 @@
       "name": "road02.jpg.image"
     },
     "1b048": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "importer": "gltf-embeded-image",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@1b048",
       "imported": true,
@@ -125,7 +125,7 @@
       "name": "road01.jpg.image"
     },
     "eb794": {
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "importer": "texture",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@eb794",
       "imported": true,
@@ -149,7 +149,7 @@
       "name": "贴图 #5.texture"
     },
     "442db": {
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "importer": "texture",
       "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd@442db",
       "imported": true,

@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "f42a6485-8323-429d-92a4-91f16dfc432b",
   "files": [],
   "subMetas": {
     "b8a2d": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "f42a6485-8323-429d-92a4-91f16dfc432b@b8a2d",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -23,7 +23,7 @@
       "name": "Plane001.mesh"
     },
     "9defe": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "importer": "gltf-embeded-image",
       "uuid": "f42a6485-8323-429d-92a4-91f16dfc432b@9defe",
       "imported": true,
@@ -40,7 +40,7 @@
       "name": "贴图 #8.image"
     },
     "bc797": {
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "importer": "texture",
       "uuid": "f42a6485-8323-429d-92a4-91f16dfc432b@bc797",
       "imported": true,
@@ -103,6 +103,7 @@
         "f42a6485-8323-429d-92a4-91f16dfc432b@5eade"
       ]
     },
-    "dumpMaterials": true
+    "dumpMaterials": true,
+    "materialDumpDir": "db://assets/model/sign/Materials_end"
   }
 }

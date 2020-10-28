@@ -258,7 +258,7 @@
     "_id": "fcM+Pg98lH+5tzHkzJG+ys"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -673,7 +673,7 @@
     "_id": "45ePgrcD5OZ4YN8v2KYHZ2"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -755,7 +755,7 @@
     "_id": "7bwJxgC3BIIbV5E+lbZayx"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -837,7 +837,7 @@
     "_id": "f5P4WZOutOnau5mH9zaUt2"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -919,7 +919,7 @@
     "_id": "87rVkLIoBHVIAv7km1FsVj"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1001,7 +1001,7 @@
     "_id": "5cxfJhOr1BJ73j8TsyubH7"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1217,7 +1217,7 @@
     "_id": "7fIvI5ecxFQ708LTjD1pft"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1299,7 +1299,7 @@
     "_id": "a2KW9lfHhBr4Si9hLVb+3w"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1381,7 +1381,7 @@
     "_id": "c9Ytr4iONHFqYTGipRBKZp"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1463,7 +1463,7 @@
     "_id": "23gDIJ/EZOAKsR9EEhEDH8"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1545,7 +1545,7 @@
     "_id": "86PuO5ED5GeL2PkRe2ARyL"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1761,7 +1761,7 @@
     "_id": "faLqwtzxpLXqQFm2bwflvV"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1843,7 +1843,7 @@
     "_id": "73/w5rUC1GRr33Ho1W8NSY"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1925,7 +1925,7 @@
     "_id": "b8z8aabJNPwYKvPQkMElTt"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2007,7 +2007,7 @@
     "_id": "8dsWJAqoNBuInQe+S2jdh/"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2089,7 +2089,7 @@
     "_id": "b42qS5ZZ9C0ouuzPbORmhw"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2305,7 +2305,7 @@
     "_id": "47IVO0WUxF2ZVjlo5CbdFS"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2387,7 +2387,7 @@
     "_id": "bdpUnUGy9M0JeN9rmVP11u"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2469,7 +2469,7 @@
     "_id": "77y4C/DmtOEbqPk93Ri6Kv"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2551,7 +2551,7 @@
     "_id": "f6tnIVhVZHbJjrsq5XKKEH"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2633,7 +2633,7 @@
     "_id": "40n+Y0Fq9HuLxZBD6W/J/8"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -2849,8 +2849,8 @@
     "_id": "abV25INBxKlaNHPdXB9lYW"
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Box023<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Box023<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 90
@@ -2931,7 +2931,7 @@
     "_id": "4bxzMNCWxDCafjeN+mr06i"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -3013,7 +3013,7 @@
     "_id": "77lENaiyNDlZoJCWkHPkqC"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -3095,7 +3095,7 @@
     "_id": "39Qeziil5Dv5DtfduOSurC"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -3177,7 +3177,7 @@
     "_id": "f6ZlkCmxVNCr6o/Wui9aE+"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -3393,8 +3393,8 @@
     "_id": "89az2E9CxK6YB2cYo8eRzb"
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Box023<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Box023<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 109
@@ -3475,7 +3475,7 @@
     "_id": "63QnmzCABEvKZ682BB3ChK"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -3557,7 +3557,7 @@
     "_id": "78YZbbXpVGDoeVA4gnLw67"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -3639,7 +3639,7 @@
     "_id": "b1intWOIpIWYpejkpJ4nyR"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -3721,7 +3721,7 @@
     "_id": "23t7wunYxHj5lPmpSJK6Ud"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -3937,8 +3937,8 @@
     "_id": "dc5DUxmUpNzYX8vq0+hjhi"
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Box023<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Box023<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 128
@@ -4019,7 +4019,7 @@
     "_id": "609eSjhS9ICZ6GdHWaqegq"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -4101,7 +4101,7 @@
     "_id": "4d04RUXhRKEYFCP7oh2QPh"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -4183,7 +4183,7 @@
     "_id": "17wtmKOUdGUYEKj+hPXo5L"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -4265,7 +4265,7 @@
     "_id": "26NtM5u79FSaiIiZ+XZuyJ"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -4481,8 +4481,8 @@
     "_id": "efe9O0baNCiq85sZhU709m"
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Box023<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Box023<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 147
@@ -4563,7 +4563,7 @@
     "_id": "5fLBUaEadBUpQxUOJdEThs"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -4645,7 +4645,7 @@
     "_id": "2f/v1Lu3pOWoAX7QllU8xX"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -4727,7 +4727,7 @@
     "_id": "9d87j0LdBCP6D+K6YHZdJ5"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -4809,7 +4809,7 @@
     "_id": "77+ICZc/NCQLcJN1iUeCgV"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -5025,8 +5025,8 @@
     "_id": "f1iSeCuqdDL7GJJB2SSHOE"
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Box023<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Box023<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 166
@@ -5107,7 +5107,7 @@
     "_id": "bbdRdkQMRLhaa3dK+9IJgL"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -5189,7 +5189,7 @@
     "_id": "86emFpqLtBuYsZllTCvzPx"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -5271,7 +5271,7 @@
     "_id": "aaIuRVnwBBjZEzBA+7r93O"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -5353,7 +5353,7 @@
     "_id": "90wnie6kJM7KIMunTREPRj"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -5569,8 +5569,8 @@
     "_id": "18QUKOCG1DooDh3NYnNqie"
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Box023<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Box023<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 185
@@ -5651,7 +5651,7 @@
     "_id": "bcMcnvauNPqYsFmzXo3vjW"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -5733,7 +5733,7 @@
     "_id": "1dNpqy5bNJH4LlHj7nnzHk"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -5815,7 +5815,7 @@
     "_id": "09R1KMd7lCd6PVuSmSa5M0"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -5897,7 +5897,7 @@
     "_id": "carphgKc5BAJ0uEsyeVkfz"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -6101,7 +6101,7 @@
     "_id": "1edC2yMC5KbLAVpDJ9WwF8"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -6305,7 +6305,7 @@
     "_id": "59LUC6rqtDoqA0eurgUXIZ"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -6509,7 +6509,7 @@
     "_id": "62AUZlvPtMa5gtVyyRATMv"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -6713,7 +6713,7 @@
     "_id": "b63vOQVYtAtLXF03dRBrL/"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -6917,7 +6917,7 @@
     "_id": "7dvvKA2NdBOacdiWMnik3E"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -7121,7 +7121,7 @@
     "_id": "fdQ4ZTWINLvLBbedA7rRRx"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -7325,7 +7325,7 @@
     "_id": "38V1t+3ppN25g3YJdp0tLL"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -7529,7 +7529,7 @@
     "_id": "3dYCtplkFOxrNk8gwCfMjj"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -7733,7 +7733,7 @@
     "_id": "cdKi5MyaRKApZnXeHbEN5a"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -7937,7 +7937,7 @@
     "_id": "54Zb/d/jpJ/qc3sNh3/GU5"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -8141,7 +8141,7 @@
     "_id": "4drIPNhR5A0oLbQniDHB8f"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -8345,7 +8345,7 @@
     "_id": "fdTgU/7+dNybIUKx4pDrml"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -8549,7 +8549,7 @@
     "_id": "dfvN6Nld1CJ7lgrPLzuSTY"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -8753,7 +8753,7 @@
     "_id": "d95ZI3OQlBQ4HScT85YRKo"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -8957,7 +8957,7 @@
     "_id": "b1K5/ouS5I2LSGb7EslNmN"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -9161,7 +9161,7 @@
     "_id": "24uapDhVBNrpPATo9FNIXc"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -9365,7 +9365,7 @@
     "_id": "eebfgCZAhMr5JnwmPO8omC"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -9569,7 +9569,7 @@
     "_id": "cdS12wJjNM3bgoAllw616d"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -9773,7 +9773,7 @@
     "_id": "6enLkpgGxMd67BRXCjtDWk"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -9977,7 +9977,7 @@
     "_id": "f8u2WHal5OJ5S/q1EwqJ/k"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -10181,7 +10181,7 @@
     "_id": "a09wm1g7FId6hmkoPjt8yL"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -10385,7 +10385,7 @@
     "_id": "d7tRATU9JNn6c4RE4VfTbE"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -10589,7 +10589,7 @@
     "_id": "cbD5T1D8NDEJ3w4XwpO7dZ"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -10793,7 +10793,7 @@
     "_id": "d1aLIcowFLd6BiR4+W579d"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -10997,7 +10997,7 @@
     "_id": "84Z63AA8pM9rZdZ8g71DOM"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -11201,7 +11201,7 @@
     "_id": "e8wvKQ9p1CwocWzzuPlRXS"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -11405,8 +11405,8 @@
     "_id": "170DCOmMZCq7yua3SuNRpn"
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Box054<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Box054<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 386
@@ -11609,8 +11609,8 @@
     "_id": "f6u+Ye+ehASZxPdFNCukKn"
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Box054<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Box054<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 393
@@ -11813,8 +11813,8 @@
     "_id": "65SpVT209CI5TbfAGvHe8i"
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Box054<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Box054<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 400
@@ -12017,8 +12017,8 @@
     "_id": "f0JKcAj3FO7q8JhHpKc9B1"
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Box054<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Box054<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 407
@@ -12221,7 +12221,7 @@
     "_id": "26vImakPJKE6ygaMRs2j+R"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -12425,7 +12425,7 @@
     "_id": "55XSZv9JlJmpn5iTvLZUUv"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -12629,7 +12629,7 @@
     "_id": "21KnVWQfBKdJ/oEfX8+p0x"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -12833,7 +12833,7 @@
     "_id": "673etdMslPppmx0xLZP1XA"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -13037,7 +13037,7 @@
     "_id": "b9ROncgmBN5ZSFTYTal9rs"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -13241,7 +13241,7 @@
     "_id": "e0ubcrxYNNAZbGf3sddj3k"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -13445,7 +13445,7 @@
     "_id": "b3jIGskbRAqZrJmI0mnp6F"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -16561,7 +16561,7 @@
     "_id": "35EMBhNbFGmbAf3AHwjse5"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -16765,7 +16765,7 @@
     "_id": "a5WvjU2KhLA4miKSvWib/H"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -16969,7 +16969,7 @@
     "_id": "f1cEs75GtDRK2wZydOFeuI"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -17173,7 +17173,7 @@
     "_id": "4dlkt8+L9KjIDYv4smHTjF"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -17468,8 +17468,8 @@
     "_id": "6d8k6N0L9OZbvRflEiXVGe"
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Plane001<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Plane001<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 590
@@ -17672,7 +17672,7 @@
     "_id": "66UbVPmSFMzoI2oanKwRTM"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -17876,7 +17876,7 @@
     "_id": "2aedCBMJJF+6PmWSuHmGc2"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -18080,7 +18080,7 @@
     "_id": "7eaIZ9+rhC9bGyveK4xHjw"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -18284,7 +18284,7 @@
     "_id": "46ovLhfFtN+Juco7dBCXmD"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -18488,7 +18488,7 @@
     "_id": "65P8ucgt5CTpXdLGqJvceu"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -18692,7 +18692,7 @@
     "_id": "b6luqZ9mNF06HBF5iDW7CV"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -18896,7 +18896,7 @@
     "_id": "8fFMYx5AFAa4pXq2LKnWNk"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -19100,7 +19100,7 @@
     "_id": "40coIP3mlLt7qIH+zZ/SB7"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -19304,7 +19304,7 @@
     "_id": "83dc2plEhPfbutlDQWElSA"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -19508,7 +19508,7 @@
     "_id": "f8ZwxXLvFFvIZhdTiDa06l"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -20166,7 +20166,7 @@
     "_id": "b22YY4c0FGWLWkQ7xrWgxq"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -20370,7 +20370,7 @@
     "_id": "08EvcV8pdJtqTCTMeyZPs6"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -20574,7 +20574,7 @@
     "_id": "12hm8czKlOX5bL+/u6zMIy"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -20778,7 +20778,7 @@
     "_id": "e6fiC95D9AAak4hfTe6w5J"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -20982,7 +20982,7 @@
     "_id": "6cUOeOBXRC9ZNRs8RVhTC1"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -21186,7 +21186,7 @@
     "_id": "af6XIIwQ1E2JAFqt80XfQ+"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -21390,7 +21390,7 @@
     "_id": "2335DXWFtIy4+321sLADjH"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -21594,7 +21594,7 @@
     "_id": "faK42G0PJM0rZvA0jCN8a2"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -21798,7 +21798,7 @@
     "_id": "fdmrqXdjZKDqKdd7ZP7eFV"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -22002,7 +22002,7 @@
     "_id": "07fSenUbtDvZWTpgnEkkfc"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -22206,7 +22206,7 @@
     "_id": "33StWwuFtDv7yufCRy0bvu"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -22410,7 +22410,7 @@
     "_id": "14/AqvxIpGuqf4dy6rBNFc"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -22614,7 +22614,7 @@
     "_id": "32N/vrslFPXohgQm5QB/Qs"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -22818,7 +22818,7 @@
     "_id": "1aqDSgY7tD+5BZVR7DxWBQ"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -23022,7 +23022,7 @@
     "_id": "14EV8R1zJDU7xYWi3+DwX9"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -23226,7 +23226,7 @@
     "_id": "c5aFx3v55H3IK1enT/64tN"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -23430,7 +23430,7 @@
     "_id": "cemd0K+3FKjY2dBWrV2aRe"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -23634,7 +23634,7 @@
     "_id": "50d9yTBhBEhZqB4Q6K2KdL"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -23838,7 +23838,7 @@
     "_id": "8cNHBkOilIa7691codQJQg"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -24042,7 +24042,7 @@
     "_id": "d9C2mu5x9CRbUcYqrvRUu8"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -24246,7 +24246,7 @@
     "_id": "70wvAZCbxFUKSSqb/ks++n"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -24450,7 +24450,7 @@
     "_id": "bePw+P8D9JFKtusg79V2yM"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -24654,7 +24654,7 @@
     "_id": "10NmVe1htP44W24kqUkIBw"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -24858,7 +24858,7 @@
     "_id": "59EJuvH99IRK3TQzoWRASN"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -25062,7 +25062,7 @@
     "_id": "3aIQuVYpdDfYd96zs6Zc4/"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -25266,7 +25266,7 @@
     "_id": "74QHnjp+NF15Vhz8vuJ2wP"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -25470,7 +25470,7 @@
     "_id": "45VY8nBOFKBYhMkZuPR0lS"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -25674,7 +25674,7 @@
     "_id": "61YMJJpm9OMI1/cN8V14Ps"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -25878,7 +25878,7 @@
     "_id": "c35KVzGA5LLrUXsz7XMT5U"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -26082,7 +26082,7 @@
     "_id": "9dxw8lKupH5J9PZV0EiZtm"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -26286,7 +26286,7 @@
     "_id": "028Vbpd6JJmIsWnEVhtnpr"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -26490,7 +26490,7 @@
     "_id": "6b78rpXIVGPJy2wPw4SNfA"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -26694,7 +26694,7 @@
     "_id": "11khng8QZEcbn8DpxGTSM3"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -26898,7 +26898,7 @@
     "_id": "a6f6xP9AZM2K8pW5qvyWZt"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -27102,7 +27102,7 @@
     "_id": "0dFkeSbfdGJZsM98ObcPZY"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -27306,7 +27306,7 @@
     "_id": "25eOdvPvxHUJ5stTDJe5Ey"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -27510,7 +27510,7 @@
     "_id": "8d/s/FA7ZBxL7RGw3CuBAO"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -27714,7 +27714,7 @@
     "_id": "51rJWwK/NGmYOE32PJh65/"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -27918,7 +27918,7 @@
     "_id": "52Dfldu+hJ7IAiqnkjnpOV"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -28122,7 +28122,7 @@
     "_id": "ffQOPyKMNFGZF0jgOhvZCY"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -28326,7 +28326,7 @@
     "_id": "d70Y25l25EPqsMCnO1NTUR"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -28530,7 +28530,7 @@
     "_id": "eecCBw/yNAEbVPXG7sKucv"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -28734,7 +28734,7 @@
     "_id": "d8mCIs8XRG95T0kCcFPii/"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -28938,7 +28938,7 @@
     "_id": "bcPNy6cxBMqrK3NuX582Qw"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -29142,7 +29142,7 @@
     "_id": "23osfiCOhObqSrYOi2nJTR"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -29346,7 +29346,7 @@
     "_id": "bdx9KtDilOdr0zrDMGAnKJ"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -29550,7 +29550,7 @@
     "_id": "fbp/OimEVDmaFH+Fw6oani"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -29754,7 +29754,7 @@
     "_id": "c1zQT2Cy9Ps4xZgJ5a13Me"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -29958,7 +29958,7 @@
     "_id": "1dofCtRGRCQJtLEzplo8fH"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -30162,7 +30162,7 @@
     "_id": "4dAzuLjTVCu6zhISc164Qc"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -30366,7 +30366,7 @@
     "_id": "c1gdrEqaxG/oNKl85Il+E6"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -30570,7 +30570,7 @@
     "_id": "28BZvQv7NGKaC7ftTstGj8"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -30774,7 +30774,7 @@
     "_id": "5b9y23zsxGE7qm1XuYyj7o"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -30978,7 +30978,7 @@
     "_id": "93LSoxHSNKUp9yzribQ/Vu"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -31182,7 +31182,7 @@
     "_id": "5eCI8Yxb9FCqENjyPeNnst"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -31386,7 +31386,7 @@
     "_id": "4adsrB9OhGApo+crstT5CE"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -31590,7 +31590,7 @@
     "_id": "4a9mIuGyhIg44qr4MZ1BdG"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -31794,7 +31794,7 @@
     "_id": "1btEj0SDBLaov2oeA5voXu"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -31998,7 +31998,7 @@
     "_id": "37AHVlrUlMhZ3wXatxITes"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -32202,7 +32202,7 @@
     "_id": "b8xfzDy/5H4IQCyldv/FUq"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -32406,7 +32406,7 @@
     "_id": "f1umK1z0JLtpn0BM0z9M+y"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -32610,7 +32610,7 @@
     "_id": "19aya2lnVHpbChHi86jocm"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -32814,7 +32814,7 @@
     "_id": "06YOzVPnlHMoj+xTQAY+xE"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -33018,7 +33018,7 @@
     "_id": "70gc/dtRtBRppN1ahO4fmq"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -33222,7 +33222,7 @@
     "_id": "70tGUOQ+lFbqbPBjYx40q/"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -33426,7 +33426,7 @@
     "_id": "152NawB+BJrJXRGuYiO25q"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -33630,7 +33630,7 @@
     "_id": "4dVysY/GJG6ZovPYiqNlSM"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -33834,7 +33834,7 @@
     "_id": "8arA3eLYdGCodDnau4dzno"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -34038,7 +34038,7 @@
     "_id": "86C1kk/J9MhKeg3b2bTlzJ"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -34242,7 +34242,7 @@
     "_id": "b7TSL+cn1F1Jwg3LH8o4hm"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -34446,7 +34446,7 @@
     "_id": "ba3KiEWDpLvJEm7SnxoIO7"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -34650,7 +34650,7 @@
     "_id": "06ol0va9dP5quF0Cu4q4LC"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -34854,7 +34854,7 @@
     "_id": "70Q2iu0uRFQqxqE7XN0MVO"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -35058,7 +35058,7 @@
     "_id": "8av5noAShJAognl7NVpK6B"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -35262,7 +35262,7 @@
     "_id": "bfqeII9TROv5g4CNxro2M1"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -35466,7 +35466,7 @@
     "_id": "e3w1+SrCZJcogPTxCul9k6"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -35670,7 +35670,7 @@
     "_id": "4ef23+9fBFh5QIILOtSB9q"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -35874,7 +35874,7 @@
     "_id": "6djvLK7PFMPJ++EttBmeed"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -36078,7 +36078,7 @@
     "_id": "3evqWJP2hJgoWt3bJuqbuJ"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -36282,7 +36282,7 @@
     "_id": "30SYDX/4lCIolU7uFFlejF"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -36486,7 +36486,7 @@
     "_id": "27p8RnNrhCH5GupUPhqmqG"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -36690,7 +36690,7 @@
     "_id": "6cui8sTe5PdJj1OWKr4nMF"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -36894,7 +36894,7 @@
     "_id": "76GGltB8JFv5/OA9fQJyR0"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -37098,7 +37098,7 @@
     "_id": "a7rwV0jlpB/5vxCD+evzSL"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -37302,7 +37302,7 @@
     "_id": "85PWi5XwZOQ4rjgmzp32Pu"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -37506,7 +37506,7 @@
     "_id": "23SBFdNnJHfozoIHUyTUso"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -37710,7 +37710,7 @@
     "_id": "888hjd8fhMYbCEb/EOVHan"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -37914,7 +37914,7 @@
     "_id": "75Gdds1ohKH43sXtoW8GEE"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -38118,7 +38118,7 @@
     "_id": "08ywyaEZpNYKP6X/JB3wsi"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -38322,7 +38322,7 @@
     "_id": "12sUifKdhOeapo6KNe0k04"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -38526,7 +38526,7 @@
     "_id": "efHIgRRjZCGaUQIAKnoOC3"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -38730,7 +38730,7 @@
     "_id": "2dIDUsHQtIv4ZiKaLFhZaH"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -38934,7 +38934,7 @@
     "_id": "8dDRLAXhlIRZ60hvBzzIjh"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -39138,7 +39138,7 @@
     "_id": "21v9TqkCtDOLI1mvYgxPAS"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -39342,7 +39342,7 @@
     "_id": "e1Hxnp3sdH/oXk0uS6BWvc"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -39546,7 +39546,7 @@
     "_id": "cfRzNvs85JPr0/lm/AtwA0"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -39750,7 +39750,7 @@
     "_id": "353+H6iXxGsb2kkVygto5S"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -39954,7 +39954,7 @@
     "_id": "d7+4MTI6RE3I9//odiDr0o"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -40158,7 +40158,7 @@
     "_id": "a7Pkj2WWNHsb4t3Pnl3uuc"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -40362,7 +40362,7 @@
     "_id": "6cey0saVJNLolhSgYq3Rtn"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -40566,7 +40566,7 @@
     "_id": "4emQFqwa5Ioo6gNCXx8zyR"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -40770,7 +40770,7 @@
     "_id": "69E8NEqpVCTbzf9nerCLKf"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -40974,7 +40974,7 @@
     "_id": "5d6lG9AStP6o6A32zwB5XI"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -41178,7 +41178,7 @@
     "_id": "28B4TT9o1D1ro1cAabWi96"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -41382,7 +41382,7 @@
     "_id": "f58iwCn1xCsYNg0WHrJned"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -41586,7 +41586,7 @@
     "_id": "0a/+MNRXRGApGcF9BxWTvO"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -41790,7 +41790,7 @@
     "_id": "72UUxLUBJIIZ1BIf4lZGuw"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -41994,7 +41994,7 @@
     "_id": "67B0WEzB5CvYlMDJrVcnAk"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -42198,7 +42198,7 @@
     "_id": "77pIxZaDRGmq2a6RUlVzUG"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -42402,7 +42402,7 @@
     "_id": "48HW6FsxdDB5Ep1HSVRCbI"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -42606,7 +42606,7 @@
     "_id": "52rPKkx/NJ5p8bP+hMyoZj"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -42810,7 +42810,7 @@
     "_id": "936O4SgupGjar7SiR01pBL"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -43014,7 +43014,7 @@
     "_id": "1faDBYskZGNp1fac0F3qAR"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -43218,7 +43218,7 @@
     "_id": "2bYitdwcFP3JUKcA/wtyOP"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -43422,7 +43422,7 @@
     "_id": "2c1WgmBWhOkos7YayxSO0V"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -43626,7 +43626,7 @@
     "_id": "1cGMq2sblF5bDaeVcOpE79"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -43830,7 +43830,7 @@
     "_id": "91cTWZBYdLa6ZhTJv1lEYD"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -44034,7 +44034,7 @@
     "_id": "76DNyRseRMJJ+IRE64/vru"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -44238,7 +44238,7 @@
     "_id": "1daw4Y81FOA5RWVuxkaUc1"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -44442,7 +44442,7 @@
     "_id": "d4yNstO8pGvpvo1hHv8rnk"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -44646,7 +44646,7 @@
     "_id": "24cH0G3ndMqq0E/GTAn+GP"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -44850,7 +44850,7 @@
     "_id": "17ujbC2bFBsJYwLy6vUeyP"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -45054,7 +45054,7 @@
     "_id": "81Grq9LD1EeanRAd9ohcaU"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -45258,7 +45258,7 @@
     "_id": "efI5u/0xRLgqUZdCPOZnEi"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -45462,7 +45462,7 @@
     "_id": "b86Ua7X99KZpxt/TYAJFHu"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -45666,7 +45666,7 @@
     "_id": "05haLsN9dNNpQ/TmncKHq9"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -45870,7 +45870,7 @@
     "_id": "2fVpM595ZLvaMExtOrjdyT"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -46074,7 +46074,7 @@
     "_id": "70TsIchxZJGIj5yAXubGBZ"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -46278,7 +46278,7 @@
     "_id": "a4QsVAm6tNJLwV4bsWgVXi"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -46482,7 +46482,7 @@
     "_id": "d0vCP/ExtI6pbdq9r0MCvU"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -46686,7 +46686,7 @@
     "_id": "e4H0v4GatNVrnp6R2fHnoC"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -46890,7 +46890,7 @@
     "_id": "daq3vx6EdLEY3sN3x95O/I"
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {

@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "9cdf2873-b985-4725-b7f8-7c827aca84d0",
@@ -14,7 +14,7 @@
       "displayName": "fightImgHand",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "9cdf2873-b985-4725-b7f8-7c827aca84d0@f9941"
+    "redirect": "9cdf2873-b985-4725-b7f8-7c827aca84d0@f9941",
+    "hasAlpha": true
   }
 }

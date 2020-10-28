@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "ef7484d5-5d80-4513-bf2d-c53b42f5200d",
@@ -14,7 +14,7 @@
       "displayName": "homeBoxGold",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "ef7484d5-5d80-4513-bf2d-c53b42f5200d@f9941"
+    "redirect": "ef7484d5-5d80-4513-bf2d-c53b42f5200d@f9941",
+    "hasAlpha": true
   }
 }

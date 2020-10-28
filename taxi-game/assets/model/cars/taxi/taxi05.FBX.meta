@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561",
   "files": [],
   "subMetas": {
     "59171": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@59171",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -23,13 +23,13 @@
       "name": "tyre1-1.mesh"
     },
     "f29e8": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@f29e8",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -40,13 +40,13 @@
       "name": "CityCar_01_005-0.mesh"
     },
     "e2346": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@e2346",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -57,13 +57,13 @@
       "name": "tyre3-2.mesh"
     },
     "9b25d": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@9b25d",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -74,13 +74,13 @@
       "name": "light1-3.mesh"
     },
     "bdfac": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@bdfac",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -91,13 +91,13 @@
       "name": "tyre2-4.mesh"
     },
     "e5185": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@e5185",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -108,7 +108,7 @@
       "name": "tyre3-5.mesh"
     },
     "98ee4": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "importer": "gltf-embeded-image",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@98ee4",
       "imported": true,
@@ -125,7 +125,7 @@
       "name": "贴图 #21.image"
     },
     "1a057": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "importer": "gltf-embeded-image",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@1a057",
       "imported": true,
@@ -142,7 +142,7 @@
       "name": "贴图 #20.image"
     },
     "7d8de": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "importer": "gltf-embeded-image",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@7d8de",
       "imported": true,
@@ -159,7 +159,7 @@
       "name": "贴图 #19.image"
     },
     "a4d9b": {
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "importer": "texture",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@a4d9b",
       "imported": true,
@@ -183,7 +183,7 @@
       "name": "贴图 #21.texture"
     },
     "cb93c": {
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "importer": "texture",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@cb93c",
       "imported": true,
@@ -207,7 +207,7 @@
       "name": "贴图 #20.texture"
     },
     "7c0f3": {
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "importer": "texture",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@7c0f3",
       "imported": true,

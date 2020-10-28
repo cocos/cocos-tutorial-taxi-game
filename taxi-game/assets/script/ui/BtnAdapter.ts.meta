@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.14",
+  "ver": "4.0.1",
   "importer": "typescript",
   "imported": true,
   "uuid": "7798c86f-d322-4104-b257-22921fc6eec5",
@@ -10,6 +10,7 @@
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
-    "moduleId": "project:///assets/script/ui/BtnAdapter.js"
+    "moduleId": "project:///assets/script/ui/BtnAdapter.js",
+    "importerSettings": 0
   }
 }

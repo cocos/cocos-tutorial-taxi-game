@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.14",
+  "ver": "4.0.1",
   "importer": "typescript",
   "imported": true,
   "uuid": "bd8fe02e-7c3a-4287-b602-cd1cc0a424a1",
@@ -10,6 +10,7 @@
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
-    "moduleId": "project:///assets/script/ui/MainUI.js"
+    "moduleId": "project:///assets/script/ui/MainUI.js",
+    "importerSettings": 0
   }
 }

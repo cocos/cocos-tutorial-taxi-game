@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "71d5af25-f49e-4a45-8aa2-49401102fd4b",
@@ -14,7 +14,7 @@
       "displayName": "homeIconCar",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "71d5af25-f49e-4a45-8aa2-49401102fd4b@f9941"
+    "redirect": "71d5af25-f49e-4a45-8aa2-49401102fd4b@f9941",
+    "hasAlpha": true
   }
 }

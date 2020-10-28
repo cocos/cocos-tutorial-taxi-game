@@ -1,12 +1,12 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "3428b334-9c03-49d6-8d06-2b7873e4cdc4",
   "files": [],
   "subMetas": {
     "7f3dc": {
-      "ver": "1.0.13",
+      "ver": "1.0.14",
       "importer": "gltf-animation",
       "uuid": "3428b334-9c03-49d6-8d06-2b7873e4cdc4@7f3dc",
       "imported": true,

@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "a99679e4-0f89-482d-844b-95bded2e3873",
@@ -14,7 +14,7 @@
       "displayName": "homeIconService",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "a99679e4-0f89-482d-844b-95bded2e3873@f9941"
+    "redirect": "a99679e4-0f89-482d-844b-95bded2e3873@f9941",
+    "hasAlpha": true
   }
 }

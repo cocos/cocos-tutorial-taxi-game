@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "155cdc11-23f8-471f-a0b7-fd4d65804cfe",
@@ -14,7 +14,7 @@
       "displayName": "fightImgGift",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "155cdc11-23f8-471f-a0b7-fd4d65804cfe@f9941"
+    "redirect": "155cdc11-23f8-471f-a0b7-fd4d65804cfe@f9941",
+    "hasAlpha": true
   }
 }

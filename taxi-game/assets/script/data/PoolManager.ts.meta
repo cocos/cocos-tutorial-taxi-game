@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.14",
+  "ver": "4.0.1",
   "importer": "typescript",
   "imported": true,
   "uuid": "bb887bcc-21bd-4081-8e69-ca995296c41a",
@@ -10,6 +10,7 @@
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
-    "moduleId": "project:///assets/script/data/PoolManager.js"
+    "moduleId": "project:///assets/script/data/PoolManager.js",
+    "importerSettings": 0
   }
 }

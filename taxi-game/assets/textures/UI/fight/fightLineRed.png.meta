@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "a4888552-d3ad-4e4c-884c-bedf47b06c13",
@@ -14,7 +14,7 @@
       "displayName": "fightLineRed",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "a4888552-d3ad-4e4c-884c-bedf47b06c13@f9941"
+    "redirect": "a4888552-d3ad-4e4c-884c-bedf47b06c13@f9941",
+    "hasAlpha": true
   }
 }

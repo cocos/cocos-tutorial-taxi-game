@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.14",
+  "ver": "4.0.1",
   "importer": "typescript",
   "imported": true,
   "uuid": "45ea9839-16e3-4603-9841-eb1900500440",
@@ -10,6 +10,7 @@
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
-    "moduleId": "project:///assets/script/data/Configuration.js"
+    "moduleId": "project:///assets/script/data/Configuration.js",
+    "importerSettings": 0
   }
 }

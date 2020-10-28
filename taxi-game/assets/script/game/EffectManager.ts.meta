@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.14",
+  "ver": "4.0.1",
   "importer": "typescript",
   "imported": true,
   "uuid": "84b11e0e-c232-4f7a-8381-866787c5fdfb",
@@ -10,6 +10,7 @@
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
-    "moduleId": "project:///assets/script/game/EffectManager.js"
+    "moduleId": "project:///assets/script/game/EffectManager.js",
+    "importerSettings": 0
   }
 }

@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "aee90582-839a-42e0-940a-1ba3faa31ae9",
   "files": [],
   "subMetas": {
     "c6160": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "aee90582-839a-42e0-940a-1ba3faa31ae9@c6160",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -23,7 +23,7 @@
       "name": "Cylinder001.mesh"
     },
     "df7df": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "importer": "gltf-embeded-image",
       "uuid": "aee90582-839a-42e0-940a-1ba3faa31ae9@df7df",
       "imported": true,
@@ -40,7 +40,7 @@
       "name": "贴图 #1.image"
     },
     "a96a6": {
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "importer": "texture",
       "uuid": "aee90582-839a-42e0-940a-1ba3faa31ae9@a96a6",
       "imported": true,

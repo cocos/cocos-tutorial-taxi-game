@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "1597c3d1-c42b-4ad3-9958-5ae671555417",
@@ -14,7 +14,7 @@
       "displayName": "commonRectangle1",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "1597c3d1-c42b-4ad3-9958-5ae671555417@f9941"
+    "redirect": "1597c3d1-c42b-4ad3-9958-5ae671555417@f9941",
+    "hasAlpha": true
   }
 }

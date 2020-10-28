@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "ea3ffed3-3077-4d31-996e-223540c9a113",
@@ -14,7 +14,7 @@
       "displayName": "homeLogo",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "ea3ffed3-3077-4d31-996e-223540c9a113@f9941"
+    "redirect": "ea3ffed3-3077-4d31-996e-223540c9a113@f9941",
+    "hasAlpha": true
   }
 }

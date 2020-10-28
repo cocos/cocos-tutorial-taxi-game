@@ -175,7 +175,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -255,7 +255,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -335,7 +335,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -415,7 +415,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -495,7 +495,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -575,7 +575,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -670,8 +670,8 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Quad<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Quad<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 22
@@ -750,7 +750,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ParticleSystemComponent",
+    "__type__": "cc.ParticleSystem",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -816,40 +816,40 @@
       "__id__": 42
     },
     "bursts": [],
-    "colorOverLifetimeModule": {
-      "__id__": 43
-    },
-    "shapeModule": {
-      "__id__": 48
-    },
-    "sizeOvertimeModule": {
-      "__id__": 50
-    },
-    "velocityOvertimeModule": {
-      "__id__": 55
-    },
-    "forceOvertimeModule": {
-      "__id__": 60
-    },
-    "limitVelocityOvertimeModule": {
-      "__id__": 64
-    },
-    "rotationOvertimeModule": {
-      "__id__": 69
-    },
-    "textureAnimationModule": {
-      "__id__": 73
-    },
-    "trailModule": {
-      "__id__": 76
-    },
     "renderer": {
       "__id__": 87
     },
     "_prewarm": false,
     "_capacity": 100,
     "_simulationSpace": 1,
-    "_id": ""
+    "_id": "",
+    "_colorOverLifetimeModule": {
+      "__id__": 43
+    },
+    "_sizeOvertimeModule": {
+      "__id__": 50
+    },
+    "_rotationOvertimeModule": {
+      "__id__": 69
+    },
+    "_forceOvertimeModule": {
+      "__id__": 60
+    },
+    "_limitVelocityOvertimeModule": {
+      "__id__": 64
+    },
+    "_velocityOvertimeModule": {
+      "__id__": 55
+    },
+    "_shapeModule": {
+      "__id__": 48
+    },
+    "_trailModule": {
+      "__id__": 76
+    },
+    "_textureAnimationModule": {
+      "__id__": 73
+    }
   },
   {
     "__type__": "cc.GradientRange",
@@ -3559,8 +3559,8 @@
     "_id": ""
   },
   {
-    "__type__": "cc.BoxColliderComponent",
-    "_name": "car101<BoxColliderComponent>",
+    "__type__": "cc.BoxCollider",
+    "_name": "car101<BoxCollider>",
     "_objFlags": 0,
     "node": {
       "__id__": 1
@@ -3583,8 +3583,8 @@
     "_id": ""
   },
   {
-    "__type__": "cc.RigidBodyComponent",
-    "_name": "car101<RigidBodyComponent>",
+    "__type__": "cc.RigidBody",
+    "_name": "car101<RigidBody>",
     "_objFlags": 0,
     "node": {
       "__id__": 1

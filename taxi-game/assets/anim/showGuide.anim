@@ -223,7 +223,7 @@
   },
   {
     "__type__": "cc.animation.ComponentPath",
-    "component": "cc.SpriteComponent"
+    "component": "cc.Sprite"
   },
   {
     "__type__": "cc.animation.HierarchyPath",
@@ -231,6 +231,6 @@
   },
   {
     "__type__": "cc.animation.ComponentPath",
-    "component": "cc.SpriteComponent"
+    "component": "cc.Sprite"
   }
 ]

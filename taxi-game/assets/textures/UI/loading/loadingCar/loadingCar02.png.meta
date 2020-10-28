@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "33fa6394-37e5-4da8-b1ae-7eee42bd9ca6",
@@ -14,7 +14,7 @@
       "displayName": "loadingCar02",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "33fa6394-37e5-4da8-b1ae-7eee42bd9ca6@f9941"
+    "redirect": "33fa6394-37e5-4da8-b1ae-7eee42bd9ca6@f9941",
+    "hasAlpha": true
   }
 }

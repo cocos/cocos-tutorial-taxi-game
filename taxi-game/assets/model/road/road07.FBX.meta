@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "f5cf3589-8dc9-48c1-8df8-59bcead1895e",
   "files": [],
   "subMetas": {
     "3a0f4": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "f5cf3589-8dc9-48c1-8df8-59bcead1895e@3a0f4",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -23,7 +23,7 @@
       "name": "002.mesh"
     },
     "3bd65": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "importer": "gltf-embeded-image",
       "uuid": "f5cf3589-8dc9-48c1-8df8-59bcead1895e@3bd65",
       "imported": true,
@@ -40,7 +40,7 @@
       "name": "road03.jpg.image"
     },
     "4b8d7": {
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "importer": "texture",
       "uuid": "f5cf3589-8dc9-48c1-8df8-59bcead1895e@4b8d7",
       "imported": true,

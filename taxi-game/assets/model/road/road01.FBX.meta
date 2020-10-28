@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "594e68c3-616a-4fe3-8954-e06e87a8cf97",
   "files": [],
   "subMetas": {
     "92060": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "594e68c3-616a-4fe3-8954-e06e87a8cf97@92060",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -23,7 +23,7 @@
       "name": "Box054.mesh"
     },
     "1b048": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "importer": "gltf-embeded-image",
       "uuid": "594e68c3-616a-4fe3-8954-e06e87a8cf97@1b048",
       "imported": true,
@@ -40,7 +40,7 @@
       "name": "road01.jpg.image"
     },
     "442db": {
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "importer": "texture",
       "uuid": "594e68c3-616a-4fe3-8954-e06e87a8cf97@442db",
       "imported": true,

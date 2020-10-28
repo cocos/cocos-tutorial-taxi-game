@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "8d78c707-e3cf-414b-9ab2-b7cd6da1dc5e",
@@ -14,7 +14,7 @@
       "displayName": "fightBox2b",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "8d78c707-e3cf-414b-9ab2-b7cd6da1dc5e@f9941"
+    "redirect": "8d78c707-e3cf-414b-9ab2-b7cd6da1dc5e@f9941",
+    "hasAlpha": true
   }
 }

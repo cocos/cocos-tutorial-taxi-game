@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "b5cb3a22-e1d1-4410-b10d-037ad2757580",
@@ -14,7 +14,7 @@
       "displayName": "homeBarGold02",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -75,6 +75,7 @@
   },
   "userData": {
     "type": "sprite-frame",
-    "redirect": "b5cb3a22-e1d1-4410-b10d-037ad2757580@f9941"
+    "redirect": "b5cb3a22-e1d1-4410-b10d-037ad2757580@f9941",
+    "hasAlpha": true
   }
 }
