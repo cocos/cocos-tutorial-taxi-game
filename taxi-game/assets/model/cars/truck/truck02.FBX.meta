@@ -38,27 +38,30 @@
       "id": "5d0b5",
       "name": "car_005_0.mesh"
     },
-    "181cb": {
-      "ver": "1.0.2",
+    "203a2": {
       "importer": "gltf-embeded-image",
-      "uuid": "c2857ca9-e016-4fae-ba6f-8f711458072c@181cb",
+      "uuid": "c2857ca9-e016-4fae-ba6f-8f711458072c@203a2",
+      "displayName": "",
+      "id": "203a2",
+      "name": "truck02Blue.jpg.image",
+      "ver": "1.0.2",
       "imported": true,
       "files": [
-        ".png",
+        ".jpg",
         ".json"
       ],
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "181cb",
-      "name": "贴图 #4.image"
+      }
     },
-    "442db": {
-      "ver": "1.0.19",
+    "3a1cd": {
       "importer": "texture",
-      "uuid": "c2857ca9-e016-4fae-ba6f-8f711458072c@442db",
+      "uuid": "c2857ca9-e016-4fae-ba6f-8f711458072c@3a1cd",
+      "displayName": "",
+      "id": "3a1cd",
+      "name": "truck02Blue.texture",
+      "ver": "1.0.19",
       "imported": true,
       "files": [
         ".json"
@@ -73,18 +76,31 @@
         "premultiplyAlpha": false,
         "anisotropy": 1,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "c2857ca9-e016-4fae-ba6f-8f711458072c@181cb"
-      },
+        "imageUuidOrDatabaseUri": "c2857ca9-e016-4fae-ba6f-8f711458072c@203a2"
+      }
+    },
+    "5f218": {
+      "importer": "gltf-material",
+      "uuid": "c2857ca9-e016-4fae-ba6f-8f711458072c@5f218",
       "displayName": "",
-      "id": "442db",
-      "name": "贴图 #4.texture"
+      "id": "5f218",
+      "name": "truck02Blue.material",
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      }
     }
   },
   "userData": {
     "imageMetas": [
       {
-        "name": "贴图 #4",
-        "uri": "c2857ca9-e016-4fae-ba6f-8f711458072c@181cb"
+        "name": "truck02Blue.jpg",
+        "uri": "c2857ca9-e016-4fae-ba6f-8f711458072c@203a2"
       }
     ],
     "redirect": "c2857ca9-e016-4fae-ba6f-8f711458072c@76763",
@@ -94,15 +110,15 @@
       ],
       "skeletons": [],
       "textures": [
-        "c2857ca9-e016-4fae-ba6f-8f711458072c@442db"
+        "c2857ca9-e016-4fae-ba6f-8f711458072c@3a1cd"
       ],
       "materials": [
-        "ff208cf8-844f-4883-ba46-35be655db886"
+        "c2857ca9-e016-4fae-ba6f-8f711458072c@5f218"
       ],
       "scenes": [
         "c2857ca9-e016-4fae-ba6f-8f711458072c@76763"
       ]
     },
-    "dumpMaterials": true
+    "dumpMaterials": false
   }
 }

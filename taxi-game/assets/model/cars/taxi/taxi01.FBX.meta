@@ -5,6 +5,23 @@
   "uuid": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af",
   "files": [],
   "subMetas": {
+    "29226": {
+      "importer": "gltf-embeded-image",
+      "uuid": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@29226",
+      "displayName": "",
+      "id": "29226",
+      "name": "taxi01.jpg.image",
+      "ver": "1.0.2",
+      "imported": true,
+      "files": [
+        ".jpg",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      }
+    },
     "050ef": {
       "ver": "1.0.9",
       "importer": "gltf-mesh",
@@ -107,23 +124,6 @@
       "id": "14b6a",
       "name": "light1.mesh"
     },
-    "d412c": {
-      "ver": "1.0.2",
-      "importer": "gltf-embeded-image",
-      "uuid": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@d412c",
-      "imported": true,
-      "files": [
-        ".png",
-        ".json"
-      ],
-      "subMetas": {},
-      "userData": {
-        "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "d412c",
-      "name": "贴图 #13.image"
-    },
     "baf1c": {
       "ver": "1.0.19",
       "importer": "texture",
@@ -142,11 +142,27 @@
         "premultiplyAlpha": false,
         "anisotropy": 1,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@d412c"
+        "imageUuidOrDatabaseUri": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@29226"
       },
       "displayName": "",
       "id": "baf1c",
       "name": "贴图 #13.texture"
+    },
+    "e3cf8": {
+      "importer": "gltf-material",
+      "uuid": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@e3cf8",
+      "displayName": "",
+      "id": "e3cf8",
+      "name": "Material #13.material",
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      }
     },
     "0f4b8": {
       "importer": "gltf-scene",
@@ -168,8 +184,8 @@
   "userData": {
     "imageMetas": [
       {
-        "name": "贴图 #13",
-        "uri": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@d412c"
+        "name": "taxi01.jpg",
+        "uri": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@29226"
       }
     ],
     "redirect": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@0f4b8",
@@ -187,12 +203,12 @@
         "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@baf1c"
       ],
       "materials": [
-        "b395065b-d849-4ba3-90ba-e66631ad5e37"
+        "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@e3cf8"
       ],
       "scenes": [
         "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@0f4b8"
       ]
     },
-    "dumpMaterials": true
+    "dumpMaterials": false
   }
 }
