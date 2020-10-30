@@ -1,48 +1,17 @@
 {
-  "ver": "1.3.24",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "c8068d35-9991-4d99-ab26-353428815ace",
   "files": [],
   "subMetas": {
-    "b8a2d": {
-      "ver": "1.1.0",
-      "importer": "gltf-mesh",
-      "uuid": "c8068d35-9991-4d99-ab26-353428815ace@b8a2d",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {},
-      "userData": {
-        "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "b8a2d",
-      "name": "Plane001.mesh"
-    },
-    "9defe": {
-      "ver": "1.0.3",
-      "importer": "gltf-embeded-image",
-      "uuid": "c8068d35-9991-4d99-ab26-353428815ace@9defe",
-      "imported": true,
-      "files": [
-        ".png",
-        ".json"
-      ],
-      "subMetas": {},
-      "userData": {
-        "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "9defe",
-      "name": "贴图 #8.image"
-    },
-    "bc797": {
-      "ver": "1.0.20",
+    "87310": {
       "importer": "texture",
-      "uuid": "c8068d35-9991-4d99-ab26-353428815ace@bc797",
+      "uuid": "c8068d35-9991-4d99-ab26-353428815ace@87310",
+      "displayName": "",
+      "id": "87310",
+      "name": "sign.texture",
+      "ver": "1.0.19",
       "imported": true,
       "files": [
         ".json"
@@ -57,11 +26,58 @@
         "premultiplyAlpha": false,
         "anisotropy": 1,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "c8068d35-9991-4d99-ab26-353428815ace@9defe"
+        "imageUuidOrDatabaseUri": "c8068d35-9991-4d99-ab26-353428815ace@a86d1"
+      }
+    },
+    "b8a2d": {
+      "ver": "1.0.9",
+      "importer": "gltf-mesh",
+      "uuid": "c8068d35-9991-4d99-ab26-353428815ace@b8a2d",
+      "imported": true,
+      "files": [
+        ".json",
+        ".bin"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
       },
       "displayName": "",
-      "id": "bc797",
-      "name": "贴图 #8.texture"
+      "id": "b8a2d",
+      "name": "Plane001.mesh"
+    },
+    "a86d1": {
+      "importer": "gltf-embeded-image",
+      "uuid": "c8068d35-9991-4d99-ab26-353428815ace@a86d1",
+      "displayName": "",
+      "id": "a86d1",
+      "name": "sign.jpg.image",
+      "ver": "1.0.2",
+      "imported": true,
+      "files": [
+        ".jpg",
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      }
+    },
+    "05365": {
+      "importer": "gltf-material",
+      "uuid": "c8068d35-9991-4d99-ab26-353428815ace@05365",
+      "displayName": "",
+      "id": "05365",
+      "name": "sign.material",
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      }
     },
     "5b89f": {
       "importer": "gltf-scene",
@@ -83,8 +99,8 @@
   "userData": {
     "imageMetas": [
       {
-        "name": "贴图 #8",
-        "uri": "c8068d35-9991-4d99-ab26-353428815ace@9defe"
+        "name": "sign.jpg",
+        "uri": "c8068d35-9991-4d99-ab26-353428815ace@a86d1"
       }
     ],
     "redirect": "c8068d35-9991-4d99-ab26-353428815ace@5b89f",
@@ -94,16 +110,15 @@
       ],
       "skeletons": [],
       "textures": [
-        "c8068d35-9991-4d99-ab26-353428815ace@bc797"
+        "c8068d35-9991-4d99-ab26-353428815ace@87310"
       ],
       "materials": [
-        "ab8446e5-9677-4134-8258-66bf3248f177"
+        "c8068d35-9991-4d99-ab26-353428815ace@05365"
       ],
       "scenes": [
         "c8068d35-9991-4d99-ab26-353428815ace@5b89f"
       ]
     },
-    "dumpMaterials": true,
-    "materialDumpDir": "db://assets/model/sign/Materials_sign02"
+    "dumpMaterials": false
   }
 }

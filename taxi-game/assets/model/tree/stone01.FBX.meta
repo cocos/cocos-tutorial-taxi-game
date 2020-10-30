@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.24",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "5f44bd4f-8f5e-4741-8eaa-991af25102fa",
   "files": [],
   "subMetas": {
     "50b92": {
-      "ver": "1.1.0",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@50b92",
       "imported": true,
       "files": [
-        ".bin",
-        ".json"
+        ".json",
+        ".bin"
       ],
       "subMetas": {},
       "userData": {
@@ -22,10 +22,13 @@
       "id": "50b92",
       "name": "TS_FaGuangSuiPian_01.mesh"
     },
-    "1cdc4": {
-      "ver": "1.0.3",
+    "b643f": {
       "importer": "gltf-embeded-image",
-      "uuid": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@1cdc4",
+      "uuid": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@b643f",
+      "displayName": "",
+      "id": "b643f",
+      "name": "stone01.png.image",
+      "ver": "1.0.2",
       "imported": true,
       "files": [
         ".png",
@@ -34,15 +37,15 @@
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "1cdc4",
-      "name": "贴图 #3.image"
+      }
     },
-    "bfae8": {
-      "ver": "1.0.20",
+    "d0e43": {
       "importer": "texture",
-      "uuid": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@bfae8",
+      "uuid": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@d0e43",
+      "displayName": "",
+      "id": "d0e43",
+      "name": "stone01.texture",
+      "ver": "1.0.19",
       "imported": true,
       "files": [
         ".json"
@@ -57,11 +60,24 @@
         "premultiplyAlpha": false,
         "anisotropy": 1,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@1cdc4"
-      },
+        "imageUuidOrDatabaseUri": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@b643f"
+      }
+    },
+    "e2cbb": {
+      "importer": "gltf-material",
+      "uuid": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@e2cbb",
       "displayName": "",
-      "id": "bfae8",
-      "name": "贴图 #3.texture"
+      "id": "e2cbb",
+      "name": "stone01.material",
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      }
     },
     "dea75": {
       "importer": "gltf-scene",
@@ -83,8 +99,8 @@
   "userData": {
     "imageMetas": [
       {
-        "name": "贴图 #3",
-        "uri": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@1cdc4"
+        "name": "stone01.png",
+        "uri": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@b643f"
       }
     ],
     "redirect": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@dea75",
@@ -94,16 +110,15 @@
       ],
       "skeletons": [],
       "textures": [
-        "5f44bd4f-8f5e-4741-8eaa-991af25102fa@bfae8"
+        "5f44bd4f-8f5e-4741-8eaa-991af25102fa@d0e43"
       ],
       "materials": [
-        "d7b4ec5b-0b6b-471c-9996-1aea41707fa1"
+        "5f44bd4f-8f5e-4741-8eaa-991af25102fa@e2cbb"
       ],
       "scenes": [
         "5f44bd4f-8f5e-4741-8eaa-991af25102fa@dea75"
       ]
     },
-    "dumpMaterials": true,
-    "materialDumpDir": "db://assets/model/tree/Materials_stone01"
+    "dumpMaterials": false
   }
 }

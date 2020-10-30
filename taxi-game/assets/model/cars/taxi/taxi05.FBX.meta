@@ -1,35 +1,35 @@
 {
-  "ver": "1.3.24",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561",
   "files": [],
   "subMetas": {
     "59171": {
-      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@59171",
+      "displayName": "",
+      "id": "59171",
+      "name": "tyre1-1.mesh",
+      "ver": "1.0.9",
       "imported": true,
       "files": [
-        ".bin",
-        ".json"
+        ".json",
+        ".bin"
       ],
       "subMetas": {},
       "userData": {
-        "gltfIndex": 1
-      },
-      "displayName": "",
-      "id": "59171",
-      "name": "tyre1-1.mesh"
+        "gltfIndex": 3
+      }
     },
     "f29e8": {
-      "ver": "1.1.0",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@f29e8",
       "imported": true,
       "files": [
-        ".bin",
-        ".json"
+        ".json",
+        ".bin"
       ],
       "subMetas": {},
       "userData": {
@@ -39,112 +39,115 @@
       "id": "f29e8",
       "name": "CityCar_01_005-0.mesh"
     },
-    "e2346": {
-      "ver": "1.1.0",
+    "bdfac": {
       "importer": "gltf-mesh",
-      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@e2346",
+      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@bdfac",
+      "displayName": "",
+      "id": "bdfac",
+      "name": "tyre2-4.mesh",
+      "ver": "1.0.9",
       "imported": true,
       "files": [
-        ".bin",
-        ".json"
+        ".json",
+        ".bin"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 1
+      }
+    },
+    "e5185": {
+      "importer": "gltf-mesh",
+      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@e5185",
+      "displayName": "",
+      "id": "e5185",
+      "name": "tyre3-5.mesh",
+      "ver": "1.0.9",
+      "imported": true,
+      "files": [
+        ".json",
+        ".bin"
       ],
       "subMetas": {},
       "userData": {
         "gltfIndex": 2
-      },
-      "displayName": "",
-      "id": "e2346",
-      "name": "tyre3-2.mesh"
+      }
     },
-    "9b25d": {
-      "ver": "1.1.0",
+    "e2346": {
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
-      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@9b25d",
+      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@e2346",
       "imported": true,
       "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {},
-      "userData": {
-        "gltfIndex": 3
-      },
-      "displayName": "",
-      "id": "9b25d",
-      "name": "light1-3.mesh"
-    },
-    "bdfac": {
-      "ver": "1.1.0",
-      "importer": "gltf-mesh",
-      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@bdfac",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
+        ".json",
+        ".bin"
       ],
       "subMetas": {},
       "userData": {
         "gltfIndex": 4
       },
       "displayName": "",
-      "id": "bdfac",
-      "name": "tyre2-4.mesh"
+      "id": "e2346",
+      "name": "tyre3-2.mesh"
     },
-    "e5185": {
-      "ver": "1.1.0",
+    "14b6a": {
       "importer": "gltf-mesh",
-      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@e5185",
+      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@14b6a",
+      "displayName": "",
+      "id": "14b6a",
+      "name": "light1.mesh",
+      "ver": "1.0.9",
       "imported": true,
       "files": [
-        ".bin",
-        ".json"
+        ".json",
+        ".bin"
       ],
       "subMetas": {},
       "userData": {
         "gltfIndex": 5
-      },
-      "displayName": "",
-      "id": "e5185",
-      "name": "tyre3-5.mesh"
+      }
     },
-    "98ee4": {
-      "ver": "1.0.3",
-      "importer": "gltf-embeded-image",
-      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@98ee4",
+    "9b25d": {
+      "importer": "gltf-mesh",
+      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@9b25d",
+      "displayName": "",
+      "id": "9b25d",
+      "name": "light1-3.mesh",
+      "ver": "1.0.9",
       "imported": true,
       "files": [
-        ".png",
+        ".json",
+        ".bin"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 6
+      }
+    },
+    "f537c": {
+      "importer": "gltf-embeded-image",
+      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@f537c",
+      "displayName": "",
+      "id": "f537c",
+      "name": "taxi05Green.jpg.image",
+      "ver": "1.0.2",
+      "imported": true,
+      "files": [
+        ".jpg",
         ".json"
       ],
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "98ee4",
-      "name": "贴图 #21.image"
+      }
     },
-    "1a057": {
-      "ver": "1.0.3",
+    "d9830": {
       "importer": "gltf-embeded-image",
-      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@1a057",
-      "imported": true,
-      "files": [
-        ".png",
-        ".json"
-      ],
-      "subMetas": {},
-      "userData": {
-        "gltfIndex": 1
-      },
+      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@d9830",
       "displayName": "",
-      "id": "1a057",
-      "name": "贴图 #20.image"
-    },
-    "7d8de": {
-      "ver": "1.0.3",
-      "importer": "gltf-embeded-image",
-      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@7d8de",
+      "id": "d9830",
+      "name": "taxi05Light.png.image",
+      "ver": "1.0.2",
       "imported": true,
       "files": [
         ".png",
@@ -153,13 +156,58 @@
       "subMetas": {},
       "userData": {
         "gltfIndex": 2
-      },
+      }
+    },
+    "7c0f3": {
+      "importer": "texture",
+      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@7c0f3",
       "displayName": "",
-      "id": "7d8de",
-      "name": "贴图 #19.image"
+      "id": "7c0f3",
+      "name": "贴图 #19.texture",
+      "ver": "1.0.19",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "premultiplyAlpha": false,
+        "anisotropy": 1,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@f537c"
+      }
+    },
+    "733e8": {
+      "importer": "texture",
+      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@733e8",
+      "displayName": "",
+      "id": "733e8",
+      "name": "taxi05Green.texture",
+      "ver": "1.0.19",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "premultiplyAlpha": false,
+        "anisotropy": 1,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/model/cars/taxi/taxi05Green.jpg"
+      }
     },
     "a4d9b": {
-      "ver": "1.0.20",
+      "ver": "1.0.19",
       "importer": "texture",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@a4d9b",
       "imported": true,
@@ -176,59 +224,43 @@
         "premultiplyAlpha": false,
         "anisotropy": 1,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@98ee4"
+        "imageUuidOrDatabaseUri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@d9830"
       },
       "displayName": "",
       "id": "a4d9b",
       "name": "贴图 #21.texture"
     },
-    "cb93c": {
-      "ver": "1.0.20",
-      "importer": "texture",
-      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@cb93c",
+    "9e444": {
+      "importer": "gltf-material",
+      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@9e444",
+      "displayName": "",
+      "id": "9e444",
+      "name": "Material #20.material",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
       ],
       "subMetas": {},
       "userData": {
-        "wrapModeS": "repeat",
-        "wrapModeT": "repeat",
-        "minfilter": "linear",
-        "magfilter": "linear",
-        "mipfilter": "none",
-        "premultiplyAlpha": false,
-        "anisotropy": 1,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@1a057"
-      },
-      "displayName": "",
-      "id": "cb93c",
-      "name": "贴图 #20.texture"
+        "gltfIndex": 0
+      }
     },
-    "7c0f3": {
-      "ver": "1.0.20",
-      "importer": "texture",
-      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@7c0f3",
+    "a8d5a": {
+      "importer": "gltf-material",
+      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@a8d5a",
+      "displayName": "",
+      "id": "a8d5a",
+      "name": "taxi05Green.material",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
       ],
       "subMetas": {},
       "userData": {
-        "wrapModeS": "repeat",
-        "wrapModeT": "repeat",
-        "minfilter": "linear",
-        "magfilter": "linear",
-        "mipfilter": "none",
-        "premultiplyAlpha": false,
-        "anisotropy": 1,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@7d8de"
-      },
-      "displayName": "",
-      "id": "7c0f3",
-      "name": "贴图 #19.texture"
+        "gltfIndex": 1
+      }
     },
     "b82d3": {
       "ver": "1.0.14",
@@ -240,43 +272,11 @@
       ],
       "subMetas": {},
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 2
       },
       "displayName": "",
       "id": "b82d3",
       "name": "Material #22.material"
-    },
-    "0534a": {
-      "ver": "1.0.14",
-      "importer": "gltf-material",
-      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@0534a",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {},
-      "userData": {
-        "gltfIndex": 1
-      },
-      "displayName": "",
-      "id": "0534a",
-      "name": "Material #21.material"
-    },
-    "9e444": {
-      "ver": "1.0.14",
-      "importer": "gltf-material",
-      "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@9e444",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {},
-      "userData": {
-        "gltfIndex": 2
-      },
-      "displayName": "",
-      "id": "9e444",
-      "name": "Material #20.material"
     },
     "fb28c": {
       "importer": "gltf-scene",
@@ -298,38 +298,39 @@
   "userData": {
     "imageMetas": [
       {
-        "name": "贴图 #21",
-        "uri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@98ee4"
+        "name": "taxi05Green.jpg",
+        "uri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@f537c"
       },
       {
-        "name": "贴图 #20",
-        "uri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@1a057"
+        "name": "taxi05Green",
+        "uri": "db://assets/model/cars/taxi/taxi05Green.jpg"
       },
       {
-        "name": "贴图 #19",
-        "uri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@7d8de"
+        "name": "taxi05Light.png",
+        "uri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@d9830"
       }
     ],
     "redirect": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@fb28c",
     "assetFinder": {
       "meshes": [
         "dfb49ec2-7be2-4377-864b-c4f6d82cd561@f29e8",
+        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@bdfac",
+        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@e5185",
         "dfb49ec2-7be2-4377-864b-c4f6d82cd561@59171",
         "dfb49ec2-7be2-4377-864b-c4f6d82cd561@e2346",
-        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@9b25d",
-        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@bdfac",
-        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@e5185"
+        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@14b6a",
+        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@9b25d"
       ],
       "skeletons": [],
       "textures": [
-        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@a4d9b",
-        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@cb93c",
-        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@7c0f3"
+        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@7c0f3",
+        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@733e8",
+        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@a4d9b"
       ],
       "materials": [
-        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@b82d3",
-        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@0534a",
-        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@9e444"
+        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@9e444",
+        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@a8d5a",
+        "dfb49ec2-7be2-4377-864b-c4f6d82cd561@b82d3"
       ],
       "scenes": [
         "dfb49ec2-7be2-4377-864b-c4f6d82cd561@fb28c"

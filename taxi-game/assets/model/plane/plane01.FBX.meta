@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.24",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "60c084d9-f9c9-4ff1-acc9-d9df252760c2",
   "files": [],
   "subMetas": {
     "f620b": {
-      "ver": "1.1.0",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "60c084d9-f9c9-4ff1-acc9-d9df252760c2@f620b",
       "imported": true,
       "files": [
-        ".bin",
-        ".json"
+        ".json",
+        ".bin"
       ],
       "subMetas": {},
       "userData": {
@@ -22,27 +22,30 @@
       "id": "f620b",
       "name": "Plane011.mesh"
     },
-    "425ef": {
-      "ver": "1.0.3",
+    "ad0ee": {
       "importer": "gltf-embeded-image",
-      "uuid": "60c084d9-f9c9-4ff1-acc9-d9df252760c2@425ef",
+      "uuid": "60c084d9-f9c9-4ff1-acc9-d9df252760c2@ad0ee",
+      "displayName": "",
+      "id": "ad0ee",
+      "name": "plane01.jpg.image",
+      "ver": "1.0.2",
       "imported": true,
       "files": [
-        ".png",
+        ".jpg",
         ".json"
       ],
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "425ef",
-      "name": "贴图 #2.image"
+      }
     },
-    "59f96": {
-      "ver": "1.0.20",
+    "a96a6": {
       "importer": "texture",
-      "uuid": "60c084d9-f9c9-4ff1-acc9-d9df252760c2@59f96",
+      "uuid": "60c084d9-f9c9-4ff1-acc9-d9df252760c2@a96a6",
+      "displayName": "",
+      "id": "a96a6",
+      "name": "贴图 #1.texture",
+      "ver": "1.0.19",
       "imported": true,
       "files": [
         ".json"
@@ -57,11 +60,24 @@
         "premultiplyAlpha": false,
         "anisotropy": 1,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "60c084d9-f9c9-4ff1-acc9-d9df252760c2@425ef"
-      },
+        "imageUuidOrDatabaseUri": "60c084d9-f9c9-4ff1-acc9-d9df252760c2@ad0ee"
+      }
+    },
+    "aa4e8": {
+      "importer": "gltf-material",
+      "uuid": "60c084d9-f9c9-4ff1-acc9-d9df252760c2@aa4e8",
       "displayName": "",
-      "id": "59f96",
-      "name": "贴图 #2.texture"
+      "id": "aa4e8",
+      "name": "plane01.material",
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      }
     },
     "c13c3": {
       "importer": "gltf-scene",
@@ -83,8 +99,8 @@
   "userData": {
     "imageMetas": [
       {
-        "name": "贴图 #2",
-        "uri": "60c084d9-f9c9-4ff1-acc9-d9df252760c2@425ef"
+        "name": "plane01.jpg",
+        "uri": "60c084d9-f9c9-4ff1-acc9-d9df252760c2@ad0ee"
       }
     ],
     "redirect": "60c084d9-f9c9-4ff1-acc9-d9df252760c2@c13c3",
@@ -94,16 +110,15 @@
       ],
       "skeletons": [],
       "textures": [
-        "60c084d9-f9c9-4ff1-acc9-d9df252760c2@59f96"
+        "60c084d9-f9c9-4ff1-acc9-d9df252760c2@a96a6"
       ],
       "materials": [
-        "749bf47f-0d93-448a-ae89-1348a6d7023d"
+        "60c084d9-f9c9-4ff1-acc9-d9df252760c2@aa4e8"
       ],
       "scenes": [
         "60c084d9-f9c9-4ff1-acc9-d9df252760c2@c13c3"
       ]
     },
-    "dumpMaterials": true,
-    "materialDumpDir": "db://assets/model/plane/Materials_plane01"
+    "dumpMaterials": false
   }
 }

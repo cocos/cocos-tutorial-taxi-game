@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.24",
+  "ver": "1.3.19",
   "importer": "fbx",
   "imported": true,
   "uuid": "35b8eab2-e304-4ff8-bd60-e540a3927736",
   "files": [],
   "subMetas": {
     "e114c": {
-      "ver": "1.1.0",
+      "ver": "1.0.9",
       "importer": "gltf-mesh",
       "uuid": "35b8eab2-e304-4ff8-bd60-e540a3927736@e114c",
       "imported": true,
       "files": [
-        ".bin",
-        ".json"
+        ".json",
+        ".bin"
       ],
       "subMetas": {},
       "userData": {
@@ -22,27 +22,30 @@
       "id": "e114c",
       "name": "Box021.mesh"
     },
-    "1cdc4": {
-      "ver": "1.0.3",
+    "1f2a9": {
       "importer": "gltf-embeded-image",
-      "uuid": "35b8eab2-e304-4ff8-bd60-e540a3927736@1cdc4",
+      "uuid": "35b8eab2-e304-4ff8-bd60-e540a3927736@1f2a9",
+      "displayName": "",
+      "id": "1f2a9",
+      "name": "trees01.jpg.image",
+      "ver": "1.0.2",
       "imported": true,
       "files": [
-        ".png",
+        ".jpg",
         ".json"
       ],
       "subMetas": {},
       "userData": {
         "gltfIndex": 0
-      },
-      "displayName": "",
-      "id": "1cdc4",
-      "name": "贴图 #3.image"
+      }
     },
-    "bfae8": {
-      "ver": "1.0.20",
+    "ba755": {
       "importer": "texture",
-      "uuid": "35b8eab2-e304-4ff8-bd60-e540a3927736@bfae8",
+      "uuid": "35b8eab2-e304-4ff8-bd60-e540a3927736@ba755",
+      "displayName": "",
+      "id": "ba755",
+      "name": "trees01.texture",
+      "ver": "1.0.19",
       "imported": true,
       "files": [
         ".json"
@@ -57,11 +60,24 @@
         "premultiplyAlpha": false,
         "anisotropy": 1,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "35b8eab2-e304-4ff8-bd60-e540a3927736@1cdc4"
-      },
+        "imageUuidOrDatabaseUri": "35b8eab2-e304-4ff8-bd60-e540a3927736@1f2a9"
+      }
+    },
+    "61b61": {
+      "importer": "gltf-material",
+      "uuid": "35b8eab2-e304-4ff8-bd60-e540a3927736@61b61",
       "displayName": "",
-      "id": "bfae8",
-      "name": "贴图 #3.texture"
+      "id": "61b61",
+      "name": "trees01.material",
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {},
+      "userData": {
+        "gltfIndex": 0
+      }
     },
     "a31c6": {
       "importer": "gltf-scene",
@@ -83,8 +99,8 @@
   "userData": {
     "imageMetas": [
       {
-        "name": "贴图 #3",
-        "uri": "35b8eab2-e304-4ff8-bd60-e540a3927736@1cdc4"
+        "name": "trees01.jpg",
+        "uri": "35b8eab2-e304-4ff8-bd60-e540a3927736@1f2a9"
       }
     ],
     "redirect": "35b8eab2-e304-4ff8-bd60-e540a3927736@a31c6",
@@ -94,16 +110,15 @@
       ],
       "skeletons": [],
       "textures": [
-        "35b8eab2-e304-4ff8-bd60-e540a3927736@bfae8"
+        "35b8eab2-e304-4ff8-bd60-e540a3927736@ba755"
       ],
       "materials": [
-        "5107d997-1bec-4b93-8854-542055b3066e"
+        "35b8eab2-e304-4ff8-bd60-e540a3927736@61b61"
       ],
       "scenes": [
         "35b8eab2-e304-4ff8-bd60-e540a3927736@a31c6"
       ]
     },
-    "dumpMaterials": true,
-    "materialDumpDir": "db://assets/model/tree/Materials_tree01"
+    "dumpMaterials": false
   }
 }
