@@ -148,8 +148,8 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 320,
-      "y": 480,
+      "x": 480,
+      "y": 320,
       "z": 1
     },
     "_lrot": {
@@ -1983,8 +1983,8 @@
     "_priority": 100,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 640,
-      "height": 960
+      "width": 960,
+      "height": 640
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2058,8 +2058,8 @@
     "_priority": 0,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 640,
-      "height": 960
+      "width": 960,
+      "height": 640
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2410,7 +2410,7 @@
     "_enabled": true,
     "_materials": [
       {
-        "__uuid__": "b395065b-d849-4ba3-90ba-e66631ad5e37"
+        "__uuid__": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@e3cf8"
       }
     ],
     "_visFlags": 0,
@@ -2511,7 +2511,7 @@
     "_enabled": true,
     "_materials": [
       {
-        "__uuid__": "b395065b-d849-4ba3-90ba-e66631ad5e37"
+        "__uuid__": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@e3cf8"
       }
     ],
     "_visFlags": 0,
@@ -2612,7 +2612,7 @@
     "_enabled": true,
     "_materials": [
       {
-        "__uuid__": "b395065b-d849-4ba3-90ba-e66631ad5e37"
+        "__uuid__": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@e3cf8"
       }
     ],
     "_visFlags": 0,
@@ -2713,7 +2713,7 @@
     "_enabled": true,
     "_materials": [
       {
-        "__uuid__": "b395065b-d849-4ba3-90ba-e66631ad5e37"
+        "__uuid__": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@e3cf8"
       }
     ],
     "_visFlags": 0,
@@ -2814,7 +2814,7 @@
     "_enabled": true,
     "_materials": [
       {
-        "__uuid__": "b395065b-d849-4ba3-90ba-e66631ad5e37"
+        "__uuid__": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@e3cf8"
       }
     ],
     "_visFlags": 0,
@@ -2915,7 +2915,7 @@
     "_enabled": true,
     "_materials": [
       {
-        "__uuid__": "b395065b-d849-4ba3-90ba-e66631ad5e37"
+        "__uuid__": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@e3cf8"
       }
     ],
     "_visFlags": 0,
@@ -5870,7 +5870,7 @@
     "_enabled": true,
     "_materials": [
       {
-        "__uuid__": "33a4cb9e-e594-471d-b84e-2c5343b48530"
+        "__uuid__": "0bb50b73-023a-4269-bac6-c7be72d298d0@9b3e0"
       }
     ],
     "_visFlags": 0,

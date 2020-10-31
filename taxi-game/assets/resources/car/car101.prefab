@@ -175,7 +175,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -195,6 +195,7 @@
       "__uuid__": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@050ef"
     },
     "_shadowCastingMode": 0,
+    "_shadowReceivingMode": 1,
     "_enableMorph": true,
     "_id": ""
   },
@@ -210,6 +211,7 @@
     },
     "_bakeable": false,
     "_castShadow": false,
+    "_receiveShadow": false,
     "_recieveShadow": false,
     "_lightmapSize": 64
   },
@@ -274,7 +276,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -294,6 +296,7 @@
       "__uuid__": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@801a3"
     },
     "_shadowCastingMode": 0,
+    "_shadowReceivingMode": 1,
     "_enableMorph": true,
     "_id": ""
   },
@@ -309,6 +312,7 @@
     },
     "_bakeable": false,
     "_castShadow": false,
+    "_receiveShadow": false,
     "_recieveShadow": false,
     "_lightmapSize": 64
   },
@@ -373,7 +377,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -393,6 +397,7 @@
       "__uuid__": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@8c383"
     },
     "_shadowCastingMode": 0,
+    "_shadowReceivingMode": 1,
     "_enableMorph": true,
     "_id": ""
   },
@@ -408,6 +413,7 @@
     },
     "_bakeable": false,
     "_castShadow": false,
+    "_receiveShadow": false,
     "_recieveShadow": false,
     "_lightmapSize": 64
   },
@@ -472,7 +478,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -492,6 +498,7 @@
       "__uuid__": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@4166c"
     },
     "_shadowCastingMode": 0,
+    "_shadowReceivingMode": 1,
     "_enableMorph": true,
     "_id": ""
   },
@@ -507,6 +514,7 @@
     },
     "_bakeable": false,
     "_castShadow": false,
+    "_receiveShadow": false,
     "_recieveShadow": false,
     "_lightmapSize": 64
   },
@@ -571,7 +579,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -591,6 +599,7 @@
       "__uuid__": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@6726b"
     },
     "_shadowCastingMode": 0,
+    "_shadowReceivingMode": 1,
     "_enableMorph": true,
     "_id": ""
   },
@@ -606,6 +615,7 @@
     },
     "_bakeable": false,
     "_castShadow": false,
+    "_receiveShadow": false,
     "_recieveShadow": false,
     "_lightmapSize": 64
   },
@@ -670,7 +680,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
+    "__type__": "cc.MeshRenderer",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -690,6 +700,7 @@
       "__uuid__": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@14b6a"
     },
     "_shadowCastingMode": 0,
+    "_shadowReceivingMode": 1,
     "_enableMorph": true,
     "_id": ""
   },
@@ -705,6 +716,7 @@
     },
     "_bakeable": false,
     "_castShadow": false,
+    "_receiveShadow": false,
     "_recieveShadow": false,
     "_lightmapSize": 64
   },
@@ -784,8 +796,8 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ModelComponent",
-    "_name": "Quad<ModelComponent>",
+    "__type__": "cc.MeshRenderer",
+    "_name": "Quad<MeshRenderer>",
     "_objFlags": 0,
     "node": {
       "__id__": 28
@@ -804,6 +816,7 @@
       "__uuid__": "1263d74c-8167-4928-91a6-4e2672411f47@fc873"
     },
     "_shadowCastingMode": 0,
+    "_shadowReceivingMode": 1,
     "_enableMorph": true,
     "_id": ""
   },
@@ -819,6 +832,7 @@
     },
     "_bakeable": false,
     "_castShadow": false,
+    "_receiveShadow": false,
     "_recieveShadow": false,
     "_lightmapSize": 64
   },
@@ -883,7 +897,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.ParticleSystemComponent",
+    "__type__": "cc.ParticleSystem",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -949,31 +963,31 @@
       "__id__": 46
     },
     "bursts": [],
-    "colorOverLifetimeModule": {
+    "_colorOverLifetimeModule": {
       "__id__": 47
     },
-    "shapeModule": {
+    "_shapeModule": {
       "__id__": 49
     },
-    "sizeOvertimeModule": {
+    "_sizeOvertimeModule": {
       "__id__": 51
     },
-    "velocityOvertimeModule": {
+    "_velocityOvertimeModule": {
       "__id__": 56
     },
-    "forceOvertimeModule": {
+    "_forceOvertimeModule": {
       "__id__": 61
     },
-    "limitVelocityOvertimeModule": {
+    "_limitVelocityOvertimeModule": {
       "__id__": 65
     },
-    "rotationOvertimeModule": {
+    "_rotationOvertimeModule": {
       "__id__": 70
     },
-    "textureAnimationModule": {
+    "_textureAnimationModule": {
       "__id__": 74
     },
-    "trailModule": {
+    "_trailModule": {
       "__id__": 77
     },
     "renderer": {
@@ -1433,6 +1447,9 @@
     "_velocityScale": 1,
     "_lengthScale": 1,
     "_mesh": null,
+    "_mainTexture": {
+      "__uuid__": "fe262dd1-1451-449b-9fe9-61c6a1f6d1a6@6c48a"
+    },
     "_useGPU": false
   },
   {
@@ -1463,8 +1480,8 @@
     "_id": ""
   },
   {
-    "__type__": "cc.BoxColliderComponent",
-    "_name": "car101<BoxColliderComponent>",
+    "__type__": "cc.BoxCollider",
+    "_name": "car101<BoxCollider>",
     "_objFlags": 0,
     "node": {
       "__id__": 1
@@ -1487,14 +1504,16 @@
     "_id": ""
   },
   {
-    "__type__": "cc.RigidBodyComponent",
-    "_name": "car101<RigidBodyComponent>",
+    "__type__": "cc.RigidBody",
+    "_name": "car101<RigidBody>",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
+    "_group": 1,
     "_mass": 10,
+    "_allowSleep": true,
     "_linearDamping": 0,
     "_angularDamping": 0,
     "_fixedRotation": false,

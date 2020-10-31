@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "88ca6b8d-dc57-44ed-8a36-ba2c53c3af6d",
   "files": [],
   "subMetas": {
     "604e5": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "88ca6b8d-dc57-44ed-8a36-ba2c53c3af6d@604e5",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -28,7 +28,7 @@
       "displayName": "",
       "id": "1f2a9",
       "name": "trees01.jpg.image",
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "imported": true,
       "files": [
         ".jpg",
@@ -45,7 +45,7 @@
       "displayName": "",
       "id": "ba755",
       "name": "trees01.texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"

@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "ff9c13bd-fc7e-4b8e-924f-74b14a74ea3c",
   "files": [],
   "subMetas": {
     "46540": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "ff9c13bd-fc7e-4b8e-924f-74b14a74ea3c@46540",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -23,7 +23,7 @@
       "name": "Box001.mesh"
     },
     "2912a": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "importer": "gltf-embeded-image",
       "uuid": "ff9c13bd-fc7e-4b8e-924f-74b14a74ea3c@2912a",
       "imported": true,
@@ -40,7 +40,7 @@
       "name": "truck01.jpg.image"
     },
     "a96a6": {
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "importer": "texture",
       "uuid": "ff9c13bd-fc7e-4b8e-924f-74b14a74ea3c@a96a6",
       "imported": true,

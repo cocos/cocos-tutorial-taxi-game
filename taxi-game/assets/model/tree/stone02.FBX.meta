@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "79a67e73-19fa-4efa-a5f2-a29f53bc7319",
   "files": [],
   "subMetas": {
     "7c176": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "79a67e73-19fa-4efa-a5f2-a29f53bc7319@7c176",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -28,7 +28,7 @@
       "displayName": "",
       "id": "982d8",
       "name": "stone02.png.image",
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "imported": true,
       "files": [
         ".png",
@@ -45,7 +45,7 @@
       "displayName": "",
       "id": "1175b",
       "name": "stone02.texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"

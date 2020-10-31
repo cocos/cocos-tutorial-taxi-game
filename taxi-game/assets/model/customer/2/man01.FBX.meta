@@ -1,18 +1,18 @@
 {
-  "ver": "1.3.19",
+  "ver": "1.3.24",
   "importer": "fbx",
   "imported": true,
   "uuid": "0bb50b73-023a-4269-bac6-c7be72d298d0",
   "files": [],
   "subMetas": {
     "b36d2": {
-      "ver": "1.0.9",
+      "ver": "1.1.0",
       "importer": "gltf-mesh",
       "uuid": "0bb50b73-023a-4269-bac6-c7be72d298d0@b36d2",
       "imported": true,
       "files": [
-        ".json",
-        ".bin"
+        ".bin",
+        ".json"
       ],
       "subMetas": {},
       "userData": {
@@ -45,7 +45,7 @@
       "displayName": "",
       "id": "2a649",
       "name": "man01.jpg.image",
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "imported": true,
       "files": [
         ".jpg",
@@ -62,7 +62,7 @@
       "displayName": "",
       "id": "78b35",
       "name": "man01.texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"

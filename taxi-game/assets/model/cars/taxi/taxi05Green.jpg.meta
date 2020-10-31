@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.17",
+  "ver": "1.0.21",
   "importer": "image",
   "imported": true,
   "uuid": "a9b9a2d8-fb91-4257-8526-adc9f5026cce",
@@ -14,7 +14,7 @@
       "displayName": "taxi05Green",
       "id": "6c48a",
       "name": "texture",
-      "ver": "1.0.19",
+      "ver": "1.0.20",
       "imported": true,
       "files": [
         ".json"
@@ -35,6 +35,7 @@
   },
   "userData": {
     "type": "texture",
-    "redirect": "a9b9a2d8-fb91-4257-8526-adc9f5026cce@6c48a"
+    "redirect": "a9b9a2d8-fb91-4257-8526-adc9f5026cce@6c48a",
+    "hasAlpha": false
   }
 }
