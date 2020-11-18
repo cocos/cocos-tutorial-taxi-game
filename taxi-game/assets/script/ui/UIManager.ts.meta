@@ -1,16 +1,17 @@
 {
-  "ver": "4.0.1",
+  "ver": "4.0.7",
   "importer": "typescript",
   "imported": true,
   "uuid": "f18d69c0-fea0-40b4-b7a0-8e5a74540f64",
   "files": [
     ".js",
+    "editor.js",
     ".trans"
   ],
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
     "moduleId": "project:///assets/script/ui/UIManager.js",
-    "importerSettings": 0
+    "importerSettings": 4
   }
 }

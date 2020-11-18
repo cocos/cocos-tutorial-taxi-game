@@ -1,16 +1,17 @@
 {
-  "ver": "4.0.1",
+  "ver": "4.0.7",
   "importer": "typescript",
   "imported": true,
   "uuid": "d5770330-c697-42b7-8af7-fbea8f0ae095",
   "files": [
     ".js",
+    "editor.js",
     ".trans"
   ],
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
     "moduleId": "project:///assets/script/ui/GameUI.js",
-    "importerSettings": 0
+    "importerSettings": 4
   }
 }

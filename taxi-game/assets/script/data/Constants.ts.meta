@@ -1,16 +1,17 @@
 {
-  "ver": "4.0.1",
+  "ver": "4.0.7",
   "importer": "typescript",
   "imported": true,
   "uuid": "70a8ed1b-fb05-4c2d-a37e-728406632cca",
   "files": [
     ".js",
+    "editor.js",
     ".trans"
   ],
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
     "moduleId": "project:///assets/script/data/Constants.js",
-    "importerSettings": 0
+    "importerSettings": 4
   }
 }

@@ -1,16 +1,17 @@
 {
-  "ver": "4.0.1",
+  "ver": "4.0.7",
   "importer": "typescript",
   "imported": true,
   "uuid": "bd8fe02e-7c3a-4287-b602-cd1cc0a424a1",
   "files": [
     ".js",
+    "editor.js",
     ".trans"
   ],
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
     "moduleId": "project:///assets/script/ui/MainUI.js",
-    "importerSettings": 0
+    "importerSettings": 4
   }
 }

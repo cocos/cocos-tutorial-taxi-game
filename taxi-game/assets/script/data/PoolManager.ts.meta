@@ -1,16 +1,17 @@
 {
-  "ver": "4.0.1",
+  "ver": "4.0.7",
   "importer": "typescript",
   "imported": true,
   "uuid": "bb887bcc-21bd-4081-8e69-ca995296c41a",
   "files": [
     ".js",
+    "editor.js",
     ".trans"
   ],
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
     "moduleId": "project:///assets/script/data/PoolManager.js",
-    "importerSettings": 0
+    "importerSettings": 4
   }
 }

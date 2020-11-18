@@ -1,16 +1,17 @@
 {
-  "ver": "4.0.1",
+  "ver": "4.0.7",
   "importer": "typescript",
   "imported": true,
   "uuid": "e90a1e4c-fa88-41fa-8b55-f272779db277",
   "files": [
     ".js",
+    "editor.js",
     ".trans"
   ],
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
     "moduleId": "project:///assets/script/ui/ResultUI.js",
-    "importerSettings": 0
+    "importerSettings": 4
   }
 }

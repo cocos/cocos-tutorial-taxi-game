@@ -1,16 +1,17 @@
 {
-  "ver": "4.0.1",
+  "ver": "4.0.7",
   "importer": "typescript",
   "imported": true,
   "uuid": "b33f9eaf-2241-48f6-8eee-cde71cfe3fe0",
   "files": [
     ".js",
+    "editor.js",
     ".trans"
   ],
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
     "moduleId": "project:///assets/script/game/GameCtrl.js",
-    "importerSettings": 0
+    "importerSettings": 4
   }
 }

@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Touch, EventTouch, BoxColliderComponent, Vec3, loader, Prefab, instantiate, JsonAsset } from "cc";
+import { _decorator, Component, Node, Touch, EventTouch, Vec3, loader, JsonAsset, BoxCollider } from "cc";
 import { MapManager } from "./MapManager";
 import { CarManager } from "./CarManager";
 import { AudioManager } from "./AudioManager";
@@ -36,17 +36,21 @@ export class GameCtrl extends Component {
     // private _progress = 5;
     private _runtimeData: RunTimeData = null;
     private _lastMapID = 0;
+    private _init = false;
 
-    public onLoad(){
-        this._runtimeData = RunTimeData.instance();
-        Configuration.instance().init();
-        PlayerData.instance().loadFromCache();
-        this.loadingUI.show();
-        this._lastMapID = this._runtimeData.currLevel;
-        this._loadMap(this._lastMapID);
-        const collider = this.group.getComponent(BoxColliderComponent);
-        collider.setGroup(Constants.CarGroup.NORMAL);
-        collider.setMask(-1);
+    public onEnable(){
+        if(!this._init){
+            this._runtimeData = RunTimeData.instance();
+            Configuration.instance().init();
+            PlayerData.instance().loadFromCache();
+            this.loadingUI.show();
+            this._lastMapID = this._runtimeData.currLevel;
+            this._loadMap(this._lastMapID);
+            const collider = this.group.getComponent(BoxCollider);
+            collider.setGroup(Constants.CarGroup.NORMAL);
+            collider.setMask(-1);
+            this._init = true;
+        }
     }
 
     public start(){
