@@ -3817,7 +3817,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "_group": 1,
+    "_group": 2,
     "_type": 1,
     "_mass": 10,
     "_allowSleep": true,

@@ -2,7 +2,7 @@
   "name": "taxi-game",
   "type": "3d",
   "uuid": "5451826f-363a-4c63-b403-0b925c502d02",
-  "version": "3.0.0",
+  "version": "3.0.0-preview.1",
   "dependencies": {
     "lz-string": "^1.4.4"
   }

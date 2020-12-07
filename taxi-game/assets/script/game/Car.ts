@@ -165,11 +165,11 @@ export class Car extends Component {
             this._gas!.play();
 
             collider.on('onCollisionEnter', this._onCollisionEnter, this);
-            collider.setGroup(Constants.CarGroup.MAIN_CAR);
-            collider.setMask(Constants.CarGroup.OTHER_CAR);
+            // collider.setGroup(Constants.CarGroup.MAIN_CAR);
+            // collider.setMask(Constants.CarGroup.OTHER_CAR);
         } else {
-            collider.setGroup(Constants.CarGroup.OTHER_CAR);
-            collider.setMask(-1);
+            // collider.setGroup(Constants.CarGroup.OTHER_CAR);
+            // collider.setMask(-1);
         }
 
         this._resetPhysical();

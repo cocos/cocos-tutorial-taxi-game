@@ -11,5 +11,22 @@
       "width": 640,
       "height": 960
     }
+  },
+  "physics": {
+    "collisionGroups": [
+      {
+        "index": 1,
+        "name": "MAIN_CAR"
+      },
+      {
+        "index": 2,
+        "name": "OTHER_CAR"
+      }
+    ],
+    "collisionMatrix": {
+      "0": 5,
+      "1": 4,
+      "2": 3
+    }
   }
 }

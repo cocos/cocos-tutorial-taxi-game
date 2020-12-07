@@ -1,7 +1,7 @@
 import { _decorator, Component, Node, Label, sys } from "cc";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
-import { RunTimeData } from "../data/GameData";
+import { PlayerData, RunTimeData } from "../data/GameData";
 const { ccclass, property } = _decorator;
 
 @ccclass("MainUI")
@@ -11,8 +11,15 @@ export class MainUI extends Component {
     })
     public  moneyLabel: Label = null!;
 
-    private _clickTime = 0;
-    private _time = 0;
+    @property({
+        type: Node
+    })
+    debugNode: Node = null;
+
+    @property({
+        type: LabelComponent
+    })
+    debugLabel: LabelComponent = null;
 
     public onEnable(){
         this.moneyLabel.string = `${RunTimeData.instance().totalMoney}`;
@@ -23,11 +30,21 @@ export class MainUI extends Component {
     }
 
     public clickDebug(){
-        const time = Date.now();
-        if (time - this._time <= 200) {
-            this._clickTime++;
+        this.debugNode.active = !this.debugNode.active;
+    }
+
+    public addLevel(){
+        this.debugLabel.string = 'level increase success!';
+        PlayerData.instance().passLevel(0);
+    }
+
+    public reduceLevel() {
+        this.debugLabel.string = 'level reduction success!';
+        const level = PlayerData.instance().playerInfo.level;
+        if (level - 2 > 0) {
+            PlayerData.instance().playerInfo.level = level - 2;
         } else {
-            this._clickTime = 0;
+            PlayerData.instance().playerInfo.level = 0;
         }
 
         this._time = time;
