@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, LabelComponent } from "cc";
+import { _decorator, Component, Node, Label, sys } from "cc";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
 import { RunTimeData } from "../data/GameData";
@@ -7,9 +7,9 @@ const { ccclass, property } = _decorator;
 @ccclass("MainUI")
 export class MainUI extends Component {
     @property({
-        type: LabelComponent
+        type: Label
     })
-    moneyLabel: LabelComponent = null;
+    public  moneyLabel: Label = null!;
 
     private _clickTime = 0;
     private _time = 0;
@@ -32,7 +32,7 @@ export class MainUI extends Component {
 
         this._time = time;
         if (this._clickTime >= 2) {
-            cc.sys.localStorage.removeItem(Constants.GameConfigID);
+            sys.localStorage.removeItem(Constants.GameConfigID);
             this._clickTime = 0;
             console.log('clear cache');
         }

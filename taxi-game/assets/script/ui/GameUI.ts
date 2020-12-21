@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, LabelComponent, SpriteComponent, SpriteFrame, loader, AnimationComponent } from "cc";
+import { _decorator, Component, Node, Label, Sprite, SpriteFrame, loader, Animation } from "cc";
 import { RunTimeData } from "../data/GameData";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
@@ -7,90 +7,90 @@ const { ccclass, property } = _decorator;
 @ccclass("GameUI")
 export class GameUI extends Component {
     @property({
-        type: LabelComponent,
+        type: Label,
         displayOrder: 1,
     })
-    targetLevel: LabelComponent = null;
+    public targetLevel: Label = null!;
 
     @property({
-        type: LabelComponent,
+        type: Label,
         displayOrder: 2,
     })
-    srcLevel: LabelComponent = null;
+    public srcLevel: Label = null!;
 
     @property({
-        type: SpriteComponent,
+        type: Sprite,
         displayOrder: 3,
     })
-    targetSp: SpriteComponent = null;
+    public targetSp: Sprite = null!;
 
     @property({
-        type: SpriteComponent,
+        type: Sprite,
         displayOrder: 4,
     })
-    srcSp: SpriteComponent = null;
+    public srcSp: Sprite = null!;
 
     @property({
         type: SpriteFrame,
         displayOrder: 5,
     })
-    levelFinished: SpriteFrame = null;
+    public levelFinished: SpriteFrame = null!;
 
     @property({
         type: SpriteFrame,
         displayOrder: 6,
     })
-    levelUnFinished: SpriteFrame = null;
+    public levelUnFinished: SpriteFrame = null!;
 
     @property({
-        type: [SpriteComponent],
+        type: [Sprite],
         displayOrder: 7,
     })
-    progress: SpriteComponent[] = [];
+    public progress: Sprite[] = [];
 
     @property({
         type: SpriteFrame,
         displayOrder: 8,
     })
-    progress1: SpriteFrame = null;
+    public progress1: SpriteFrame = null!;
 
     @property({
         type: SpriteFrame,
         displayOrder: 9,
     })
-    progress2: SpriteFrame = null;
+    progress2: SpriteFrame = null!;
 
     @property({
         type: SpriteFrame,
         displayOrder: 10,
     })
-    progress3: SpriteFrame = null;
+    public progress3: SpriteFrame = null!;
 
     @property({
-        type: SpriteComponent,
+        type: Sprite,
         displayOrder: 11,
     })
-    avatar: SpriteComponent = null;
+    public avatar: Sprite = null!;
 
     @property({
-        type: LabelComponent,
+        type: Label,
         displayOrder: 12,
     })
-    content: LabelComponent = null;
+    public content: Label = null!;
 
     @property({
         type: Node,
         displayOrder: 13,
     })
-    talkNode: Node = null;
+    public talkNode: Node = null!;
 
     @property({
         type: Node,
         displayOrder: 13,
     })
-    guideNode: Node = null;
+    public guideNode: Node = null!;
 
-    private _runtimeData: RunTimeData = null;
+    private _runtimeData: RunTimeData = null!;
 
     public show(){
         CustomEventListener.on(Constants.EventName.GREETING, this._greeting, this);
@@ -128,13 +128,13 @@ export class GameUI extends Component {
         this.content.string = str;
         this.talkNode.active = true;
         const path = `texture/head/head${customerID + 1}/spriteFrame`;
-        loader.loadRes(path, SpriteFrame, (err: any, sp: SpriteFrame)=>{
+        loader.loadRes(path, SpriteFrame, (err, sp)=>{
             if(err){
                 return;
             }
 
             if(this.talkNode.active){
-                this.avatar.spriteFrame = sp;
+                this.avatar.spriteFrame = sp!;
             }
         });
 
@@ -147,7 +147,7 @@ export class GameUI extends Component {
         this.guideNode.active = isShow;
 
         if(isShow){
-            const animComp = this.guideNode.getComponent(AnimationComponent);
+            const animComp = this.guideNode.getComponent(Animation)!;
             animComp.play('showGuide');
         }
     }

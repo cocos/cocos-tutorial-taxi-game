@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Vec3, AnimationComponent } from "cc";
+import { _decorator, Component, Node, Vec3, Animation } from "cc";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
 import { AudioManager } from "./AudioManager";
@@ -17,7 +17,7 @@ export class CustomerManager extends Component {
     @property
     walkTime = 2;
 
-    private _currCustomer: Node = null;
+    private _currCustomer: Node | null = null;
     private _startPos = new Vec3();
     private _endPos = new Vec3();
     private _inTheOrder = false;
@@ -36,7 +36,7 @@ export class CustomerManager extends Component {
             if (this._deltaTime > this.walkTime) {
                 this._deltaTime = 0;
                 this._inTheOrder = false;
-                this._currCustomer.active = false;
+                this._currCustomer!.active = false;
                 if (this._state === Constants.CustomerState.GOODBYE) {
                     this._currCustomer = null;
                 }
@@ -49,7 +49,7 @@ export class CustomerManager extends Component {
                 CustomEventListener.dispatchEvent(Constants.EventName.SHOW_GUIDE, true);
             } else {
                 Vec3.lerp(_tempVec, this._startPos, this._endPos, this._deltaTime / this.walkTime);
-                this._currCustomer.setWorldPosition(_tempVec);
+                this._currCustomer!.setWorldPosition(_tempVec);
             }
         }
     }
@@ -87,7 +87,7 @@ export class CustomerManager extends Component {
             }
         }
 
-        const animComp = this._currCustomer.getComponent(AnimationComponent);
+        const animComp = this._currCustomer.getComponent(Animation)!;
         animComp.play('walk');
 
         CustomEventListener.dispatchEvent(EventName.SHOW_TALK, this._customerID);
@@ -105,27 +105,27 @@ export class CustomerManager extends Component {
         Vec3.multiplyScalar(this._endPos, direction, 1.4);
         this._endPos.add(carPos);
 
-        this._currCustomer.setWorldPosition(this._startPos);
-        this._currCustomer.active = true;
+        this._currCustomer!.setWorldPosition(this._startPos);
+        this._currCustomer!.active = true;
         const runtimeData = RunTimeData.instance();
         const money = Math.floor(30 + (runtimeData.currLevel / 2) + (Math.random() * 10));
         runtimeData.money += money;
 
         if (direction.x !== 0) {
             if (direction.x > 0) {
-                this._currCustomer.eulerAngles = new Vec3(0, 90, 0);
+                this._currCustomer!.eulerAngles = new Vec3(0, 90, 0);
             } else {
-                this._currCustomer.eulerAngles = new Vec3(0, -90, 0);
+                this._currCustomer!.eulerAngles = new Vec3(0, -90, 0);
             }
         } else {
             if (direction.z > 0) {
-                this._currCustomer.eulerAngles = new Vec3();
+                this._currCustomer!.eulerAngles = new Vec3();
             } else {
-                this._currCustomer.eulerAngles = new Vec3(0, 180, 0);
+                this._currCustomer!.eulerAngles = new Vec3(0, 180, 0);
             }
         }
 
-        const animComp = this._currCustomer.getComponent(AnimationComponent);
+        const animComp = this._currCustomer!.getComponent(Animation)!;
         animComp.play('walk');
         AudioManager.playSound(Constants.AudioSource.GETMONEY);
 

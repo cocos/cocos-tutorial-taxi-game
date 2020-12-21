@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, SpriteFrame, LabelComponent, SpriteComponent } from "cc";
+import { _decorator, Component, Node, SpriteFrame, Label, Sprite } from "cc";
 import { RunTimeData, PlayerData } from "../data/GameData";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
@@ -7,76 +7,76 @@ const { ccclass, property } = _decorator;
 @ccclass("ResultUI")
 export class ResultUI extends Component {
     @property({
-        type: LabelComponent,
+        type: Label,
         displayOrder: 1,
     })
-    targetLevel: LabelComponent = null;
+    public targetLevel: Label = null!;
 
     @property({
-        type: LabelComponent,
+        type: Label,
         displayOrder: 2,
     })
-    srcLevel: LabelComponent = null;
+    public srcLevel: Label = null!;
 
     @property({
-        type: SpriteComponent,
+        type: Sprite,
         displayOrder: 3,
     })
-    targetSp: SpriteComponent = null;
+    public targetSp: Sprite = null!;
 
     @property({
-        type: SpriteComponent,
+        type: Sprite,
         displayOrder: 4,
     })
-    srcSp: SpriteComponent = null;
+    public srcSp: Sprite = null!;
 
     @property({
         type: SpriteFrame,
         displayOrder: 5,
     })
-    levelFinished: SpriteFrame = null;
+    public levelFinished: SpriteFrame = null!;
 
     @property({
         type: SpriteFrame,
         displayOrder: 6,
     })
-    levelUnFinished: SpriteFrame = null;
+    public levelUnFinished: SpriteFrame = null!;
 
     @property({
-        type: [SpriteComponent],
+        type: [Sprite],
         displayOrder: 7,
     })
-    progress: SpriteComponent[] = [];
+    public progress: Sprite[] = [];
 
     @property({
         type: SpriteFrame,
         displayOrder: 8,
     })
-    progress1: SpriteFrame = null;
+    public progress1: SpriteFrame = null!;
 
     @property({
         type: SpriteFrame,
         displayOrder: 9,
     })
-    progress2: SpriteFrame = null;
+    public progress2: SpriteFrame = null!;
 
     @property({
         type: SpriteFrame,
         displayOrder: 10,
     })
-    progress3: SpriteFrame = null;
+    public progress3: SpriteFrame = null!;
 
     @property({
-        type: LabelComponent,
+        type: Label,
         displayOrder: 11,
     })
-    progressLabel: LabelComponent = null;
+    public progressLabel: Label = null!;
 
     @property({
-        type: LabelComponent,
+        type: Label,
         displayOrder: 12,
     })
-    moneyLabel: LabelComponent = null;
+    public moneyLabel: Label = null!;
 
     public show(){
         const runtimeData = RunTimeData.instance();

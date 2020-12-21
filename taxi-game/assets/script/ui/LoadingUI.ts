@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, LabelComponent } from "cc";
+import { _decorator, Component, Node, Label } from "cc";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
 import { UpdateLabelValue } from "../data/UpdateLabelValue";
@@ -9,11 +9,11 @@ export class LoadingUI extends Component {
     @property({
         type: UpdateLabelValue
     })
-    progressLabel: UpdateLabelValue = null;
+    public progressLabel: UpdateLabelValue = null!;
     @property({
-        type: LabelComponent
+        type: Label
     })
-    tipLabel: LabelComponent = null;
+    public tipLabel: Label = null!;
     private _progress = 0;
 
     public onEnable(){

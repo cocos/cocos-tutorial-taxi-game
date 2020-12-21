@@ -6,14 +6,16 @@ import { PoolManager } from "../data/PoolManager";
 import { RoadPoint } from "./RoadPoint";
 const { ccclass, property } = _decorator;
 
+type DicPrefab = { [name: string]: Prefab };
+
 @ccclass("MapManager")
 export class MapManager extends Component {
     public currPath: Node[] = [];
     public maxProgress = 0;
 
     // private _currMap: Node = null;
-    private _objMap = {};
-    private _completeCb: Function = null;
+    private _objMap: any;
+    private _completeCb: Function | null = null;
     private _currProgress = 0;
     private _maxProgress = 6;
 
@@ -41,7 +43,7 @@ export class MapManager extends Component {
 
     public buildMap(res: JsonAsset, cb?: Function){
         this._objMap = res;
-        this._completeCb = cb;
+        this._completeCb = cb || null;
         this._currProgress = 0;
         this._maxProgress = 6;
         this._buildModel('plane');
@@ -69,8 +71,8 @@ export class MapManager extends Component {
             }
         }
 
-        let dictPrefab = {};
-        ResUtil.getMapObjs(type, arrName, null, (err: any, arrPrefabs: Prefab[])=>{
+        let dictPrefab: DicPrefab = {};
+        ResUtil.getMapObjs(type, arrName, undefined, (err: any, arrPrefabs: Prefab[])=>{
             if (err) {
                 console.error(err);
                 return;
@@ -118,7 +120,9 @@ export class MapManager extends Component {
             nodePath.setPosition(objPath.pX, objPath.pY, objPath.pZ);
 
             let start = this._createRoadPoint(objPath.path, nodePath);
-            this.currPath.push(start);
+            if (start){
+                this.currPath.push(start);
+            }
         }
 
         this._triggerFinished('path');

@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Vec3, ParticleSystemComponent, BoxColliderComponent, RigidBodyComponent, ICollisionEvent } from "cc";
+import { _decorator, Component, Node, Vec3, ParticleSystem, BoxCollider, RigidBody, ICollisionEvent } from "cc";
 import { RoadPoint } from "./RoadPoint";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
@@ -24,7 +24,7 @@ export class Car extends Component {
     @property
     minSpeed = 0.02;
 
-    private _currRoadPoint: RoadPoint = null;
+    private _currRoadPoint: RoadPoint | null = null;
     private _pointA = new Vec3();
     private _pointB = new Vec3();
     private _currSpeed = 0;
@@ -38,9 +38,9 @@ export class Car extends Component {
     private _acceleration = 0.2;
     private _isMain = false;
     private _isBraking = false;
-    private _gas: ParticleSystemComponent = null;
-    private _overCD: Function = null;
-    private _camera: Node = null;
+    private _gas: ParticleSystem | null = null;
+    private _overCD: Function | null = null;
+    private _camera: Node | null = null;
     private _tootingCoolTime = 0;
     private _minSpeed = 0;
     private _maxSpeed = 0;
@@ -74,7 +74,7 @@ export class Car extends Component {
             }
         }
 
-        switch (this._currRoadPoint.moveType) {
+        switch (this._currRoadPoint!.moveType) {
             case RoadPoint.RoadMoveType.BEND:
                 const offsetRotation = this._targetRotation - this._originRotation;
                 let nextStation = (this._currRotation - this._originRotation) + (this._currSpeed * this._rotMeasure * (this._targetRotation > this._originRotation ? 1 : -1));
@@ -128,7 +128,7 @@ export class Car extends Component {
 
     public setEntry(entry: Node, isMain = false){
         this.node.setWorldPosition(entry.worldPosition);
-        this._currRoadPoint = entry.getComponent(RoadPoint);
+        this._currRoadPoint = entry.getComponent(RoadPoint)!;
         this._isMain = isMain;
         if(!this._currRoadPoint){
             console.warn('There is no RoadPoint in ' + entry.name);
@@ -158,11 +158,11 @@ export class Car extends Component {
         this._runState = RunState.NORMAL;
         this._currSpeed = 0;
         this._isMoving = false;
-        const collider = this.node.getComponent(BoxColliderComponent);
+        const collider = this.node.getComponent(BoxCollider)!;
         if (this._isMain) {
-            const gasNode = this.node.getChildByName('gas');
-            this._gas = gasNode.getComponent(ParticleSystemComponent);
-            this._gas.play();
+            const gasNode = this.node.getChildByName('gas')!;
+            this._gas = gasNode.getComponent(ParticleSystem);
+            this._gas!.play();
 
             collider.on('onCollisionEnter', this._onCollisionEnter, this);
             collider.setGroup(Constants.CarGroup.MAIN_CAR);
@@ -241,9 +241,9 @@ export class Car extends Component {
 
     private _arrivalStation(){
         this._pointA.set(this._pointB);
-        this._currRoadPoint = this._currRoadPoint.nextStation.getComponent(RoadPoint);
-        if (this._currRoadPoint.nextStation) {
-            this._pointB.set(this._currRoadPoint.nextStation.worldPosition);
+        this._currRoadPoint = this._currRoadPoint!.nextStation.getComponent(RoadPoint);
+        if (this._currRoadPoint!.nextStation) {
+            this._pointB.set(this._currRoadPoint!.nextStation.worldPosition);
             this._originRotation = this._targetRotation;
 
             if (this._isMain) {
@@ -252,11 +252,11 @@ export class Car extends Component {
                     CustomEventListener.dispatchEvent(EventName.END_BRAKING);
                 }
 
-                if (this._currRoadPoint.type === RoadPoint.RoadPointType.GREETING) {
+                if (this._currRoadPoint!.type === RoadPoint.RoadPointType.GREETING) {
                     this._greetingCustomer();
-                } else if (this._currRoadPoint.type === RoadPoint.RoadPointType.GOODBYE) {
+                } else if (this._currRoadPoint!.type === RoadPoint.RoadPointType.GOODBYE) {
                     this._takingCustomer();
-                } else if (this._currRoadPoint.type === RoadPoint.RoadPointType.END) {
+                } else if (this._currRoadPoint!.type === RoadPoint.RoadPointType.END) {
                     AudioManager.playSound(Constants.AudioSource.WIN);
                     this._runState = RunState.OVER;
                     this._minSpeed = this._maxSpeed = 0.2;
@@ -266,8 +266,8 @@ export class Car extends Component {
                 }
             }
 
-            if(this._currRoadPoint.moveType === RoadPoint.RoadMoveType.BEND){
-                if (this._currRoadPoint.clockwise) {
+            if(this._currRoadPoint!.moveType === RoadPoint.RoadMoveType.BEND){
+                if (this._currRoadPoint!.clockwise) {
                     this._originRotation = this._currRotation = this._originRotation <= 0 ? this._originRotation + 360 : this._originRotation;
                     this._targetRotation = this._originRotation - 90;
 
@@ -312,13 +312,13 @@ export class Car extends Component {
             return;
         }
 
-        const otherRigidBody = otherCollider.node.getComponent(RigidBodyComponent);
+        const otherRigidBody = otherCollider.node.getComponent(RigidBody)!;
         otherRigidBody.useGravity = true;
         otherRigidBody.applyForce(new Vec3(0, 3000, -1500), new Vec3(0, 0.5, 0));
 
         const collider = event.selfCollider;
         collider.addMask(Constants.CarGroup.NORMAL);
-        const rigidBody = this.node.getComponent(RigidBodyComponent);
+        const rigidBody = this.node.getComponent(RigidBody)!;
         rigidBody.useGravity = true;
         this._runState = RunState.CRASH;
         AudioManager.playSound(Constants.AudioSource.CRASH);
@@ -331,8 +331,8 @@ export class Car extends Component {
         this._runState = RunState.INORDER;
         this._currSpeed = 0;
         this._isMoving = false;
-        this._gas.stop();
-        CustomEventListener.dispatchEvent(EventName.GREETING, this.node.worldPosition, this._currRoadPoint.direction);
+        this._gas!.stop();
+        CustomEventListener.dispatchEvent(EventName.GREETING, this.node.worldPosition, this._currRoadPoint!.direction);
     }
 
     private _takingCustomer(){
@@ -342,20 +342,20 @@ export class Car extends Component {
         this._runState = RunState.INORDER;
         this._currSpeed = 0;
         this._isMoving = false;
-        this._gas.stop();
-        CustomEventListener.dispatchEvent(EventName.GOODBYE, this.node.worldPosition, this._currRoadPoint.direction);
+        this._gas!.stop();
+        CustomEventListener.dispatchEvent(EventName.GOODBYE, this.node.worldPosition, this._currRoadPoint!.direction);
         CustomEventListener.dispatchEvent(EventName.SHOW_COIN, this.node.worldPosition);
     }
 
     private _finishedWalk(){
         if(this._isMain){
             this._runState = RunState.NORMAL;
-            this._gas.play();
+            this._gas!.play();
         }
     }
 
     private _resetPhysical() {
-        const rigidBody = this.node.getComponent(RigidBodyComponent);
+        const rigidBody = this.node.getComponent(RigidBody)!;
         rigidBody.useGravity = false;
         rigidBody.sleep();
         rigidBody.wakeUp();

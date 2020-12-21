@@ -19,7 +19,7 @@ export class BtnAdapter extends Component {
     }
 
     playSound(){
-        if(this.soundName.length <=0){
+        if (this.soundName.length <= 0) {
             return;
         }
 

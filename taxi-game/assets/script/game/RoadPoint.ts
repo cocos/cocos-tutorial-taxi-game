@@ -35,7 +35,7 @@ export class RoadPoint extends Component {
         type: Node,
         displayOrder: 2,
     })
-    nextStation: Node = null;
+    public nextStation: Node  | null= null;
 
     @property({ type: ROAD_MOVE_TYPE, displayOrder: 3})
     moveType = ROAD_MOVE_TYPE.LINE;

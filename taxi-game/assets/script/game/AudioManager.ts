@@ -5,27 +5,27 @@ const { ccclass, property } = _decorator;
 export class AudioManager {
     public static playMusic(name: string) {
         const path = `audio/music/${name}`;
-        loader.loadRes(path, AudioClip, (err: any, clip: AudioClip) => {
+        loader.loadRes(path, AudioClip, (err, clip) => {
             if (err) {
                 console.warn(err);
                 return;
             }
 
-            clip.setLoop(true);
-            clip.play();
+            clip!.setLoop(true);
+            clip!.play();
         });
     }
 
     public static playSound(name: string) {
         const path = `audio/sound/${name}`;
-        loader.loadRes(path, AudioClip, (err: any, clip: AudioClip) => {
+        loader.loadRes(path, AudioClip, (err, clip) => {
             if (err) {
                 console.warn(err);
                 return;
             }
 
-            clip.setLoop(false);
-            clip.playOneShot(1);
+            clip!.setLoop(false);
+            clip!.playOneShot(1);
         });
     }
 }

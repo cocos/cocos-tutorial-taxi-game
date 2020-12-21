@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Prefab, ParticleUtils, ParticleSystemComponent, instantiate } from "cc";
+import { _decorator, Component, Node, Prefab, ParticleUtils, ParticleSystem, instantiate } from "cc";
 import { CustomEventListener } from "../data/CustomEventListener";
 import { Constants } from "../data/Constants";
 import { PoolManager } from "../data/PoolManager";
@@ -9,16 +9,16 @@ export class EffectManager extends Component {
     @property({
         type: Prefab
     })
-    brakeTrail: Prefab = null;
+    public brakeTrail: Prefab = null!;
 
     @property({
         type: Prefab
     })
-    coin: Prefab = null;
+    public coin: Prefab = null!;
 
-    private _followTarget: Node = null;
-    private _currBraking: Node = null;
-    private _coin: ParticleSystemComponent = null;
+    private _followTarget: Node | null = null;
+    private _currBraking: Node | null = null;
+    private _coin: ParticleSystem | null = null;
 
     public start() {
         CustomEventListener.on(Constants.EventName.START_BRAKING, this._startBraking, this);
@@ -40,7 +40,7 @@ export class EffectManager extends Component {
     }
 
     private _endBraking() {
-        const currBraking = this._currBraking;
+        const currBraking = this._currBraking!;
         ParticleUtils.stop(currBraking);
         this.scheduleOnce(() => {
             PoolManager.setNode(currBraking);
@@ -55,10 +55,10 @@ export class EffectManager extends Component {
         if(!this._coin){
             const coin = instantiate(this.coin) as Node;
             coin.setParent(this.node);
-            this._coin = coin.getComponent(ParticleSystemComponent);
+            this._coin = coin.getComponent(ParticleSystem);
         }
 
-        this._coin.node.setWorldPosition(pos);
-        this._coin.play();
+        this._coin!.node.setWorldPosition(pos);
+        this._coin!.play();
     }
 }

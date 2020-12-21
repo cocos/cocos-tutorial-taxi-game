@@ -16,25 +16,25 @@ export class GameCtrl extends Component {
     @property({
         type: MapManager,
     })
-    mapManager: MapManager = null;
+    public mapManager: MapManager = null!;
 
     @property({
         type: CarManager
     })
-    carManager: CarManager = null;
+    public carManager: CarManager = null!;
 
     @property({
         type: Node,
     })
-    group: Node = null;
+    public group: Node = null!;
 
     @property({
         type: LoadingUI
     })
-    loadingUI: LoadingUI = null;
+    public loadingUI: LoadingUI = null!;
 
     // private _progress = 5;
-    private _runtimeData: RunTimeData = null;
+    private _runtimeData: RunTimeData = null!;
     private _lastMapID = 0;
     private _init = false;
 
@@ -46,7 +46,7 @@ export class GameCtrl extends Component {
             this.loadingUI.show();
             this._lastMapID = this._runtimeData.currLevel;
             this._loadMap(this._lastMapID);
-            const collider = this.group.getComponent(BoxCollider);
+            const collider = this.group.getComponent(BoxCollider)!;
             collider.setGroup(Constants.CarGroup.NORMAL);
             collider.setMask(-1);
             this._init = true;

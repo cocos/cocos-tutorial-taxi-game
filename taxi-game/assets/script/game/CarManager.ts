@@ -12,11 +12,11 @@ export class CarManager extends Component {
     @property({
         type: Car
     })
-    mainCar: Car = null;
+    public mainCar: Car = null!;
     @property({
         type: Node
     })
-    camera: Node = null;
+    public camera: Node = null!;
 
     @property
     cameraPos = new Vec3(0, 8, 8);
@@ -89,7 +89,7 @@ export class CarManager extends Component {
     private _startSchedule(){
         for (let i = 1; i < this._currPath.length; i++) {
             const node = this._currPath[i];
-            const roadPoint = node.getComponent(RoadPoint);
+            const roadPoint = node.getComponent(RoadPoint)!;
             roadPoint.startSchedule(this._createEnemy.bind(this));
         }
     }
@@ -97,21 +97,21 @@ export class CarManager extends Component {
     private _stopSchedule(){
         for (let i = 1; i < this._currPath.length; i++) {
             const node = this._currPath[i];
-            const roadPoint = node.getComponent(RoadPoint);
+            const roadPoint = node.getComponent(RoadPoint)!;
             roadPoint.stopSchedule();
         }
     }
 
     private _createEnemy(road: RoadPoint, carID: string){
         const self = this;
-        loader.loadRes(`car/car${carID}`, Prefab, (err: any, prefab: Prefab)=>{
+        loader.loadRes(`car/car${carID}`, Prefab, (err, prefab)=>{
             if(err){
                 console.warn(err);
                 return;
             }
 
-            const car = PoolManager.getNode(prefab, self.node);
-            const carComp = car.getComponent(Car);
+            const car = PoolManager.getNode(prefab!, self.node);
+            const carComp = car.getComponent(Car)!;
             this._aiCars.push(carComp);
             carComp.setEntry(road.node);
             carComp.maxSpeed = road.speed;
