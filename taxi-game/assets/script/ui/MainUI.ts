@@ -17,9 +17,9 @@ export class MainUI extends Component {
     debugNode: Node = null;
 
     @property({
-        type: LabelComponent
+        type: Label
     })
-    debugLabel: LabelComponent = null;
+    debugLabel: Label = null;
 
     public onEnable(){
         this.moneyLabel.string = `${RunTimeData.instance().totalMoney}`;
