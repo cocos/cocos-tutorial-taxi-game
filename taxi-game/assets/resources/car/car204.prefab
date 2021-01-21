@@ -23,17 +23,17 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 9
-      },
-      {
-        "__id__": 10
-      },
-      {
         "__id__": 11
+      },
+      {
+        "__id__": 13
+      },
+      {
+        "__id__": 15
       }
     ],
     "_prefab": {
-      "__id__": 12
+      "__id__": 17
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -78,7 +78,7 @@
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 8
+      "__id__": 10
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -123,7 +123,7 @@
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 7
+      "__id__": 9
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -168,7 +168,7 @@
       }
     ],
     "_prefab": {
-      "__id__": 6
+      "__id__": 8
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -206,32 +206,45 @@
       "__id__": 4
     },
     "_enabled": true,
+    "__prefab": {
+      "__id__": 6
+    },
     "_materials": [
       {
         "__uuid__": "12ba639a-9685-4c76-87cb-cbdac6c31d46"
       }
     ],
     "_visFlags": 0,
+    "lightmapSettings": {
+      "__id__": 7
+    },
     "_mesh": {
       "__uuid__": "c2857ca9-e016-4fae-ba6f-8f711458072c@5d0b5"
     },
     "_shadowCastingMode": 0,
+    "_shadowReceivingMode": 1,
+    "_enableMorph": true,
     "_id": ""
   },
   {
-    "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 1
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "adCBkNRA5BZZPnRsmwvoXQ"
+  },
+  {
+    "__type__": "cc.ModelLightmapSettings",
+    "texture": null,
+    "uvParam": {
+      "__type__": "cc.Vec4",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 0
     },
-    "asset": {
-      "__id__": 0
-    },
-    "fileId": "Node.835",
-    "sync": false,
-    "_synced": {
-      "default": false,
-      "serializable": false
-    }
+    "_bakeable": false,
+    "_castShadow": false,
+    "_receiveShadow": false,
+    "_recieveShadow": false,
+    "_lightmapSize": 64
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -241,12 +254,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "Node.834",
-    "sync": false,
-    "_synced": {
-      "default": false,
-      "serializable": false
-    }
+    "fileId": "Node.835"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -256,12 +264,17 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "Node.833",
-    "sync": false,
-    "_synced": {
-      "default": false,
-      "serializable": false
-    }
+    "fileId": "Node.834"
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__id__": 0
+    },
+    "fileId": "Node.833"
   },
   {
     "__type__": "cc.BoxCollider",
@@ -271,6 +284,9 @@
       "__id__": 1
     },
     "_enabled": true,
+    "__prefab": {
+      "__id__": 12
+    },
     "_material": null,
     "_isTrigger": false,
     "_center": {
@@ -288,6 +304,10 @@
     "_id": ""
   },
   {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "ff9x5yiVdNoY/p6ZQLveU0"
+  },
+  {
     "__type__": "cc.RigidBody",
     "_name": "",
     "_objFlags": 0,
@@ -295,11 +315,15 @@
       "__id__": 1
     },
     "_enabled": true,
+    "__prefab": {
+      "__id__": 14
+    },
+    "_group": 4,
+    "_type": 1,
     "_mass": 10,
+    "_allowSleep": true,
     "_linearDamping": 0,
     "_angularDamping": 0,
-    "_fixedRotation": false,
-    "_isKinematic": false,
     "_useGravity": false,
     "_linearFactor": {
       "__type__": "cc.Vec3",
@@ -316,6 +340,10 @@
     "_id": ""
   },
   {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "f3jTXB/7lIWZgd9ADvDc9M"
+  },
+  {
     "__type__": "4b61aYXI2JBZ6e1QOqrIjA9",
     "_name": "",
     "_objFlags": 0,
@@ -323,9 +351,16 @@
       "__id__": 1
     },
     "_enabled": true,
+    "__prefab": {
+      "__id__": 16
+    },
     "maxSpeed": 0.3,
     "minSpeed": 0.02,
     "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "1eskMhm/dKMa+N1edR2EhC"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -335,11 +370,6 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "33Uhs1dolM3a6GcJG6G6wf",
-    "sync": false,
-    "_synced": {
-      "default": false,
-      "serializable": false
-    }
+    "fileId": "33Uhs1dolM3a6GcJG6G6wf"
   }
 ]

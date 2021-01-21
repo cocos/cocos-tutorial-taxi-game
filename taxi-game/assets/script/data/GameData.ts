@@ -5,8 +5,8 @@ const { ccclass, property } = _decorator;
 
 @ccclass("RunTimeData")
 export class RunTimeData {
-    public playerData: PlayerData = null;
-    static _instance: RunTimeData = null;
+    public playerData: PlayerData = null!;
+    static _instance: RunTimeData = null!;
     public static instance() {
         if (!this._instance) {
             this._instance = new RunTimeData();
@@ -41,7 +41,7 @@ interface IPlayerInfo {
 export class PlayerData {
     public playerInfo: IPlayerInfo = { money: 0, level: 1 };
 
-    static _instance: PlayerData = null;
+    static _instance: PlayerData = null!;
     public static instance() {
         if (!this._instance) {
             this._instance = new PlayerData();

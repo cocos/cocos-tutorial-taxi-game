@@ -14,12 +14,12 @@ export class MainUI extends Component {
     @property({
         type: Node
     })
-    debugNode: Node = null;
+    debugNode: Node = null!;
 
     @property({
         type: Label
     })
-    debugLabel: Label = null;
+    debugLabel: Label = null!;
 
     public onEnable(){
         this.moneyLabel.string = `${RunTimeData.instance().totalMoney}`;
@@ -41,17 +41,16 @@ export class MainUI extends Component {
     public reduceLevel() {
         this.debugLabel.string = 'level reduction success!';
         const level = PlayerData.instance().playerInfo.level;
-        if (level - 2 > 0) {
-            PlayerData.instance().playerInfo.level = level - 2;
+        if (level - 1 > 0) {
+            PlayerData.instance().playerInfo.level = level - 1;
         } else {
-            PlayerData.instance().playerInfo.level = 0;
+            PlayerData.instance().playerInfo.level = 1;
         }
 
-        this._time = time;
-        if (this._clickTime >= 2) {
-            sys.localStorage.removeItem(Constants.GameConfigID);
-            this._clickTime = 0;
-            console.log('clear cache');
-        }
+        PlayerData.instance().savePlayerInfoToCache();
+    }
+
+    public clearData(){
+        sys.localStorage.removeItem(Constants.GameConfigID);
     }
 }

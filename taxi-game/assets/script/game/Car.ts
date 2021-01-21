@@ -120,7 +120,7 @@ export class Car extends Component {
 
         this.node.setWorldPosition(this._offset);
         Vec3.subtract(_tempVec, this._pointB, this._offset);
-        if (_tempVec.length() <= 0.01) {
+        if (Math.floor(_tempVec.length() * 100) / 100 <= 0.01) {
             this._arrivalStation();
         }
 
