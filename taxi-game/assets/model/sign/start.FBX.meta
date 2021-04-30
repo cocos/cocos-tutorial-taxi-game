@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "e94cc67c-4cb3-416c-94af-cd31edea933d",
@@ -45,7 +45,7 @@
       "displayName": "",
       "id": "07925",
       "name": "start.texture",
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "imported": true,
       "files": [
         ".json"
@@ -58,7 +58,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "e94cc67c-4cb3-416c-94af-cd31edea933d@33c1b"
       }

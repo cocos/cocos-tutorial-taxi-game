@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "a3e7039d-7969-4e5c-b557-130b162884e4",
@@ -147,7 +147,7 @@
       "displayName": "",
       "id": "36f89",
       "name": "贴图 #14.texture",
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "imported": true,
       "files": [
         ".json"
@@ -160,7 +160,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "a3e7039d-7969-4e5c-b557-130b162884e4@07403"
       }
@@ -171,7 +171,7 @@
       "displayName": "",
       "id": "5b61b",
       "name": "贴图 #17.texture",
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "imported": true,
       "files": [
         ".json"
@@ -184,7 +184,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "a3e7039d-7969-4e5c-b557-130b162884e4@93503"
       }

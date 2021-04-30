@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "ff9c13bd-fc7e-4b8e-924f-74b14a74ea3c",
@@ -40,7 +40,7 @@
       "name": "truck01.jpg.image"
     },
     "a96a6": {
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "importer": "texture",
       "uuid": "ff9c13bd-fc7e-4b8e-924f-74b14a74ea3c@a96a6",
       "imported": true,
@@ -55,7 +55,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "ff9c13bd-fc7e-4b8e-924f-74b14a74ea3c@2912a"
       },

@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "6d8e08f2-d296-4c5a-8b09-c8cac1dae51a",
@@ -11,7 +11,7 @@
       "displayName": "",
       "id": "87310",
       "name": "sign.texture",
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "imported": true,
       "files": [
         ".json"
@@ -24,7 +24,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "6d8e08f2-d296-4c5a-8b09-c8cac1dae51a@a86d1"
       }

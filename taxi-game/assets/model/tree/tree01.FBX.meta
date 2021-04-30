@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "35b8eab2-e304-4ff8-bd60-e540a3927736",
@@ -45,7 +45,7 @@
       "displayName": "",
       "id": "ba755",
       "name": "trees01.texture",
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "imported": true,
       "files": [
         ".json"
@@ -58,7 +58,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "35b8eab2-e304-4ff8-bd60-e540a3927736@1f2a9"
       }

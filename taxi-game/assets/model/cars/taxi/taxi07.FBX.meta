@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "5642a317-6c41-43bf-b12c-faf5aee0f22a",
@@ -147,7 +147,7 @@
       "displayName": "",
       "id": "5d474",
       "name": "贴图 #15.texture",
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "imported": true,
       "files": [
         ".json"
@@ -160,13 +160,13 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "5642a317-6c41-43bf-b12c-faf5aee0f22a@7173f"
       }
     },
     "36f89": {
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "importer": "texture",
       "uuid": "5642a317-6c41-43bf-b12c-faf5aee0f22a@36f89",
       "imported": true,
@@ -181,7 +181,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "5642a317-6c41-43bf-b12c-faf5aee0f22a@9abf0"
       },

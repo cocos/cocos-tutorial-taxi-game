@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "14ea35e0-8945-43a0-82b1-9c6fc27a7863",
@@ -81,7 +81,7 @@
       "name": "girl02.png.image"
     },
     "59f96": {
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "importer": "texture",
       "uuid": "14ea35e0-8945-43a0-82b1-9c6fc27a7863@59f96",
       "imported": true,
@@ -96,7 +96,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "14ea35e0-8945-43a0-82b1-9c6fc27a7863@88ed2"
       },

@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561",
@@ -164,7 +164,7 @@
       "displayName": "",
       "id": "7c0f3",
       "name": "贴图 #19.texture",
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "imported": true,
       "files": [
         ".json"
@@ -177,7 +177,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@f537c"
       }
@@ -188,7 +188,7 @@
       "displayName": "",
       "id": "733e8",
       "name": "taxi05Green.texture",
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "imported": true,
       "files": [
         ".json"
@@ -201,13 +201,13 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": false,
         "imageUuidOrDatabaseUri": "db://assets/model/cars/taxi/taxi05Green.jpg"
       }
     },
     "a4d9b": {
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "importer": "texture",
       "uuid": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@a4d9b",
       "imported": true,
@@ -222,7 +222,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "dfb49ec2-7be2-4377-864b-c4f6d82cd561@d9830"
       },

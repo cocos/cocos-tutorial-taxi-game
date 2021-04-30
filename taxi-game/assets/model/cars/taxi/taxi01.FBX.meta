@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af",
@@ -125,7 +125,7 @@
       "name": "light1.mesh"
     },
     "baf1c": {
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "importer": "texture",
       "uuid": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@baf1c",
       "imported": true,
@@ -140,7 +140,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "b14e9a6e-2a1d-46b9-be38-5ef6a083e5af@29226"
       },

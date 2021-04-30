@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "5f44bd4f-8f5e-4741-8eaa-991af25102fa",
@@ -45,7 +45,7 @@
       "displayName": "",
       "id": "d0e43",
       "name": "stone01.texture",
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "imported": true,
       "files": [
         ".json"
@@ -58,7 +58,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "5f44bd4f-8f5e-4741-8eaa-991af25102fa@b643f"
       }

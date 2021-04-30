@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "05278612-af4d-496d-97e1-d15c7c87fd89",
@@ -125,7 +125,7 @@
       "name": "taxi08Black.jpg.image"
     },
     "f1638": {
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "importer": "texture",
       "uuid": "05278612-af4d-496d-97e1-d15c7c87fd89@f1638",
       "imported": true,
@@ -140,7 +140,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "05278612-af4d-496d-97e1-d15c7c87fd89@81fb1"
       },

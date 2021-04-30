@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "bd0f2c89-ba3e-4ca6-b244-548e1899427b",
@@ -57,7 +57,7 @@
       "name": "road01.jpg.image"
     },
     "4b8d7": {
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "importer": "texture",
       "uuid": "bd0f2c89-ba3e-4ca6-b244-548e1899427b@4b8d7",
       "imported": true,
@@ -72,7 +72,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "bd0f2c89-ba3e-4ca6-b244-548e1899427b@3bd65"
       },
@@ -81,7 +81,7 @@
       "name": "贴图 #7.texture"
     },
     "442db": {
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "importer": "texture",
       "uuid": "bd0f2c89-ba3e-4ca6-b244-548e1899427b@442db",
       "imported": true,
@@ -96,7 +96,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "bd0f2c89-ba3e-4ca6-b244-548e1899427b@1b048"
       },

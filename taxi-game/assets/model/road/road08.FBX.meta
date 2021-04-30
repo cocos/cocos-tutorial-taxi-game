@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.10",
+  "ver": "2.0.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "0b112ecf-18a2-43e2-bf3a-30fc315e3827",
@@ -40,7 +40,7 @@
       "name": "road03.jpg.image"
     },
     "4b8d7": {
-      "ver": "1.0.20",
+      "ver": "1.0.21",
       "importer": "texture",
       "uuid": "0b112ecf-18a2-43e2-bf3a-30fc315e3827@4b8d7",
       "imported": true,
@@ -55,7 +55,7 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "premultiplyAlpha": false,
-        "anisotropy": 1,
+        "anisotropy": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "0b112ecf-18a2-43e2-bf3a-30fc315e3827@3bd65"
       },
