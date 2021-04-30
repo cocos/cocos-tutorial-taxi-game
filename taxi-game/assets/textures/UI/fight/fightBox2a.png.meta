@@ -33,7 +33,7 @@
       }
     },
     "f9941": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "sprite-frame",
       "uuid": "c840e510-ba1b-4472-aa7d-8f0f60c94dad@f9941",
       "imported": true,
@@ -66,7 +66,8 @@
         "borderRight": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "c840e510-ba1b-4472-aa7d-8f0f60c94dad@6c48a",
-        "atlasUuid": ""
+        "atlasUuid": "",
+        "packable": true
       },
       "displayName": "fightBox2a",
       "id": "f9941",

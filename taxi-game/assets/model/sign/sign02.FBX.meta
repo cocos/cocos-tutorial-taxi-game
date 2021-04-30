@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.2",
+  "ver": "2.0.10",
   "importer": "fbx",
   "imported": true,
   "uuid": "c8068d35-9991-4d99-ab26-353428815ace",
@@ -85,7 +85,7 @@
       "displayName": "",
       "id": "5b89f",
       "name": "sign02.prefab",
-      "ver": "1.0.11",
+      "ver": "1.0.12",
       "imported": true,
       "files": [
         ".json"

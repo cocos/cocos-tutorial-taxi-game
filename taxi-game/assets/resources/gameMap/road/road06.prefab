@@ -168,7 +168,10 @@
     },
     "_shadowCastingMode": 0,
     "_enableMorph": true,
-    "_id": ""
+    "_id": "",
+    "__prefab": {
+      "__id__": 9
+    }
   },
   {
     "__type__": "cc.ModelLightmapSettings",
@@ -193,12 +196,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "03c26wg6RCLrl2njp3LSm9",
-    "sync": false,
-    "_synced": {
-      "default": false,
-      "serializable": false
-    }
+    "fileId": "03c26wg6RCLrl2njp3LSm9"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -208,12 +206,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "deG1YBrdFCEomBQt+v2/Ib",
-    "sync": false,
-    "_synced": {
-      "default": false,
-      "serializable": false
-    }
+    "fileId": "deG1YBrdFCEomBQt+v2/Ib"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -223,11 +216,10 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "5fPKC1kX5K5JK8Jg3MD0/b",
-    "sync": false,
-    "_synced": {
-      "default": false,
-      "serializable": false
-    }
+    "fileId": "5fPKC1kX5K5JK8Jg3MD0/b"
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "3bJ9XZahNAVb8HjgWoL4cg"
   }
 ]

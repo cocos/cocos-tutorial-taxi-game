@@ -33,7 +33,7 @@
       }
     },
     "f9941": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "sprite-frame",
       "uuid": "7f95b470-8fca-445f-87c2-6aa314519f0a@f9941",
       "imported": true,
@@ -66,7 +66,8 @@
         "borderRight": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "7f95b470-8fca-445f-87c2-6aa314519f0a@6c48a",
-        "atlasUuid": ""
+        "atlasUuid": "",
+        "packable": true
       },
       "displayName": "head1",
       "id": "f9941",

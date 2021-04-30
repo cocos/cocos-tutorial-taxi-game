@@ -33,7 +33,7 @@
       }
     },
     "f9941": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "sprite-frame",
       "uuid": "0fbd964a-ab06-483d-803d-e63d7aa864ac@f9941",
       "imported": true,
@@ -66,7 +66,8 @@
         "borderRight": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "0fbd964a-ab06-483d-803d-e63d7aa864ac@6c48a",
-        "atlasUuid": ""
+        "atlasUuid": "",
+        "packable": true
       },
       "displayName": "fightImgCircle",
       "id": "f9941",

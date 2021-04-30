@@ -33,7 +33,7 @@
       }
     },
     "f9941": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "sprite-frame",
       "uuid": "ef7484d5-5d80-4513-bf2d-c53b42f5200d@f9941",
       "imported": true,
@@ -66,7 +66,8 @@
         "borderRight": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "ef7484d5-5d80-4513-bf2d-c53b42f5200d@6c48a",
-        "atlasUuid": ""
+        "atlasUuid": "",
+        "packable": true
       },
       "displayName": "homeBoxGold",
       "id": "f9941",

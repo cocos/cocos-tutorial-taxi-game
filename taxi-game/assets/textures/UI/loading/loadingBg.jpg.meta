@@ -33,7 +33,7 @@
       }
     },
     "f9941": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "sprite-frame",
       "uuid": "433e09cb-3eeb-4a0b-819f-19373be6eef2@f9941",
       "imported": true,
@@ -66,7 +66,8 @@
         "borderRight": 0,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "433e09cb-3eeb-4a0b-819f-19373be6eef2@6c48a",
-        "atlasUuid": ""
+        "atlasUuid": "",
+        "packable": true
       },
       "displayName": "loadingBg",
       "id": "f9941",

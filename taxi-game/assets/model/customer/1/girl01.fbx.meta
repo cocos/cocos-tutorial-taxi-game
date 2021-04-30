@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.2",
+  "ver": "2.0.10",
   "importer": "fbx",
   "imported": true,
   "uuid": "14ea35e0-8945-43a0-82b1-9c6fc27a7863",
@@ -121,7 +121,7 @@
       "name": "Material #5.material"
     },
     "7b338": {
-      "ver": "1.0.11",
+      "ver": "1.0.12",
       "importer": "gltf-scene",
       "uuid": "14ea35e0-8945-43a0-82b1-9c6fc27a7863@7b338",
       "imported": true,

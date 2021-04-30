@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.2",
+  "ver": "2.0.10",
   "importer": "fbx",
   "imported": true,
   "uuid": "79a67e73-19fa-4efa-a5f2-a29f53bc7319",
@@ -85,7 +85,7 @@
       "displayName": "",
       "id": "6bfe5",
       "name": "stone02.prefab",
-      "ver": "1.0.11",
+      "ver": "1.0.12",
       "imported": true,
       "files": [
         ".json"

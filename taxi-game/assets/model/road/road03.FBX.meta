@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.2",
+  "ver": "2.0.10",
   "importer": "fbx",
   "imported": true,
   "uuid": "648a88b7-d36e-452e-9b37-a7dd077f05dd",
@@ -210,7 +210,7 @@
       "displayName": "",
       "id": "99a4a",
       "name": "road03.prefab",
-      "ver": "1.0.11",
+      "ver": "1.0.12",
       "imported": true,
       "files": [
         ".json"

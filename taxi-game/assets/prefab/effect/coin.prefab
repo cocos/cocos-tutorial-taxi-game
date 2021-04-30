@@ -153,6 +153,9 @@
     },
     "_textureAnimationModule": {
       "__id__": 49
+    },
+    "__prefab": {
+      "__id__": 65
     }
   },
   {
@@ -2846,11 +2849,10 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "48eAg+tipMxa/v6sdF8Y+B",
-    "sync": false,
-    "_synced": {
-      "default": false,
-      "serializable": false
-    }
+    "fileId": "48eAg+tipMxa/v6sdF8Y+B"
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "175mam9dJMdaKKfXNJGGi0"
   }
 ]

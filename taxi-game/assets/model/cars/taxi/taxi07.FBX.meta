@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.2",
+  "ver": "2.0.10",
   "importer": "fbx",
   "imported": true,
   "uuid": "5642a317-6c41-43bf-b12c-faf5aee0f22a",
@@ -227,7 +227,7 @@
       "displayName": "",
       "id": "0804d",
       "name": "taxi07.prefab",
-      "ver": "1.0.11",
+      "ver": "1.0.12",
       "imported": true,
       "files": [
         ".json"

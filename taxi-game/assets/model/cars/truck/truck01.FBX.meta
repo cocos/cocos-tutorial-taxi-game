@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.2",
+  "ver": "2.0.10",
   "importer": "fbx",
   "imported": true,
   "uuid": "ff9c13bd-fc7e-4b8e-924f-74b14a74ea3c",
@@ -85,7 +85,7 @@
       "displayName": "",
       "id": "aef53",
       "name": "truck01.prefab",
-      "ver": "1.0.11",
+      "ver": "1.0.12",
       "imported": true,
       "files": [
         ".json"

@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.2",
+  "ver": "2.0.10",
   "importer": "fbx",
   "imported": true,
   "uuid": "b67d0ca0-77ea-4c36-bf55-9211584c367a",
@@ -35,7 +35,7 @@
       "displayName": "",
       "id": "37ff8",
       "name": "man01@walk.prefab",
-      "ver": "1.0.11",
+      "ver": "1.0.12",
       "imported": true,
       "files": [
         ".json"

@@ -33,7 +33,7 @@
       }
     },
     "f9941": {
-      "ver": "1.0.8",
+      "ver": "1.0.9",
       "importer": "sprite-frame",
       "uuid": "32bf4713-1bb0-4b32-a69a-eb2133147f9c@f9941",
       "imported": true,
@@ -66,7 +66,8 @@
         "borderRight": 39,
         "isUuid": true,
         "imageUuidOrDatabaseUri": "32bf4713-1bb0-4b32-a69a-eb2133147f9c@6c48a",
-        "atlasUuid": ""
+        "atlasUuid": "",
+        "packable": true
       },
       "displayName": "fightBoxTalk",
       "id": "f9941",

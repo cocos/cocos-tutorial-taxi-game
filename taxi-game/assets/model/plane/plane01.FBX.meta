@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.2",
+  "ver": "2.0.10",
   "importer": "fbx",
   "imported": true,
   "uuid": "60c084d9-f9c9-4ff1-acc9-d9df252760c2",
@@ -85,7 +85,7 @@
       "displayName": "",
       "id": "c13c3",
       "name": "plane01.prefab",
-      "ver": "1.0.11",
+      "ver": "1.0.12",
       "imported": true,
       "files": [
         ".json"

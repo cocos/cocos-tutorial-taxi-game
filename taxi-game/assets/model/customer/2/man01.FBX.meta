@@ -1,5 +1,5 @@
 {
-  "ver": "2.0.2",
+  "ver": "2.0.10",
   "importer": "fbx",
   "imported": true,
   "uuid": "0bb50b73-023a-4269-bac6-c7be72d298d0",
@@ -102,7 +102,7 @@
       "displayName": "",
       "id": "3787f",
       "name": "man01.prefab",
-      "ver": "1.0.11",
+      "ver": "1.0.12",
       "imported": true,
       "files": [
         ".json"
