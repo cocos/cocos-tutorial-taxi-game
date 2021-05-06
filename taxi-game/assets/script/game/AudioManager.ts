@@ -1,31 +1,40 @@
-import { _decorator, Component, Node, loader, AudioClip } from "cc";
-const { ccclass, property } = _decorator;
+import { assert, assetManager, AudioClip, AudioSource, log } from "cc";
 
-@ccclass("AudioManager")
 export class AudioManager {
-    public static playMusic(name: string) {
-        const path = `audio/music/${name}`;
-        loader.loadRes(path, AudioClip, (err, clip) => {
-            if (err) {
-                console.warn(err);
-                return;
-            }
+    private static _audioSource?: AudioSource;
+    private static _cachedAudioClipMap: Record<string, AudioClip> = {};
 
-            clip!.setLoop(true);
-            clip!.play();
-        });
+    // init AudioManager in GameRoot component.
+    public static init (audioSource: AudioSource) {
+        log('Init AudioManager !');
+        AudioManager._audioSource = audioSource;
+    }
+
+    public static playMusic () {
+        const audioSource = AudioManager._audioSource!;
+        assert(audioSource, 'AudioManager not inited!');
+
+        audioSource.play();
     }
 
     public static playSound(name: string) {
-        const path = `audio/sound/${name}`;
-        loader.loadRes(path, AudioClip, (err, clip) => {
-            if (err) {
-                console.warn(err);
-                return;
-            }
+        const audioSource = AudioManager._audioSource!;
+        assert(audioSource, 'AudioManager not inited!');
 
-            clip!.setLoop(false);
-            clip!.playOneShot(1);
-        });
+        const path = `audio/sound/${name}`;
+        let cachedAudioClip = AudioManager._cachedAudioClipMap[path];
+        if (cachedAudioClip) {
+            audioSource.playOneShot(cachedAudioClip, 1);
+        } else {
+            assetManager.resources?.load(path, AudioClip, (err, clip) => {
+                if (err) {
+                    console.warn(err);
+                    return;
+                }
+                
+                AudioManager._cachedAudioClipMap[path] = clip;
+                audioSource.playOneShot(clip, 1);
+            });
+        }
     }
 }
