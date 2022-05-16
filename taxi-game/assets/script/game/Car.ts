@@ -268,7 +268,7 @@ export class Car extends Component {
 
             if(this._currRoadPoint!.moveType === RoadPoint.RoadMoveType.BEND){
                 if (this._currRoadPoint!.clockwise) {
-                    this._originRotation = this._currRotation = this._originRotation <= 0 ? this._originRotation + 360 : this._originRotation;
+                    this._originRotation = this._currRotation = this._currRotation <= 0 ? this._currRotation + 360 : this._currRotation;
                     this._targetRotation = this._originRotation - 90;
 
                     if ((this._pointB.z < this._pointA.z && this._pointB.x > this._pointA.x) ||
@@ -278,7 +278,7 @@ export class Car extends Component {
                         this._centerPoint.set(this._pointA.x, 0, this._pointB.z);
                     }
                 } else {
-                    this._originRotation = this._currRotation = this._originRotation >= 360 ? this._originRotation - 360 : this._originRotation;
+                    this._originRotation = this._currRotation = this._currRotation >= 360 ? this._currRotation - 360 : this._currRotation;
                     this._targetRotation = this._originRotation + 90;
 
                     if ((this._pointB.z > this._pointA.z && this._pointB.x > this._pointA.x) ||
